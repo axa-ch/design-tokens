@@ -1,0 +1,12 @@
+{
+  "shadow": {
+    "box": {
+      "default": {
+        "value": "{shadow.base.1}"
+      },
+      "high": {
+        "value": "{shadow.base.1}"
+      }
+    }
+  }
+}

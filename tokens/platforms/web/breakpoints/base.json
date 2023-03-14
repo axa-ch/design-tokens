@@ -1,0 +1,21 @@
+{
+  "breakpoints": {
+    "base": {
+      "xs": {
+        "value": "576px"
+      },
+      "sm": {
+        "value": "768px"
+      },
+      "md": {
+        "value": "992px"
+      },
+      "xl": {
+        "value": "1200px"
+      },
+      "xxl": {
+        "value": "1440px"
+      }
+    }
+  }
+}

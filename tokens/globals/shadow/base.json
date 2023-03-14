@@ -1,0 +1,24 @@
+{
+  "shadow": {
+    "base": {
+      "1": {
+        "value": {
+          "x": "0px",
+          "y": "1px",
+          "blur": "8px",
+          "spread": "0px",
+          "color": "#000000"
+        }
+      },
+      "2": {
+        "value": {
+          "x": "0px",
+          "y": "1px",
+          "blur": "20px",
+          "spread": "0px",
+          "color": "#000000"
+        }
+      }
+    }
+  }
+}

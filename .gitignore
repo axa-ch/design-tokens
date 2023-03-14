@@ -1,0 +1,17 @@
+# build output
+/build
+
+# depedencies
+/node_modules
+
+# idea
+.idea/*
+*.iml
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Mac OS specific
+.DS_Store
