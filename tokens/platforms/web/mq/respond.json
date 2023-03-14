@@ -1,0 +1,51 @@
+{
+  "mq": {
+    "respond": {
+      "down-xs": {
+        "value": "{mq.base.xs-max}"
+      },
+      "down-sm": {
+        "value": "{mq.base.sm-max}"
+      },
+      "down-md": {
+        "value": "{mq.base.md-max}"
+      },
+      "down-xl": {
+        "value": "{mq.base.xl-max}"
+      },
+      "down-xxl": {
+        "value": "{mq.base.xxl-max}"
+      },
+      "up-xs": {
+        "value": "{mq.base.xs}"
+      },
+      "up-sm": {
+        "value": "{mq.base.sm}"
+      },
+      "up-md": {
+        "value": "{mq.base.md}"
+      },
+      "up-xl": {
+        "value": "{mq.base.xl}"
+      },
+      "up-xxl": {
+        "value": "{mq.base.xxl}"
+      },
+      "only-xs": {
+        "value": "{mq.base.xs-max}"
+      },
+      "only-sm": {
+        "value": "{mq.base.xs} and {mq.base.sm-max}"
+      },
+      "only-md": {
+        "value": "{mq.base.sm} and {mq.base.md-max}"
+      },
+      "only-xl": {
+        "value": "{mq.base.md} and {mq.base.xl-max}"
+      },
+      "only-xxl": {
+        "value": "{mq.base.xl}"
+      }
+    }
+  }
+}

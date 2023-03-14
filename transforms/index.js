@@ -1,4 +1,4 @@
-const { shadowMatcher, shadowTransformer } = require('./box-shadow');
+const { shadowMatcher, shadowTransformer } = require('./shadow');
 
 module.exports.shadowCSSTransform = {
   matcher: shadowMatcher,

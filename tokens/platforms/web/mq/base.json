@@ -1,0 +1,53 @@
+{
+  "mq": {
+    "base": {
+      "xs": {
+        "value": "(min-width: {breakpoints.base.xs}px)"
+      },
+      "xs-max": {
+        "value": "(max-width: {breakpoints.base.xs-max}px)"
+      },
+      "sm": {
+        "value": "(min-width: {breakpoints.base.sm}px)"
+      },
+      "sm-max": {
+        "value": "(max-width: {breakpoints.base.sm-max}px)"
+      },
+      "md": {
+        "value": "(min-width: {breakpoints.base.md}px)"
+      },
+      "md-max": {
+        "value": "(max-width: {breakpoints.base.md-max}px)"
+      },
+      "xl": {
+        "value": "(min-width: {breakpoints.base.xl}px)"
+      },
+      "xl-max": {
+        "value": "(max-width: {breakpoints.base.xl-max}px)"
+      },
+      "xxl": {
+        "value": "(min-width: {breakpoints.base.xxl}px)"
+      },
+      "xxl-max": {
+        "value": "(max-width: {breakpoints.base.xxl-max}px)"
+      },
+      "hd-color": { "value": "(dynamic-range: high)" },
+      "touch": { "value": "(hover: none) and (pointer: coarse)" },
+      "stylus": { "value": "(hover: none) and (pointer: fine)" },
+      "pointer": { "value": "(hover) and (pointer: coarse)" },
+      "mouse": { "value": "(hover) and (pointer: fine)" },
+      "scheme-dark": { "value": "(prefers-color-scheme: dark)" },
+      "scheme-light": { "value": "(prefers-color-scheme: light)" },
+      "motion-safe": { "value": "(prefers-reduced-motion: no-preference)" },
+      "motion-reduce": { "value": "(prefers-reduced-motion: reduce)" },
+      "opacity-safe": { "value": "(prefers-reduced-transparency: no-preference)" },
+      "opacity-reduce": { "value": "(prefers-reduced-transparency: reduce)" },
+      "data-safe": { "value": "(prefers-reduced-data: no-preference)" },
+      "data-reduce": { "value": "(prefers-reduced-data: reduce)" },
+      "contrast-more": { "value": "(prefers-contrast: more)" },
+      "contrast-less": { "value": "(prefers-contrast: less)" },
+      "portrait": { "value": "(orientation: portrait)" },
+      "landscape": { "value": "(orientation: landscape)" }
+    }
+  }
+}
