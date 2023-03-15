@@ -71,14 +71,5 @@ module.exports = {
         },
       ]),
     },
-    ts: {
-      transformGroup: 'js',
-      buildPath: 'build/ts/',
-      files: [...TOKENS_LIST, MEDIA_QUERY_TOKEN_NAME].map((tokenName) => ({
-        destination: `${tokenName}.ts`,
-        filter: (token) => token?.attributes?.category === tokenName,
-        format: 'typescript/es6-declarations',
-      })),
-    },
   },
 };
