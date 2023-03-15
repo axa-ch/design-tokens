@@ -3,6 +3,9 @@ const transformGroups = require('style-dictionary/lib/common/transformGroups');
 const { customMediaFormatter } = require('./formats/custom-media');
 const { scssMediaQuery } = require('./formats/scss-mq');
 
+const TOKENS_LIST = ['color', 'shadow', 'size', 'spacing', 'breakpoints'];
+const MEDIA_QUERY_TOKEN_NAME = 'mq';
+
 module.exports = {
   source: ['tokens/**/*.json'],
   format: {
@@ -18,18 +21,18 @@ module.exports = {
       buildPath: 'build/css/',
       transforms: [...transformGroups.css, 'shadow/css'],
       files: [
-        {
-          destination: 'tokens.css',
-          filter: (token) => token?.attributes?.category !== 'mq',
+        ...TOKENS_LIST.map((tokenName) => ({
+          destination: `${tokenName}.css`,
+          filter: (token) => token?.attributes?.category === tokenName,
           format: 'css/variables',
           options: {
             outputReferences: true,
           },
-        },
+        })),
         {
-          destination: 'custom-media.css',
+          destination: `${MEDIA_QUERY_TOKEN_NAME}.css`,
           format: 'css/custom-media',
-          filter: (token) => token?.attributes?.category === 'mq',
+          filter: (token) => token?.attributes?.category === MEDIA_QUERY_TOKEN_NAME,
         },
       ],
     },
@@ -37,17 +40,17 @@ module.exports = {
       buildPath: 'build/scss/',
       transforms: [...transformGroups.scss, 'shadow/scss'],
       files: [
-        {
-          destination: '_tokens.scss',
-          filter: (token) => token?.attributes?.category !== 'mq',
+        ...TOKENS_LIST.map((tokenName) => ({
+          destination: `${tokenName}.scss`,
+          filter: (token) => token?.attributes?.category === tokenName,
           format: 'scss/variables',
           options: {
             outputReferences: true,
           },
-        },
+        })),
         {
-          destination: '_mq.scss',
-          filter: (token) => token?.attributes?.category === 'mq',
+          destination: `_${MEDIA_QUERY_TOKEN_NAME}.scss`,
+          filter: (token) => token?.attributes?.category === MEDIA_QUERY_TOKEN_NAME,
           format: 'scss/media-query',
         },
       ],
@@ -55,12 +58,27 @@ module.exports = {
     js: {
       transformGroup: 'js',
       buildPath: 'build/js/',
-      files: [
+      files: [...TOKENS_LIST, MEDIA_QUERY_TOKEN_NAME].flatMap((tokenName) => [
         {
-          destination: 'tokens.js',
+          destination: `${tokenName}.js`,
+          filter: (token) => token?.attributes?.category === tokenName,
           format: 'javascript/es6',
         },
-      ],
+        {
+          destination: `${tokenName}.d.ts`,
+          filter: (token) => token?.attributes?.category === tokenName,
+          format: 'typescript/es6-declarations',
+        },
+      ]),
+    },
+    ts: {
+      transformGroup: 'js',
+      buildPath: 'build/ts/',
+      files: [...TOKENS_LIST, MEDIA_QUERY_TOKEN_NAME].map((tokenName) => ({
+        destination: `${tokenName}.ts`,
+        filter: (token) => token?.attributes?.category === tokenName,
+        format: 'typescript/es6-declarations',
+      })),
     },
   },
 };
