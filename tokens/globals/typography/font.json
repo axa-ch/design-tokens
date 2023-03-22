@@ -1,0 +1,24 @@
+{
+  "typography": {
+    "font-family": {
+      "primary": {
+        "value": "Source Sans Pro"
+      },
+      "secondary": {
+        "value": "Publico Headline"
+      },
+      "primary-fallback-1": {
+        "value": "Arial"
+      },
+      "secondary-fallback-1": {
+        "value": "Georgia"
+      },
+      "primary-fallback-2": {
+        "value": "sans-serif"
+      },
+      "secondary-fallback-2": {
+        "value": "serif"
+      }
+    }
+  }
+}

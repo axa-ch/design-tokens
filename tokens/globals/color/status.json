@@ -1,0 +1,8 @@
+{
+  "color": {
+    "status": {
+      "success": { "value": "{color.base.malachite}" },
+      "error": { "value": "{color.base.shy-tomato}" }
+    }
+  }
+}

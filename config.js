@@ -1,10 +1,11 @@
-const { shadowCSSTransform, shadowSCSSTransform } = require('./transforms');
+const transform = require('./transform');
 const transformGroups = require('style-dictionary/lib/common/transformGroups');
 const { customMediaFormatter } = require('./formats/custom-media');
 const { scssMediaQuery } = require('./formats/scss-mq');
 
-const TOKENS_LIST = ['color', 'shadow', 'size', 'spacing', 'breakpoints'];
+const TOKENS_LIST = ['typography', 'color', 'shadow', 'animation', 'spacing', 'breakpoints'];
 const MEDIA_QUERY_TOKEN_NAME = 'mq';
+const CUSTOM_CSS_TRANSFORM_LIST = ['shadow/css', 'cubicBezier/css', 'animationDuration/css', 'font/css', 'size/px'];
 
 module.exports = {
   source: ['tokens/**/*.json'],
@@ -12,14 +13,11 @@ module.exports = {
     'css/custom-media': customMediaFormatter,
     'scss/media-query': scssMediaQuery,
   },
-  transform: {
-    'shadow/css': shadowCSSTransform,
-    'shadow/scss': shadowSCSSTransform,
-  },
+  transform,
   platforms: {
     css: {
       buildPath: 'build/css/',
-      transforms: [...transformGroups.css, 'shadow/css'],
+      transforms: [...transformGroups.css, ...CUSTOM_CSS_TRANSFORM_LIST],
       files: [
         ...TOKENS_LIST.map((tokenName) => ({
           destination: `${tokenName}.css`,
@@ -38,7 +36,7 @@ module.exports = {
     },
     scss: {
       buildPath: 'build/scss/',
-      transforms: [...transformGroups.scss, 'shadow/scss'],
+      transforms: [...transformGroups.scss, ...CUSTOM_CSS_TRANSFORM_LIST],
       files: [
         ...TOKENS_LIST.map((tokenName) => ({
           destination: `${tokenName}.scss`,
@@ -49,7 +47,7 @@ module.exports = {
           },
         })),
         {
-          destination: `_${MEDIA_QUERY_TOKEN_NAME}.scss`,
+          destination: `${MEDIA_QUERY_TOKEN_NAME}.scss`,
           filter: (token) => token?.attributes?.category === MEDIA_QUERY_TOKEN_NAME,
           format: 'scss/media-query',
         },

@@ -8,7 +8,8 @@
           "blur": "8px",
           "spread": "0px",
           "color": "#000000"
-        }
+        },
+        "type": "shadow"
       },
       "2": {
         "value": {
@@ -17,7 +18,8 @@
           "blur": "20px",
           "spread": "0px",
           "color": "#000000"
-        }
+        },
+        "type": "shadow"
       }
     }
   }

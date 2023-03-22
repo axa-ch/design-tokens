@@ -1,13 +1,43 @@
 {
   "color": {
     "base": {
-      "gray": {
-        "light": { "value": "#CCCCCC" },
-        "medium": { "value": "#999999" },
-        "dark": { "value": "#111111" }
-      },
-      "red": { "value": "#FF0000" },
-      "green": { "value": "#00FF00" }
+      "axa-blue": { "value": "#00008f" },
+      "axa-red": { "value": "#ff1721" },
+
+      "burnt-sienna": { "value": "#f07662" },
+      "black": { "value": "#000" },
+      "dark-grey": { "value": "#333" },
+      "medium-grey": { "value": "#5f5f5f" },
+      "grey": { "value": "#7f7f7f" },
+      "light-grey": { "value": "#999" },
+      "silver": { "value": "#ccc" },
+      "mercury": { "value": "#e5e5e5" },
+      "wild-sand": { "value": "#f5f5f5" },
+      "alabaster": { "value": "#fafafa" },
+      "prim-white": { "value": "#fff" },
+
+      "deep-sapphire": { "value": "#00005b" },
+      "azure": { "value": "#3032c1" },
+      "dark-indigo": { "value": "#3b3fd8" },
+      "ocean-blue": { "value": "#4976ba" },
+      "teal": { "value": "#027180" },
+      "viridian-green": { "value": "#668980" },
+      "pacific": { "value": "#00adc6" },
+      "greyjoy": { "value": "#9fbeaf" },
+      "aqua-green": { "value": "#9fd9b4" },
+      "flamingo": { "value": "#ec4d33" },
+      "tosca": { "value": "#914146" },
+      "azalea": { "value": "#e196aa" },
+      "cotton-candy": { "value": "#fad6de" },
+      "apache": { "value": "#ddbe65" },
+      "underbrush": { "value": "#bc9d45" },
+      "dune": { "value": "#fcd385" },
+      "acid": { "value": "#f0ff93" },
+      "logan": { "value": "#9190ac" },
+      "igloo": { "value": "#b5d0ee" },
+
+      "malachite": { "value": "#1cc54e" },
+      "shy-tomato": { "value": "#c91432" }
     }
   }
 }
