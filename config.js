@@ -3,7 +3,7 @@ const transformGroups = require('style-dictionary/lib/common/transformGroups');
 const { customMediaFormatter } = require('./formats/custom-media');
 const { scssMediaQuery } = require('./formats/scss-mq');
 
-const TOKENS_LIST = ['typography', 'color', 'shadow', 'animation', 'spacing', 'breakpoints'];
+const TOKENS_LIST = ['typography', 'color', 'shadow', 'radius', 'animation', 'spacing', 'breakpoints'];
 const MEDIA_QUERY_TOKEN_NAME = 'mq';
 const CUSTOM_CSS_TRANSFORM_LIST = ['shadow/css', 'cubicBezier/css', 'animationDuration/css', 'font/css', 'size/px'];
 

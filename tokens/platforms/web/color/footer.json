@@ -1,0 +1,9 @@
+{
+  "color": {
+    "footer": {
+      "background": {
+        "value": "{color.base.ocean-blue}"
+      }
+    }
+  }
+}

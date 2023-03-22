@@ -3,7 +3,6 @@
     "base": {
       "axa-blue": { "value": "#00008f" },
       "axa-red": { "value": "#ff1721" },
-
       "burnt-sienna": { "value": "#f07662" },
       "black": { "value": "#000" },
       "dark-grey": { "value": "#333" },
@@ -15,7 +14,6 @@
       "wild-sand": { "value": "#f5f5f5" },
       "alabaster": { "value": "#fafafa" },
       "prim-white": { "value": "#fff" },
-
       "deep-sapphire": { "value": "#00005b" },
       "azure": { "value": "#3032c1" },
       "dark-indigo": { "value": "#3b3fd8" },
@@ -35,7 +33,6 @@
       "acid": { "value": "#f0ff93" },
       "logan": { "value": "#9190ac" },
       "igloo": { "value": "#b5d0ee" },
-
       "malachite": { "value": "#1cc54e" },
       "shy-tomato": { "value": "#c91432" }
     }

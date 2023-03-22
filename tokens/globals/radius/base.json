@@ -1,0 +1,18 @@
+{
+  "radius": {
+    "base": {
+      "small": {
+        "value": 4,
+        "type": "size"
+      },
+      "medium": {
+        "value": 8,
+        "type": "size"
+      },
+      "large": {
+        "value": 16,
+        "type": "size"
+      }
+    }
+  }
+}

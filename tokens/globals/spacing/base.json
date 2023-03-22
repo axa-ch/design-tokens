@@ -2,34 +2,44 @@
   "spacing": {
     "base": {
       "1": {
-        "value": "4px"
+        "value": 4,
+        "type": "size"
       },
       "2": {
-        "value": "8px"
+        "value": 8,
+        "type": "size"
       },
       "3": {
-        "value": "12px"
+        "value": 12,
+        "type": "size"
       },
       "4": {
-        "value": "16px"
+        "value": 16,
+        "type": "size"
       },
       "5": {
-        "value": "20px"
+        "value": 20,
+        "type": "size"
       },
       "6": {
-        "value": "28px"
+        "value": 28,
+        "type": "size"
       },
       "7": {
-        "value": "40px"
+        "value": 40,
+        "type": "size"
       },
       "8": {
-        "value": "60px"
+        "value": 60,
+        "type": "size"
       },
       "9": {
-        "value": "80px"
+        "value": 80,
+        "type": "size"
       },
       "10": {
-        "value": "120px"
+        "value": 120,
+        "type": "size"
       }
     }
   }
