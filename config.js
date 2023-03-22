@@ -2,6 +2,13 @@ const transform = require('./transform');
 const transformGroups = require('style-dictionary/lib/common/transformGroups');
 const { customMediaFormatter } = require('./formats/custom-media');
 const { scssMediaQuery } = require('./formats/scss-mq');
+const { makeSdTailwindConfig } = require('sd-tailwindcss-transformer');
+// create tailwind format
+const tailwindConfig = makeSdTailwindConfig({
+  type: 'all',
+});
+
+console.log(tailwindConfig);
 
 const TOKENS_LIST = ['typography', 'color', 'shadow', 'radius', 'animation', 'spacing', 'breakpoints'];
 const MEDIA_QUERY_TOKEN_NAME = 'mq';
@@ -12,9 +19,20 @@ module.exports = {
   format: {
     'css/custom-media': customMediaFormatter,
     'scss/media-query': scssMediaQuery,
+    ...tailwindConfig.format,
   },
   transform,
   platforms: {
+    tailwind: {
+      buildPath: 'build/tailwind/',
+      transforms: [...tailwindConfig.platforms.tailwind.transforms, ...CUSTOM_CSS_TRANSFORM_LIST],
+      files: [
+        {
+          destination: 'tailwind.config.js',
+          format: 'tailwindFormat',
+        },
+      ],
+    },
     css: {
       buildPath: 'build/css/',
       transforms: [...transformGroups.css, ...CUSTOM_CSS_TRANSFORM_LIST],
