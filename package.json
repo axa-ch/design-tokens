@@ -10,7 +10,7 @@
   "scripts": {
     "test": "prettier . --check && eslint",
     "clean": "rimraf build",
-    "build": "npm run clean && style-dictionary build && prettier --write build/{js,scss,css}/*",
+    "build": "npm run clean && style-dictionary build && prettier --write build/{js,scss,css,tailwind}/*",
     "prepublishOnly": "npm run build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
