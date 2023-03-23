@@ -1,0 +1,42 @@
+@use '../build/css/color';
+@use '../build/css/shadow';
+@use '../build/css/typography';
+@use '../build/css/spacing';
+
+.container {
+  display: grid;
+  align-content: flex-start;
+  grid-auto-flow: row;
+  height: 100%;
+  width: 100%;
+  box-shadow: var(--shadow-base-1);
+  padding-bottom: var(--spacing-base-1);
+}
+
+.preview {
+  padding: 0;
+  margin: 0 0 var(--spacing-base-2);
+  height: 120px;
+  background: var(--bg);
+}
+
+.name,
+.value,
+.variableName {
+  margin: 0;
+  padding: 0 var(--spacing-base-2);
+}
+
+.name {
+  font: var(--typography-primary-h6);
+}
+
+.value {
+  color: var(--color-base-light-grey);
+  font: var(--typography-primary-text-3);
+}
+
+.variableName {
+  color: var(--color-base-medium-grey);
+  font: var(--typography-primary-text-3);
+}

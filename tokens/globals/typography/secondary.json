@@ -1,9 +1,9 @@
 {
   "typography": {
-    "base": {
+    "secondary": {
       "h1": {
         "value": {
-          "fontFamily": "inherit",
+          "fontFamily": "{typography.font-family.secondary}, {typography.font-family.secondary-fallback-1}, {typography.font-family.secondary-fallback-2}",
           "fontWeight": 700,
           "fontSize": "{typography.size.font-size-10}",
           "lineHeight": "{typography.size.line-height-10}"
@@ -12,7 +12,7 @@
       },
       "h2": {
         "value": {
-          "fontFamily": "inherit",
+          "fontFamily": "{typography.font-family.secondary}, {typography.font-family.secondary-fallback-1}, {typography.font-family.secondary-fallback-2}",
           "fontWeight": 700,
           "fontSize": "{typography.size.font-size-9}",
           "lineHeight": "{typography.size.line-height-9}"
@@ -21,7 +21,7 @@
       },
       "h3": {
         "value": {
-          "fontFamily": "inherit",
+          "fontFamily": "{typography.font-family.secondary}, {typography.font-family.secondary-fallback-1}, {typography.font-family.secondary-fallback-2}",
           "fontWeight": 700,
           "fontSize": "{typography.size.font-size-8}",
           "lineHeight": "{typography.size.line-height-8}"
@@ -30,7 +30,7 @@
       },
       "h4": {
         "value": {
-          "fontFamily": "inherit",
+          "fontFamily": "{typography.font-family.secondary}, {typography.font-family.secondary-fallback-1}, {typography.font-family.secondary-fallback-2}",
           "fontWeight": 700,
           "fontSize": "{typography.size.font-size-7}",
           "lineHeight": "{typography.size.line-height-7}"
@@ -39,7 +39,7 @@
       },
       "h5": {
         "value": {
-          "fontFamily": "inherit",
+          "fontFamily": "{typography.font-family.secondary}, {typography.font-family.secondary-fallback-1}, {typography.font-family.secondary-fallback-2}",
           "fontWeight": 700,
           "fontSize": "{typography.size.font-size-6}",
           "lineHeight": "{typography.size.line-height-6}"
@@ -48,46 +48,10 @@
       },
       "h6": {
         "value": {
-          "fontFamily": "inherit",
+          "fontFamily": "{typography.font-family.secondary}, {typography.font-family.secondary-fallback-1}, {typography.font-family.secondary-fallback-2}",
           "fontWeight": 700,
           "fontSize": "{typography.size.font-size-5}",
           "lineHeight": "{typography.size.line-height-5}"
-        },
-        "type": "typography"
-      },
-      "text-1": {
-        "value": {
-          "fontFamily": "inherit",
-          "fontWeight": 400,
-          "fontSize": "{typography.size.font-size-4}",
-          "lineHeight": "{typography.size.line-height-4}"
-        },
-        "type": "typography"
-      },
-      "text-2": {
-        "value": {
-          "fontFamily": "inherit",
-          "fontWeight": 400,
-          "fontSize": "{typography.size.font-size-3}",
-          "lineHeight": "{typography.size.line-height-3}"
-        },
-        "type": "typography"
-      },
-      "text-3": {
-        "value": {
-          "fontFamily": "inherit",
-          "fontWeight": 400,
-          "fontSize": "{typography.size.font-size-2}",
-          "lineHeight": "{typography.size.line-height-2}"
-        },
-        "type": "typography"
-      },
-      "text-4": {
-        "value": {
-          "fontFamily": "inherit",
-          "fontWeight": 400,
-          "fontSize": "{typography.size.font-size-1}",
-          "lineHeight": "{typography.size.line-height-1}"
         },
         "type": "typography"
       }

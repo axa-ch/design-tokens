@@ -1,8 +1,8 @@
 {
   "color": {
     "status": {
-      "success": { "value": "{color.base.malachite}" },
-      "error": { "value": "{color.base.shy-tomato}" }
+      "success": { "value": "#1CC54E" },
+      "error": { "value": "#C91432" }
     }
   }
 }

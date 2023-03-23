@@ -7,7 +7,7 @@
           "y": "1px",
           "blur": "8px",
           "spread": "0px",
-          "color": "#000000"
+          "color": "rgba(0, 0, 0, 0.15)"
         },
         "type": "shadow"
       },
@@ -17,7 +17,7 @@
           "y": "1px",
           "blur": "20px",
           "spread": "0px",
-          "color": "#000000"
+          "color": "rgba(0, 0, 0, 0.15)"
         },
         "type": "shadow"
       }

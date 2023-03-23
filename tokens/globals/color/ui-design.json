@@ -1,0 +1,17 @@
+{
+  "color": {
+    "ui-design": {
+      "axa-blue": { "value": "{color.base.axa-blue}" },
+      "burnt-sienna": { "value": "#f07662" },
+      "dark-grey": { "value": "{color.greyscale.1}" },
+      "medium-grey": { "value": "{color.greyscale.2}" },
+      "grey": { "value": "{color.greyscale.3}" },
+      "light-grey": { "value": "{color.greyscale.4}" },
+      "silver": { "value": "{color.greyscale.5}" },
+      "mercury": { "value": "{color.greyscale.6}" },
+      "wild-sand": { "value": "{color.greyscale.7}" },
+      "alabaster": { "value": "{color.greyscale.8}" },
+      "white": { "value": "{color.greyscale.9}" }
+    }
+  }
+}

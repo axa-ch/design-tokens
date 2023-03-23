@@ -1,0 +1,16 @@
+{
+  "color": {
+    "greyscale": {
+      "0": { "value": "#000000" },
+      "1": { "value": "#333333" },
+      "2": { "value": "#5F5F5F" },
+      "3": { "value": "#7F7F7F" },
+      "4": { "value": "#999999" },
+      "5": { "value": "#CCCCCC" },
+      "6": { "value": "#E5E5E5" },
+      "7": { "value": "#F5F5F5" },
+      "8": { "value": "#FAFAFA" },
+      "9": { "value": "#FFFFFF" }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@use '../build/css/spacing';
+@use '../build/css/mq.css';
+@use '../build/css/breakpoints';
+@use 'chaestli';
+
+.list {
+  --gutter: var(--typography-size-font-size-5);
+
+  display: flex;
+  gap: var(--gutter);
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  @media (--mq-respond-up-sm) {
+    display: grid;
+
+    @include chaestli.grid(
+      (
+        gutter: var(--gutter),
+        num-cols: 2,
+      )
+    );
+  }
+
+  @media (--mq-respond-up-md) {
+    @include chaestli.grid(
+      (
+        gutter: var(--gutter),
+        num-cols: 4,
+      )
+    );
+  }
+}
+
+.item {
+  display: flex;
+  width: 100%;
+}

@@ -1,0 +1,7 @@
+{
+  "extends": "@axa-ch/myaxa-config/ts-config/base",
+  "compilerOptions": {
+    "types": ["vite/client"]
+  },
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

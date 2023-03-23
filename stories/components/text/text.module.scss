@@ -1,0 +1,31 @@
+@use '../../../build/css/typography.css';
+@use '../../../build/css/color.css';
+
+.text {
+  color: var(--color-ui-design-medium-grey);
+
+  a {
+    color: var(--color-base-axa-blue);
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--color-base-axa-red);
+    }
+  }
+}
+
+.text-1 {
+  font: var(--typography-primary-text-1);
+}
+
+.text-2 {
+  font: var(--typography-primary-text-2);
+}
+
+.text-3 {
+  font: var(--typography-primary-text-3);
+}
+
+.text-4 {
+  font: var(--typography-primary-text-4);
+}
