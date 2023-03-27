@@ -3,8 +3,6 @@ import { Heading } from './components/heading/heading';
 import { ShadowList } from './components/shadows/shadow-list';
 import { Container } from './components/container/container';
 import { Text } from './components/text/text';
-// @ts-ignore
-import colorUtil from 'color-util';
 
 const meta = {
   title: 'Shadows',
