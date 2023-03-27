@@ -1,8 +1,9 @@
 import { StoryObj } from '@storybook/react';
 import { Heading } from './components/heading/heading';
 import { Container } from './components/container/container';
-import { Text } from './components/text/text';
+import { Text, TextProps } from './components/text/text';
 import { ResponsiveHeadings } from './components/responsive-headings/responsive-headings';
+import { startCase } from 'lodash';
 
 const meta = {
   title: 'Typography',
@@ -13,6 +14,9 @@ const meta = {
 
 export default meta;
 type Story = StoryObj<typeof meta>;
+
+const lorem =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus nunc nec tempus suscipit. Nunc quis mattis arcu, ut malesuada eros. Mauris quis fermentum arcu. Vivamus est magna, tincidunt nec mi ac, iaculis aliquam leo. Phasellus fermentum magna a turpis suscipit ultricies. Proin ac nisi nec elit tempus pellentesque. Integer aliquet placerat nunc non maximus. Nulla sollicitudin lobortis vestibulum. Mauris accumsan erat posuere, condimentum metus non, fermentum turpis. Proin convallis mollis molestie. Phasellus tincidunt semper orci, eu luctus lorem varius ac. Praesent in nunc non quam luctus vestibulum. Nullam in nibh sit amet leo porta scelerisque at a augue. Maecenas congue sem eu arcu porttitor pharetra. Maecenas ultrices nisi a libero pretium scelerisque.';
 
 export const Typography: Story = {
   render: () => (
@@ -46,13 +50,7 @@ export const Typography: Story = {
 export const PrimaryHeadings: Story = {
   render: () => (
     <Container>
-      <Heading
-        facet={'primary'}
-        as={'h3'}
-      >
-        Headings Primary Font - Source Sans Pro
-      </Heading>
-
+      <Heading as={'h2'}>Headings Primary Font - Source Sans Pro</Heading>
       <Text>
         Source Sans Pro should be mainly used for UI design. <br />
         <i>Notice that the headings in this example are responsive, and behave accordingly to our design system.</i>
@@ -102,13 +100,7 @@ export const PrimaryHeadings: Story = {
 export const SecondaryHeadings: Story = {
   render: () => (
     <Container>
-      <Heading
-        facet={'primary'}
-        as={'h3'}
-      >
-        Headings Secondary Font - Publico
-      </Heading>
-
+      <Heading as={'h2'}>Headings Secondary Font - Publico</Heading>
       <Text>
         Publico should mainly be used for headlines on landinpages. <br />
         <i>Notice that the headings in this example are responsive, and behave accordingly to our design system.</i>
@@ -121,6 +113,26 @@ export const SecondaryHeadings: Story = {
         <Heading as={'h5'}>Heading 5</Heading>
         <Heading as={'h6'}>Heading 6</Heading>
       </ResponsiveHeadings>
+    </Container>
+  ),
+};
+
+export const Texts: Story = {
+  render: () => (
+    <Container>
+      <Heading as={'h2'}>Standard Texts</Heading>
+      {Array.from({ length: 4 }, (_, index) => `text-${index + 1}` as TextProps<'p'>['facet']).map((facet) => (
+        <div key={facet}>
+          <Heading
+            as={'h3'}
+            facet={'primary'}
+          >
+            {startCase(facet)}
+          </Heading>
+          <Text facet={facet}>{lorem}</Text>
+          <Text facet={facet}>{lorem}</Text>
+        </div>
+      ))}
     </Container>
   ),
 };
