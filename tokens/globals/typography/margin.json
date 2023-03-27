@@ -1,0 +1,54 @@
+{
+  "typography": {
+    "margin": {
+      "h1-top": {
+        "value": "{spacing.base.7}"
+      },
+      "h1-bottom": {
+        "value": "{spacing.base.5}"
+      },
+      "h2-top": {
+        "value": "{spacing.base.7}"
+      },
+      "h2-bottom": {
+        "value": "{spacing.base.5}"
+      },
+      "h3-top": {
+        "value": "{spacing.base.6}"
+      },
+      "h3-bottom": {
+        "value": "{spacing.base.4}"
+      },
+      "h4-top": {
+        "value": "{spacing.base.6}"
+      },
+      "h4-bottom": {
+        "value": "{spacing.base.4}"
+      },
+      "h5-top": {
+        "value": "{spacing.base.5}"
+      },
+      "h5-bottom": {
+        "value": "{spacing.base.3}"
+      },
+      "h6-top": {
+        "value": "{spacing.base.5}"
+      },
+      "h6-bottom": {
+        "value": "{spacing.base.3}"
+      },
+      "text-1-bottom": {
+        "value": "{spacing.base.6}"
+      },
+      "text-2-bottom": {
+        "value": "{spacing.base.6}"
+      },
+      "text-3-bottom": {
+        "value": "{spacing.base.5}"
+      },
+      "text-4-bottom": {
+        "value": "{spacing.base.5}"
+      }
+    }
+  }
+}

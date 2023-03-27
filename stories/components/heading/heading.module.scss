@@ -1,62 +1,19 @@
 @use '../../../build/css/typography.css';
 @use '../../../build/css/spacing.css';
 
-.h1-primary {
-  font: var(--typography-primary-h1);
-  margin-bottom: var(--spacing-base-4);
-}
+@each $heading in (h1, h2, h3, h4, h5, h6) {
+  #{$heading} {
+    margin-top: var(--typography-margin-#{$heading}-top);
+    margin-bottom: var(--typography-margin-#{$heading}-bottom);
+  }
 
-.h2-primary {
-  font: var(--typography-primary-h2);
-  margin-bottom: var(--spacing-base-4);
-}
+  // primary
+  .#{$heading}-primary {
+    font: var(--typography-primary-#{$heading});
+  }
 
-.h3-primary {
-  font: var(--typography-primary-h3);
-  margin-bottom: var(--spacing-base-4);
-}
-
-.h4-primary {
-  font: var(--typography-primary-h4);
-  margin-bottom: var(--spacing-base-4);
-}
-
-.h5-primary {
-  font: var(--typography-primary-h5);
-  margin-bottom: var(--spacing-base-4);
-}
-
-.h6-primary {
-  font: var(--typography-primary-h6);
-  margin-bottom: var(--spacing-base-4);
-}
-
-.h1-secondary {
-  font: var(--typography-secondary-h1);
-  margin-bottom: var(--spacing-base-4);
-}
-
-.h2-secondary {
-  font: var(--typography-secondary-h2);
-  margin-bottom: var(--spacing-base-4);
-}
-
-.h3-secondary {
-  font: var(--typography-secondary-h3);
-  margin-bottom: var(--spacing-base-4);
-}
-
-.h4-secondary {
-  font: var(--typography-secondary-h4);
-  margin-bottom: var(--spacing-base-4);
-}
-
-.h5-secondary {
-  font: var(--typography-secondary-h5);
-  margin-bottom: var(--spacing-base-4);
-}
-
-.h6-secondary {
-  font: var(--typography-secondary-h6);
-  margin-bottom: var(--spacing-base-4);
+  // secondary
+  .#{$heading}-secondary {
+    font: var(--typography-secondary-#{$heading});
+  }
 }

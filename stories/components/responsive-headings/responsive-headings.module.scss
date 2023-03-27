@@ -1,0 +1,36 @@
+@use '../../../build/css/mq.css';
+@use '../../../build/css/typography.css';
+
+.container {
+  @media (--mq-respond-down-sm) {
+    h1 {
+      font-size: var(--typography-size-font-size-8);
+      line-height: var(--typography-size-line-height-8);
+    }
+
+    h2 {
+      font-size: var(--typography-size-font-size-7);
+      line-height: var(--typography-size-line-height-7);
+    }
+
+    h3 {
+      font-size: var(--typography-size-font-size-6);
+      line-height: var(--typography-size-line-height-6);
+    }
+
+    h4 {
+      font-size: var(--typography-size-font-size-5);
+      line-height: var(--typography-size-line-height-5);
+    }
+
+    h5 {
+      font-size: var(--typography-size-font-size-4);
+      line-height: var(--typography-size-line-height-4);
+    }
+
+    h6 {
+      font-size: var(--typography-size-font-size-3);
+      line-height: var(--typography-size-line-height-3);
+    }
+  }
+}
