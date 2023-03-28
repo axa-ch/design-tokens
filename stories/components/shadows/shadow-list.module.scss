@@ -5,7 +5,7 @@
 @use 'chaestli';
 
 .list {
-  --gutter: var(--typography-size-font-size-5);
+  --gutter: var(--spacing-base-5);
 
   display: flex;
   gap: var(--gutter);
