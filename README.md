@@ -26,7 +26,8 @@ npm i @axa-ch/design-tokens
 
 ## Usage
 
-Depending on your setup you should be able to import the design tokens into your project.
+Depending on your setup and technology you should be able to import the design tokens into your project without big problems.
+Below you have some implementation examples that could inspire you:
 
 ### CSS Usage
 
