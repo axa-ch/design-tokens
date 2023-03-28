@@ -5,8 +5,8 @@
         "value": {
           "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
           "fontWeight": 400,
-          "fontSize": "{typography.size.font-size-4}",
-          "lineHeight": "{typography.size.line-height-4}"
+          "fontSize": "{typography.font-size.4}",
+          "lineHeight": "{typography.line-height.4}"
         },
         "type": "typography"
       },
@@ -14,8 +14,8 @@
         "value": {
           "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
           "fontWeight": 400,
-          "fontSize": "{typography.size.font-size-3}",
-          "lineHeight": "{typography.size.line-height-3}"
+          "fontSize": "{typography.font-size.3}",
+          "lineHeight": "{typography.line-height.3}"
         },
         "type": "typography"
       },
@@ -23,8 +23,8 @@
         "value": {
           "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
           "fontWeight": 400,
-          "fontSize": "{typography.size.font-size-2}",
-          "lineHeight": "{typography.size.line-height-2}"
+          "fontSize": "{typography.font-size.2}",
+          "lineHeight": "{typography.line-height.2}"
         },
         "type": "typography"
       },
@@ -32,8 +32,8 @@
         "value": {
           "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
           "fontWeight": 400,
-          "fontSize": "{typography.size.font-size-1}",
-          "lineHeight": "{typography.size.line-height-1}"
+          "fontSize": "{typography.font-size.1}",
+          "lineHeight": "{typography.line-height.1}"
         },
         "type": "typography"
       }
