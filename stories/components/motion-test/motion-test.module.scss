@@ -1,0 +1,130 @@
+@use '../build/css/spacing.css';
+@use '../build/css/color.css';
+@use '../build/css/radius.css';
+@use '../build/css/animation.css';
+@use '../build/css/mq.css';
+
+.wrapper {
+  position: relative;
+  aspect-ratio: 1;
+  padding: 0;
+  margin: 0;
+  background: var(--color-base-axa-blue);
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--spacing-base-7);
+    height: var(--spacing-base-7);
+    transform: translate(-50%, -50%);
+    display: block;
+    border-radius: 50%;
+    background: var(--color-greyscale-9);
+    transition-property: all;
+  }
+
+  @media (--mq-respond-up-sm) {
+    max-width: 35%;
+  }
+}
+
+.small {
+  background: var(--color-misc-azure);
+
+  &:hover {
+    span {
+      transform: translate(-50%, -50%) scale(1.5);
+      border-radius: var(--radius-base-small);
+    }
+  }
+
+  span {
+    animation-duration: var(--animation-duration-small);
+    transition-duration: var(--animation-duration-small);
+  }
+}
+
+.medium {
+  background: var(--color-misc-tosca);
+
+  &:hover {
+    span {
+      transform: translate(-50%, -50%) scale(3);
+      border-radius: var(--radius-base-medium);
+    }
+  }
+
+  span {
+    animation-duration: var(--animation-duration-medium);
+    transition-duration: var(--animation-duration-medium);
+  }
+}
+
+.large {
+  background: var(--color-misc-flamingo);
+
+  &:hover {
+    span {
+      transform: translate(-50%, -50%) scale(7);
+      border-radius: var(--radius-base-large);
+    }
+  }
+
+  span {
+    animation-duration: var(--animation-duration-large);
+    transition-duration: var(--animation-duration-large);
+  }
+}
+
+.accelerated {
+  background: var(--color-misc-viridian-green);
+
+  &:hover {
+    span {
+      animation-name: move;
+      animation-direction: alternate;
+      animation-fill-mode: both;
+    }
+  }
+
+  span {
+    transition-timing-function: var(--animation-easing-accelerated);
+    animation-timing-function: var(--animation-easing-accelerated);
+  }
+}
+
+.decelerated {
+  background: var(--color-misc-ocean-blue);
+
+  &:hover {
+    span {
+      animation-name: move;
+      animation-direction: alternate;
+      animation-fill-mode: both;
+    }
+  }
+
+  span {
+    transition-timing-function: var(--animation-easing-decelerated);
+    animation-timing-function: var(--animation-easing-decelerated);
+  }
+}
+
+.standard {
+  span {
+    transition-timing-function: var(--animation-easing-standard);
+    animation-timing-function: var(--animation-easing-standard);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-300%, -50%) scale(1);
+  }
+
+  100% {
+    transform: translate(200%, -50%) scale(1.5);
+  }
+}
