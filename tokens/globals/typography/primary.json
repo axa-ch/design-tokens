@@ -5,8 +5,8 @@
         "value": {
           "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
           "fontWeight": 700,
-          "fontSize": "{typography.size.font-size-10}",
-          "lineHeight": "{typography.size.line-height-10}"
+          "fontSize": "{typography.font-size.10}",
+          "lineHeight": "{typography.line-height.10}"
         },
         "type": "typography"
       },
@@ -14,8 +14,8 @@
         "value": {
           "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
           "fontWeight": 700,
-          "fontSize": "{typography.size.font-size-9}",
-          "lineHeight": "{typography.size.line-height-9}"
+          "fontSize": "{typography.font-size.9}",
+          "lineHeight": "{typography.line-height.9}"
         },
         "type": "typography"
       },
@@ -23,8 +23,8 @@
         "value": {
           "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
           "fontWeight": 700,
-          "fontSize": "{typography.size.font-size-8}",
-          "lineHeight": "{typography.size.line-height-8}"
+          "fontSize": "{typography.font-size.8}",
+          "lineHeight": "{typography.line-height.8}"
         },
         "type": "typography"
       },
@@ -32,8 +32,8 @@
         "value": {
           "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
           "fontWeight": 700,
-          "fontSize": "{typography.size.font-size-7}",
-          "lineHeight": "{typography.size.line-height-7}"
+          "fontSize": "{typography.font-size.7}",
+          "lineHeight": "{typography.line-height.7}"
         },
         "type": "typography"
       },
@@ -41,8 +41,8 @@
         "value": {
           "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
           "fontWeight": 700,
-          "fontSize": "{typography.size.font-size-6}",
-          "lineHeight": "{typography.size.line-height-6}"
+          "fontSize": "{typography.font-size.6}",
+          "lineHeight": "{typography.line-height.6}"
         },
         "type": "typography"
       },
@@ -50,44 +50,8 @@
         "value": {
           "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
           "fontWeight": 700,
-          "fontSize": "{typography.size.font-size-5}",
-          "lineHeight": "{typography.size.line-height-5}"
-        },
-        "type": "typography"
-      },
-      "text-1": {
-        "value": {
-          "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
-          "fontWeight": 400,
-          "fontSize": "{typography.size.font-size-4}",
-          "lineHeight": "{typography.size.line-height-4}"
-        },
-        "type": "typography"
-      },
-      "text-2": {
-        "value": {
-          "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
-          "fontWeight": 400,
-          "fontSize": "{typography.size.font-size-3}",
-          "lineHeight": "{typography.size.line-height-3}"
-        },
-        "type": "typography"
-      },
-      "text-3": {
-        "value": {
-          "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
-          "fontWeight": 400,
-          "fontSize": "{typography.size.font-size-2}",
-          "lineHeight": "{typography.size.line-height-2}"
-        },
-        "type": "typography"
-      },
-      "text-4": {
-        "value": {
-          "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
-          "fontWeight": 400,
-          "fontSize": "{typography.size.font-size-1}",
-          "lineHeight": "{typography.size.line-height-1}"
+          "fontSize": "{typography.font-size.5}",
+          "lineHeight": "{typography.line-height.5}"
         },
         "type": "typography"
       }

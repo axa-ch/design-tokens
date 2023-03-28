@@ -1,0 +1,56 @@
+{
+  "typography": {
+    "font-size": {
+      "10": {
+        "value": 62,
+        "comment": "62px",
+        "type": "size"
+      },
+      "9": {
+        "value": 48,
+        "comment": "48px",
+        "type": "size"
+      },
+      "8": {
+        "value": 36,
+        "comment": "36px",
+        "type": "size"
+      },
+      "7": {
+        "value": 28,
+        "comment": "28px",
+        "type": "size"
+      },
+      "6": {
+        "value": 24,
+        "comment": "24px",
+        "type": "size"
+      },
+      "5": {
+        "value": 20,
+        "comment": "20px",
+        "type": "size"
+      },
+      "4": {
+        "value": 20,
+        "comment": "20px",
+        "type": "size"
+      },
+      "3": {
+        "value": 18,
+        "comment": "18px",
+        "type": "size"
+      },
+      "2": {
+        "value": 16,
+        "comment": "16px",
+        "type": "size"
+      },
+      "1": {
+        "value": 14,
+        "comment": "14px",
+        "type": "size"
+      }
+    }
+  }
+}
