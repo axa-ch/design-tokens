@@ -1,0 +1,42 @@
+{
+  "typography": {
+    "text": {
+      "1": {
+        "value": {
+          "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
+          "fontWeight": 400,
+          "fontSize": "{typography.size.font-size-4}",
+          "lineHeight": "{typography.size.line-height-4}"
+        },
+        "type": "typography"
+      },
+      "2": {
+        "value": {
+          "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
+          "fontWeight": 400,
+          "fontSize": "{typography.size.font-size-3}",
+          "lineHeight": "{typography.size.line-height-3}"
+        },
+        "type": "typography"
+      },
+      "3": {
+        "value": {
+          "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
+          "fontWeight": 400,
+          "fontSize": "{typography.size.font-size-2}",
+          "lineHeight": "{typography.size.line-height-2}"
+        },
+        "type": "typography"
+      },
+      "4": {
+        "value": {
+          "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
+          "fontWeight": 400,
+          "fontSize": "{typography.size.font-size-1}",
+          "lineHeight": "{typography.size.line-height-1}"
+        },
+        "type": "typography"
+      }
+    }
+  }
+}

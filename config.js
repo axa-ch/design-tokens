@@ -1,35 +1,31 @@
 const transform = require('./transform');
 const transformGroups = require('style-dictionary/lib/common/transformGroups');
 const { customMediaFormatter } = require('./formats/custom-media');
-const { scssMediaQuery } = require('./formats/scss-mq');
-const { makeSdTailwindConfig } = require('sd-tailwindcss-transformer');
-// create tailwind format
-const tailwindConfig = makeSdTailwindConfig({
-  type: 'all',
-});
+const { scssMediaQueryFormatter } = require('./formats/scss-mq');
+const { tailwindFormatter } = require('./formats/tailwind');
 
-console.log(tailwindConfig);
-
-const TOKENS_LIST = ['typography', 'color', 'shadow', 'radius', 'animation', 'spacing', 'breakpoints'];
 const MEDIA_QUERY_TOKEN_NAME = 'mq';
+const TYPOGRAPHY_TOKEN_NAME = 'typography';
+const TOKENS_LIST = [TYPOGRAPHY_TOKEN_NAME, 'color', 'shadow', 'radius', 'animation', 'spacing', 'breakpoints'];
 const CUSTOM_CSS_TRANSFORM_LIST = ['shadow/css', 'cubicBezier/css', 'animationDuration/css', 'font/css', 'size/px'];
 
 module.exports = {
   source: ['tokens/**/*.json'],
   format: {
     'css/custom-media': customMediaFormatter,
-    'scss/media-query': scssMediaQuery,
-    ...tailwindConfig.format,
+    'scss/media-query': scssMediaQueryFormatter,
+    tailwind: tailwindFormatter,
   },
   transform,
   platforms: {
     tailwind: {
       buildPath: 'build/tailwind/',
-      transforms: [...tailwindConfig.platforms.tailwind.transforms, ...CUSTOM_CSS_TRANSFORM_LIST],
+      transforms: [...transformGroups.css, 'shadow/css', 'cubicBezier/css', 'size/px'],
       files: [
         {
           destination: 'tailwind.config.js',
-          format: 'tailwindFormat',
+          filter: (token) => token?.attributes?.category !== MEDIA_QUERY_TOKEN_NAME,
+          format: 'tailwind',
         },
       ],
     },
@@ -42,7 +38,7 @@ module.exports = {
           filter: (token) => token?.attributes?.category === tokenName,
           format: 'css/variables',
           options: {
-            outputReferences: true,
+            outputReferences: tokenName !== TYPOGRAPHY_TOKEN_NAME,
           },
         })),
         {
@@ -61,7 +57,7 @@ module.exports = {
           filter: (token) => token?.attributes?.category === tokenName,
           format: 'scss/variables',
           options: {
-            outputReferences: true,
+            outputReferences: tokenName !== TYPOGRAPHY_TOKEN_NAME,
           },
         })),
         {

@@ -1,4 +1,4 @@
-module.exports.scssMediaQuery = ({ dictionary }) =>
+module.exports.scssMediaQueryFormatter = ({ dictionary }) =>
   dictionary.allTokens
     .map((prop) => {
       const { value, name } = prop;
