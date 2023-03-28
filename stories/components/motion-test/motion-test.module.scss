@@ -26,6 +26,10 @@
   }
 
   @media (--mq-respond-up-sm) {
+    max-width: 50%;
+  }
+
+  @media (--mq-respond-up-md) {
     max-width: 35%;
   }
 }
