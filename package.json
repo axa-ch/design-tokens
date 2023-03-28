@@ -8,7 +8,9 @@
     "tokens"
   ],
   "scripts": {
-    "test": "prettier . --check && eslint",
+    "pretest": "npm run build",
+    "test": "prettier . --check && eslint && vitest",
+    "coverage": "vitest run --coverage",
     "clean": "rimraf build",
     "build": "npm run clean && style-dictionary build && prettier --write build/{js,scss,css,tailwind}/*",
     "prepublishOnly": "npm run build",
@@ -50,6 +52,7 @@
     "style-dictionary": "^3.7.2",
     "style-dictionary-utils": "^1.1.0",
     "typescript": "^4.9.3",
-    "vite": "^4.2.0"
+    "vite": "^4.2.0",
+    "vitest": "^0.29.8"
   }
 }
