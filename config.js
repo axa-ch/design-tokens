@@ -7,7 +7,14 @@ const { tailwindFormatter } = require('./formats/tailwind');
 const MEDIA_QUERY_TOKEN_NAME = 'mq';
 const TYPOGRAPHY_TOKEN_NAME = 'typography';
 const TOKENS_LIST = [TYPOGRAPHY_TOKEN_NAME, 'color', 'shadow', 'radius', 'animation', 'spacing', 'breakpoints'];
-const CUSTOM_CSS_TRANSFORM_LIST = ['shadow/css', 'cubicBezier/css', 'animationDuration/css', 'font/css', 'size/px'];
+const CUSTOM_CSS_TRANSFORM_LIST = [
+  'shadow/css',
+  'cubicBezier/css',
+  'animationDuration/css',
+  'font/css',
+  'size/px',
+  'dimension/pixelToRem',
+];
 
 module.exports = {
   source: ['tokens/**/*.json'],
@@ -20,7 +27,7 @@ module.exports = {
   platforms: {
     tailwind: {
       buildPath: 'build/tailwind/',
-      transforms: [...transformGroups.css, 'shadow/css', 'cubicBezier/css', 'size/px'],
+      transforms: [...transformGroups.css, 'shadow/css', 'cubicBezier/css', 'size/px', 'dimension/pixelToRem'],
       files: [
         {
           destination: 'tailwind.config.js',
