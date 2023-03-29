@@ -18,9 +18,6 @@ The following technologies are supported:
 - Spacing -> AXA Design System spacings variables
 - Typography -> AXA Design System font styles
 
-## Storybook
-//TODO link
-
 ## Installation
 
 ```shell
