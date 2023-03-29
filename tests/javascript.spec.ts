@@ -17,4 +17,36 @@ describe('Javascript Tokens specs', () => {
   it('Colors are exported in hex format', () => {
     Object.values(color).forEach((color) => expect(color).toMatch(/#(\w){3,6}/));
   });
+
+  it('Animations bezier values are provided as array', () => {
+    expect(animation.AnimationEasingStandard).toHaveLength(4);
+    expect(animation.AnimationEasingAccelerated).toHaveLength(4);
+    expect(animation.AnimationEasingDecelerated).toHaveLength(4);
+  });
+
+  it('Breakpoints are exported as numbers', () => {
+    Object.values(breakpoints).forEach((breakPoint) => expect(breakPoint).toBeTypeOf('number'));
+  });
+
+  it('Media Queries are exported properly as strings', () => {
+    Object.values(mq).forEach((mediaQuery) => expect(mediaQuery).toMatch(/^\(.+\)$/));
+  });
+
+  it('Radius are exported as numbers', () => {
+    Object.values(radius).forEach((rd) => expect(rd).toBeTypeOf('number'));
+  });
+
+  it('Shadow are exported as object', () => {
+    Object.values(shadow).forEach((sd) => expect(sd).toBeTypeOf('object'));
+  });
+
+  it('Spacing are exported as number', () => {
+    Object.values(spacing).forEach((sp) => expect(sp).toBeTypeOf('number'));
+  });
+
+  it('Typography variables are properly exported', () => {
+    expect(typography.TypographyFontSize1).toBeTypeOf('number');
+    expect(typography.TypographySecondaryH5).toBeTypeOf('object');
+    expect(typography.TypographyFontFamilyPrimary).toBeTypeOf('string');
+  });
 });
