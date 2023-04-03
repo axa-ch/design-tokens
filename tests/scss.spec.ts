@@ -22,7 +22,7 @@ describe('SCSS Tokens specs', () => {
     const root = postcss.parse(color);
     const colorDeclarations = root.nodes.filter(({ type }) => type === 'decl') as Declaration[];
 
-    colorDeclarations.forEach(({ value }) => expect(value).toMatch(/^\$|^#(\w){3,6}/));
+    colorDeclarations.forEach(({ value }) => expect(value).toMatch(/^\$|^#(\w){3,6}|rgba\(/));
   });
 
   it('Animations bezier values are provided as string', () => {

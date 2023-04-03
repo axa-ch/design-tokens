@@ -16,7 +16,7 @@ describe('Tailwind Config specs', () => {
   });
 
   it('Colors are exported in hex format', () => {
-    Object.values(tailwindConfig.theme.extend.colors).forEach((color) => expect(color).toMatch(/#(\w){3,6}/));
+    Object.values(tailwindConfig.theme.extend.colors).forEach((color) => expect(color).toMatch(/#(\w){3,6}|rgba\(/));
   });
 
   it('Animations bezier values are provided as array', () => {

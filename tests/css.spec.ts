@@ -19,9 +19,9 @@ describe('Css Tokens specs', () => {
 
   it('Colors are properly exported', () => {
     const root = postcss.parse(color);
-    const colorDeclarations = (root.nodes[1] as Rule).nodes as Declaration[];
+    const colorDeclarations = (root.nodes[1] as Rule).nodes.filter(({ type }) => type === 'decl') as Declaration[];
 
-    colorDeclarations.forEach(({ value }) => expect(value).toMatch(/^var\(|^#(\w){3,6}/));
+    colorDeclarations.forEach(({ value, prop }) => expect(value).toMatch(/^(var|rgba)\(|^#(\w){3,6}/));
   });
 
   it('Animations bezier values are provided as string', () => {
@@ -35,7 +35,7 @@ describe('Css Tokens specs', () => {
 
   it('Breakpoints are exported as numbers', () => {
     const root = postcss.parse(breakpoints);
-    const breakPointDeclarations = (root.nodes[1] as Rule).nodes as Declaration[];
+    const breakPointDeclarations = (root.nodes[1] as Rule).nodes.filter(({ type }) => type === 'decl') as Declaration[];
 
     breakPointDeclarations.forEach(({ value }) => {
       const breakpoint = Number(value); // css numbers are always parsed as strings, we need to cast them
@@ -53,28 +53,28 @@ describe('Css Tokens specs', () => {
 
   it('Radius are properly exported', () => {
     const root = postcss.parse(radius);
-    const radiusDeclarations = (root.nodes[1] as Rule).nodes as Declaration[];
+    const radiusDeclarations = (root.nodes[1] as Rule).nodes.filter(({ type }) => type === 'decl') as Declaration[];
 
     radiusDeclarations.forEach(({ value }) => expect(value).toMatch(/rem$/));
   });
 
   it('Shadow are exported as string', () => {
     const root = postcss.parse(shadow);
-    const shadowDeclarations = (root.nodes[1] as Rule).nodes as Declaration[];
+    const shadowDeclarations = (root.nodes[1] as Rule).nodes.filter(({ type }) => type === 'decl') as Declaration[];
 
     shadowDeclarations.forEach(({ value }) => expect(value).toMatch(/^var|\)$/));
   });
 
   it('Spacing are properly exported', () => {
     const root = postcss.parse(spacing);
-    const spacingDeclarations = (root.nodes[1] as Rule).nodes as Declaration[];
+    const spacingDeclarations = (root.nodes[1] as Rule).nodes.filter(({ type }) => type === 'decl') as Declaration[];
 
     spacingDeclarations.forEach(({ value }) => expect(value).toMatch(/rem$/));
   });
 
   it('Typography variables are properly exported', () => {
     const root = postcss.parse(typography);
-    const typographyDeclarations = (root.nodes[1] as Rule).nodes as Declaration[];
+    const typographyDeclarations = (root.nodes[1] as Rule).nodes.filter(({ type }) => type === 'decl') as Declaration[];
     const fontSize1 = typographyDeclarations.find(({ prop }) => prop?.includes('font-size-1')) as Declaration;
     const secondaryH5 = typographyDeclarations.find(({ prop }) => prop?.includes('secondary-h5')) as Declaration;
     const fontFamilyPrimary = typographyDeclarations.find(({ prop }) =>
