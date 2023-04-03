@@ -7,6 +7,7 @@ const { tailwindFormatter } = require('./formats/tailwind');
 const MEDIA_QUERY_TOKEN_NAME = 'mq';
 const TYPOGRAPHY_TOKEN_NAME = 'typography';
 const TOKENS_LIST = [TYPOGRAPHY_TOKEN_NAME, 'color', 'shadow', 'radius', 'animation', 'spacing', 'breakpoints'];
+const SHARED_TRANSFORM_LIST = ['sass/color-transform'];
 const CUSTOM_CSS_TRANSFORM_LIST = [
   'shadow/css',
   'cubicBezier/css',
@@ -14,6 +15,7 @@ const CUSTOM_CSS_TRANSFORM_LIST = [
   'font/css',
   'size/px',
   'dimension/pixelToRem',
+  ...SHARED_TRANSFORM_LIST,
 ];
 
 module.exports = {
@@ -27,7 +29,14 @@ module.exports = {
   platforms: {
     tailwind: {
       buildPath: 'build/tailwind/',
-      transforms: [...transformGroups.css, 'shadow/css', 'cubicBezier/css', 'size/px', 'dimension/pixelToRem'],
+      transforms: [
+        ...transformGroups.css,
+        'shadow/css',
+        'cubicBezier/css',
+        'size/px',
+        'dimension/pixelToRem',
+        ...SHARED_TRANSFORM_LIST,
+      ],
       files: [
         {
           destination: 'tailwind.config.js',
@@ -77,6 +86,7 @@ module.exports = {
     js: {
       transformGroup: 'js',
       buildPath: 'build/js/',
+      transform: [...transformGroups.js, SHARED_TRANSFORM_LIST],
       files: [...TOKENS_LIST, MEDIA_QUERY_TOKEN_NAME].flatMap((tokenName) => [
         {
           destination: `${tokenName}.js`,

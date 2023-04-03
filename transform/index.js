@@ -3,6 +3,7 @@ const { fontCss } = require('style-dictionary-utils/dist/transformer/font-css');
 const { dimensionPixelToRem } = require('style-dictionary-utils/dist/transformer/dimension-pixel-to-rem');
 const { cubicBezierCss } = require('style-dictionary-utils/dist/transformer/cubic-bezier-css');
 const defaultTransforms = require('style-dictionary/lib/common/transforms');
+const { sassColorTransform } = require('./sass-color-transform');
 
 // create a matcher filtering the token type attribute
 const createMatcher = (type) => (token) => token.type === type || token.$type === type;
@@ -23,5 +24,9 @@ module.exports = {
   'dimension/pixelToRem': {
     ...dimensionPixelToRem,
     matcher: createMatcher('size'),
+  },
+  'sass/color-transform': {
+    ...sassColorTransform,
+    matcher: createMatcher('color-transform'),
   },
 };

@@ -87,3 +87,17 @@ export const Status: Story = {
     </Container>
   ),
 };
+
+export const Components: Story = {
+  args: {
+    // filter out all the above colors
+    colors: filterColor((name) => /^color(?!status|uidesign|base|misc|greyscale).*/gi.test(name)),
+  },
+  render: (args) => (
+    <Container>
+      <Heading as={'h2'}>Components Specific colors</Heading>
+      <Text>These colors might help you building AXA components keeping your design consistent across products.</Text>
+      <ColorList {...args} />
+    </Container>
+  ),
+};

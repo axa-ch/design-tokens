@@ -2,7 +2,50 @@
   "color": {
     "status": {
       "success": { "value": "#1CC54E" },
-      "error": { "value": "#C91432" }
+      "success-dark": {
+        "value": "{color.status.success}",
+        "type": "color-transform",
+        "params": {
+          "lightness": 30
+        }
+      },
+      "success-light": {
+        "value": "{color.status.success}",
+        "type": "color-transform",
+        "params": {
+          "lightness": 80
+        }
+      },
+      "warning": { "value": "#ffa726" },
+      "warning-dark": {
+        "value": "{color.status.warning}",
+        "type": "color-transform",
+        "params": {
+          "lightness": 30
+        }
+      },
+      "warning-light": {
+        "value": "{color.status.warning}",
+        "type": "color-transform",
+        "params": {
+          "lightness": 80
+        }
+      },
+      "error": { "value": "#C91432" },
+      "error-dark": {
+        "value": "{color.status.error}",
+        "type": "color-transform",
+        "params": {
+          "lightness": 30
+        }
+      },
+      "error-light": {
+        "value": "{color.status.error}",
+        "type": "color-transform",
+        "params": {
+          "lightness": 80
+        }
+      }
     }
   }
 }

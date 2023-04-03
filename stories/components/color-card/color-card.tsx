@@ -20,7 +20,7 @@ export const ColorCard: FC<ColorCardProps> = ({ name, value }) => (
     }
   >
     <figure className={classes.preview}></figure>
-    <h1 className={classes.name}>{startCase(name.replace(/color-(misc|ui-design|base|status)/, ''))}</h1>
+    <h1 className={classes.name}>{startCase(name.replace(/color-(misc|ui-design|base|status)|color-/, ''))}</h1>
     <h2 className={classes.value}>{value}</h2>
     <h3 className={classes.variableName}>{name}</h3>
   </div>
