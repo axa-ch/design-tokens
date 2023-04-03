@@ -1,8 +1,11 @@
 import { describe, it, expect } from 'vitest';
 import { OptionalConfig, ThemeConfig } from 'tailwindcss/types/config';
 
-const tailwindConfig: ThemeConfig = require('../build/tailwind/tailwind.config.js');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const defaultTailwindConfig: OptionalConfig = require('tailwindcss/stubs/config.full.js');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const tailwindConfig: ThemeConfig = require('../build/tailwind/tailwind.config.js');
+
 const allowedTailwindThemeProps = Object.keys(defaultTailwindConfig.theme);
 
 describe('Tailwind Config specs', () => {

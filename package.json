@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "pretest": "npm run build",
-    "test": "prettier . --check && eslint && vitest",
+    "lint": "prettier . --check && eslint . --max-warnings=0",
+    "test": "npm run lint && vitest",
     "coverage": "vitest run --coverage",
     "clean": "rimraf build",
     "build": "npm run clean && style-dictionary build && prettier --write build/{js,scss,css,tailwind}/*",
@@ -21,7 +22,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@axa-ch/myaxa-config": "^0.1.1",
+    "@axa-ch/myaxa-config": "github:axa-ch/myaxa-config#v0.1.2",
     "@storybook/addon-essentials": "^7.0.0-rc.5",
     "@storybook/addon-links": "^7.0.0-rc.5",
     "@storybook/blocks": "^7.0.0-alpha.8",

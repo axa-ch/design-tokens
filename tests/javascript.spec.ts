@@ -15,7 +15,7 @@ describe('Javascript Tokens specs', () => {
   });
 
   it('Colors are exported in hex format', () => {
-    Object.values(color).forEach((color) => expect(color).toMatch(/#(\w){3,6}|rgba\(/));
+    Object.values(color).forEach((c) => expect(c).toMatch(/#(\w){3,6}|rgba\(/));
   });
 
   it('Animations bezier values are provided as array', () => {

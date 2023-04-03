@@ -1,6 +1,6 @@
 import { CSSProperties, FC } from 'react';
-import classes from './color-card.module.scss';
 import { startCase } from 'lodash';
+import classes from './color-card.module.scss';
 
 export type ColorCardProps = {
   name: string;

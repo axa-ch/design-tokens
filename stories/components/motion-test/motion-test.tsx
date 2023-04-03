@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import classes from './motion-test.module.scss';
 import clsx from 'clsx';
+import classes from './motion-test.module.scss';
 
 export type MotionTestProps = {
   size: 'small' | 'medium' | 'large';

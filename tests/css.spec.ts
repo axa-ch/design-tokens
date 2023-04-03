@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
-import { loadFile } from './utils';
 import postcss, { AtRule, Declaration, Rule } from 'postcss';
+import { loadFile } from './utils';
+
 const animation = loadFile('/build/css/animation.css');
 const breakpoints = loadFile('/build/css/breakpoints.css');
 const color = loadFile('/build/css/color.css');
@@ -21,7 +22,7 @@ describe('Css Tokens specs', () => {
     const root = postcss.parse(color);
     const colorDeclarations = (root.nodes[1] as Rule).nodes.filter(({ type }) => type === 'decl') as Declaration[];
 
-    colorDeclarations.forEach(({ value, prop }) => expect(value).toMatch(/^(var|rgba)\(|^#(\w){3,6}/));
+    colorDeclarations.forEach(({ value }) => expect(value).toMatch(/^(var|rgba)\(|^#(\w){3,6}/));
   });
 
   it('Animations bezier values are provided as string', () => {
@@ -40,7 +41,7 @@ describe('Css Tokens specs', () => {
     breakPointDeclarations.forEach(({ value }) => {
       const breakpoint = Number(value); // css numbers are always parsed as strings, we need to cast them
       expect(breakpoint).toBeTypeOf('number');
-      expect(isNaN(breakpoint)).toEqual(false);
+      expect(Number.isNaN(breakpoint)).toEqual(false);
     });
   });
 

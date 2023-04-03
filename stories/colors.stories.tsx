@@ -1,11 +1,11 @@
+import { StoryObj, Meta } from '@storybook/react';
+// @ts-ignore
+import colorUtil from 'color-util';
 import * as colors from '../build/js/color';
 import { ColorList } from './components/color-list/color-list';
-import { StoryObj, Meta } from '@storybook/react';
 import { Heading } from './components/heading/heading';
 import { Container } from './components/container/container';
 import { Text } from './components/text/text';
-// @ts-ignore
-import colorUtil from 'color-util';
 
 const meta = {
   title: 'Colors',

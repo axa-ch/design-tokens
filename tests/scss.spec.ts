@@ -1,7 +1,8 @@
 import { describe, it, expect } from 'vitest';
-import { loadFile } from './utils';
 import { Declaration } from 'postcss';
 import postcss from 'postcss-scss';
+import { loadFile } from './utils';
+
 const animation = loadFile('/build/scss/animation.scss');
 const breakpoints = loadFile('/build/scss/breakpoints.scss');
 const color = loadFile('/build/scss/color.scss');
@@ -41,7 +42,7 @@ describe('SCSS Tokens specs', () => {
     breakPointDeclarations.forEach(({ value }) => {
       const breakpoint = Number(value); // css numbers are always parsed as strings, we need to cast them
       expect(breakpoint).toBeTypeOf('number');
-      expect(isNaN(breakpoint)).toEqual(false);
+      expect(Number.isNaN(breakpoint)).toEqual(false);
     });
   });
 

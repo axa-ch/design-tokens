@@ -20,7 +20,7 @@ export const Motion: Story = {
       <Heading as={'h2'}>Motion</Heading>
       <Text>
         Motion helps make a UI expressive and easy to use. Motion design informs users by highlighting relationships
-        between elements, action availability, and action outcomes. Motion focuses attention on what's important,
+        between elements, action availability, and action outcomes. Motion focuses attention on what&apos;s important,
         without creating unnecessary distraction. Regardless of an animation’s style, transitions shouldn’t be jarringly
         fast or so slow that users feel as though they’re waiting. The right combination of duration and easing produces
         smooth and clear transitions.
@@ -106,7 +106,7 @@ export const Motion: Story = {
       </Heading>
       <Text>
         Incoming elements are animated using decelerated easing, in which transitions begin at peak velocity (the
-        fastest point in an element's movement) and end at rest.
+        fastest point in an element&apos;s movement) and end at rest.
       </Text>
       <MotionTest
         size={'medium'}

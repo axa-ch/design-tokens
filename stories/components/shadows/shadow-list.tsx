@@ -1,5 +1,5 @@
-import classes from './shadow-list.module.scss';
 import { FC } from 'react';
+import classes from './shadow-list.module.scss';
 import { Text } from '../text/text';
 
 export const ShadowList: FC = () => (

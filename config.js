@@ -1,5 +1,5 @@
-const transform = require('./transform');
 const transformGroups = require('style-dictionary/lib/common/transformGroups');
+const transform = require('./transform');
 const { customMediaFormatter } = require('./formats/custom-media');
 const { scssMediaQueryFormatter } = require('./formats/scss-mq');
 const { tailwindFormatter } = require('./formats/tailwind');

@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import { ColorCard } from '../color-card/color-card';
 import { kebabCase } from 'lodash';
+import { ColorCard } from '../color-card/color-card';
 import classes from './color-list.module.scss';
 
 export type ColorListProps = {
