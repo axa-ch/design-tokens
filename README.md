@@ -34,7 +34,7 @@ Below you have some implementation examples that could inspire you:
 You can simply import the CSS variables in your files as follows:
 
 ```css
-@import url('path/to/the/@axa-ch/design-tokens/build/css/spacing.css');
+@import url('@axa-ch/design-tokens/tokens.css');
 
 .component {
   width: var(--spacing-base-3);
@@ -44,8 +44,7 @@ You can simply import the CSS variables in your files as follows:
 Notice that for the CSS media queries via [@custom-media](https://drafts.csswg.org/mediaqueries-5/#custom-mq) you will need a [postcss plugin](https://github.com/csstools/postcss-custom-media)
 
 ```css
-@import url('path/to/the/@axa-ch/design-tokens/build/css/spacing.css');
-@import url('path/to/the/@axa-ch/design-tokens/build/css/mq.css');
+@import url('@axa-ch/design-tokens/tokens.css');
 
 .component {
   width: var(--spacing-base-3);
@@ -61,14 +60,13 @@ Notice that for the CSS media queries via [@custom-media](https://drafts.csswg.o
 You can simply import the SCSS variables in your files as follows:
 
 ```scss
-@use 'path/to/the/@axa-ch/design-tokens/build/scss/spacing.scss';
-@use 'path/to/the/@axa-ch/design-tokens/build/css/mq.scss';
+@use '@axa-ch/design-tokens/tokens';
 
 .component {
-  width: spacing.$spacing-base-3;
+  width: tokens.$spacing-base-3;
 
-  @media (mq.$mq-respond-up-sm) {
-    width: spacing.$spacing-base-6;
+  @media (tokens.$mq-respond-up-sm) {
+    width: tokens.$spacing-base-6;
   }
 }
 ```
@@ -78,9 +76,9 @@ You can simply import the SCSS variables in your files as follows:
 You can simply import the JS variables in your files as follows:
 
 ```ts
-import * as colors from '@axa-ch/design-tokens/build/js/color';
+import * as tokens from '@axa-ch/design-tokens';
 
-console.log(colors);
+console.log(tokens.ColorBaseAxaBlue);
 ```
 
 ### Tailwind Usage
@@ -89,7 +87,7 @@ You can extend you `tailwind.config.js` file as follows:
 
 ```js
 module.exports = {
-  presets: [require('@axa-ch/design-tokens/build/tailwind/tailwind.config')],
+  presets: [require('@axa-ch/design-tokens/tailwind.config')],
   // ...
 };
 ```
