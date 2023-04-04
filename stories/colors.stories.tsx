@@ -30,7 +30,7 @@ const filterColor = (fn: (name: string, value: string) => boolean) =>
       return 0;
     });
 
-export const CoreAxaColors: Story = {
+export const CoreAXAColors: Story = {
   args: {
     colors: filterColor((name) => /base/gi.test(name)),
   },
