@@ -4,6 +4,7 @@
 
 @each $heading in (h1, h2, h3, h4, h5, h6) {
   #{$heading} {
+    color: var(--color-text-default);
     margin-top: var(--typography-margin-#{$heading}-top);
     margin-bottom: var(--typography-margin-#{$heading}-bottom);
   }
