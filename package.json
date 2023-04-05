@@ -2,17 +2,20 @@
   "name": "@axa-ch/design-tokens",
   "version": "0.0.0",
   "description": "AXA Design Tokens",
-  "main": "index.js",
+  "main": "./index.cjs.js",
+  "module": "./index.js",
   "files": [
     "build",
     "tokens",
     "tailwind.config.js",
     "index.js",
+    "index.cjs.js",
     "tokens.scss",
     "tokens.css"
   ],
   "exports": {
-    "import": "./index.js"
+    "import": "./index.js",
+    "require": "./index.cjs.js"
   },
   "scripts": {
     "pretest": "npm run build",
@@ -20,7 +23,7 @@
     "test": "npm run lint && vitest",
     "coverage": "vitest run --coverage",
     "clean": "rimraf build",
-    "build": "npm run clean && style-dictionary build && prettier --write build/{js,scss,css,tailwind}/*",
+    "build": "npm run clean && style-dictionary build && prettier --write build/{js,scss,css,tailwind}/* && vite build",
     "prepublishOnly": "npm run build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",

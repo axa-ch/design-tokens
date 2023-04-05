@@ -1,5 +1,6 @@
 # build output
 /build
+index.cjs.js
 
 # depedencies
 /node_modules

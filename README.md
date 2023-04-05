@@ -1,7 +1,6 @@
 # AXA CH Design Tokens
 
-This projects exports the AXA Design Tokens for multiple technologies.
-The following technologies are supported:
+The AXA CH Design Tokens project exports design tokens for use in multiple technologies. The following technologies are supported:
 
 - CSS Variables + Media Queries with [@custom-media](https://drafts.csswg.org/mediaqueries-5/#custom-mq)
 - SCSS Variables
@@ -10,15 +9,19 @@ The following technologies are supported:
 
 ## Supported Tokens
 
-- Animation -> Variables needed to handle component animations
-- Breakpoints/Media Queries -> AXA Viewport breakpoints and additional media queries utils
-- Color -> AXA colors
-- Radius -> Box radius variables
-- Shadow -> Box shadow variables
-- Spacing -> AXA Design System spacings variables
-- Typography -> AXA Design System font styles
+The project supports the following design tokens:
+
+- Animation: Variables needed to handle component animations.
+- Breakpoints/Media Queries: AXA viewport breakpoints and additional media query utilities.
+- Color: AXA colors.
+- Radius: Box radius variables.
+- Shadow: Box shadow variables.
+- Spacing: AXA Design System spacing variables.
+- Typography: AXA Design System font styles.
 
 ## Installation
+
+To install the AXA CH Design Tokens, run the following command:
 
 ```shell
 npm i @axa-ch/design-tokens
@@ -26,12 +29,11 @@ npm i @axa-ch/design-tokens
 
 ## Usage
 
-Depending on your setup and technology you should be able to import the design tokens into your project without big problems.
-Below you have some implementation examples that could inspire you:
+To use the AXA CH Design Tokens in your project, import them based on your technology. Here are some implementation examples that may inspire you:
 
 ### CSS Usage
 
-You can simply import the CSS variables in your files as follows:
+You can import the CSS variables into your files as follows:
 
 ```css
 @import url('@axa-ch/design-tokens/tokens.css');
@@ -41,7 +43,7 @@ You can simply import the CSS variables in your files as follows:
 }
 ```
 
-Notice that for the CSS media queries via [@custom-media](https://drafts.csswg.org/mediaqueries-5/#custom-mq) you will need a [postcss plugin](https://github.com/csstools/postcss-custom-media)
+Note that for CSS media queries via [@custom-media](https://drafts.csswg.org/mediaqueries-5/#custom-mq) you will need a [postCSS plugin](https://github.com/csstools/postcss-custom-media)
 
 ```css
 @import url('@axa-ch/design-tokens/tokens.css');
@@ -57,7 +59,7 @@ Notice that for the CSS media queries via [@custom-media](https://drafts.csswg.o
 
 ### SCSS Usage
 
-You can simply import the SCSS variables in your files as follows:
+You can import the SCSS variables into your files as follows:
 
 ```scss
 @use '@axa-ch/design-tokens/tokens';
@@ -73,7 +75,7 @@ You can simply import the SCSS variables in your files as follows:
 
 ### JS/TS Usage
 
-You can simply import the JS variables in your files as follows:
+You can import the JS variables into your files as follows:
 
 ```ts
 import * as tokens from '@axa-ch/design-tokens';
@@ -83,7 +85,7 @@ console.log(tokens.ColorBaseAxaBlue);
 
 ### Tailwind Usage
 
-You can extend you `tailwind.config.js` file as follows:
+You can extend your `tailwind.config.js` file as follows:
 
 ```js
 module.exports = {
