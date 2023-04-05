@@ -6,6 +6,7 @@ export default defineConfig({
   build: {
     outDir: './',
     minify: false,
+    emptyOutDir: false,
     lib: {
       entry: 'index.js',
       formats: ['cjs'],

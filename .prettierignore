@@ -1,3 +1,4 @@
 package-lock.json
 .storybook/*.html
 stories/*.mdx
+index.cjs.js
