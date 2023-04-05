@@ -1,0 +1,25 @@
+{
+  "color": {
+    "primary": {
+      "value": "{color.base.axa-blue}"
+    },
+    "on-primary": {
+      "value": "{color.ui-design.white}"
+    },
+    "on-primary-container": {
+      "value": "{color.primary}",
+      "type": "color-transform",
+      "comment": "Update the lightness of the primary color",
+      "params": {
+        "lightness": 22.4
+      }
+    },
+    "primary-container": {
+      "value": "{color.primary}",
+      "type": "color-transform",
+      "params": {
+        "alpha": 0.2
+      }
+    }
+  }
+}

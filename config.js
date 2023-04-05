@@ -86,7 +86,7 @@ module.exports = {
     js: {
       transformGroup: 'js',
       buildPath: 'build/js/',
-      transform: [...transformGroups.js, SHARED_TRANSFORM_LIST],
+      transforms: [...transformGroups.js, ...SHARED_TRANSFORM_LIST],
       files: [...TOKENS_LIST, MEDIA_QUERY_TOKEN_NAME].flatMap((tokenName) => [
         {
           destination: `${tokenName}.js`,

@@ -3,18 +3,18 @@
     "misc": {
       "ocean-blue": { "value": "#4976BA" },
       "teal": { "value": "#027180" },
-      "viridian-green": { "value": "#668980" },
-      "pacific": { "value": "#00adc6" },
-      "greyjoy": { "value": "#9fbeaf" },
-      "aqua-green": { "value": "#9fd9b4" },
+      "viridia-green": { "value": "#668980" },
+      "pacific": { "value": "#00ADC6" },
+      "greyjoy": { "value": "#9FBEAF" },
+      "aqua-green": { "value": "#9FD9B4" },
       "tosca": { "value": "#914146" },
-      "azalea": { "value": "#e196aa" },
-      "cotton-candy": { "value": "#fad6de" },
-      "apache": { "value": "#ddbe65" },
-      "dune": { "value": "#fcd385" },
-      "acid": { "value": "#f0ff93" },
-      "logan": { "value": "#9190ac" },
-      "igloo": { "value": "#b5d0ee" }
+      "azalea": { "value": "#E196AA" },
+      "cotton-candy": { "value": "#FAD6DE" },
+      "apache": { "value": "#BC9D45" },
+      "dune": { "value": "#FCD385" },
+      "acid": { "value": "#F0FF93" },
+      "logan": { "value": "#9190AC" },
+      "igloo": { "value": "#B5D0EE" }
     }
   }
 }

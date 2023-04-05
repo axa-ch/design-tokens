@@ -2,29 +2,35 @@
   "color": {
     "status": {
       "success": { "value": "#1CC54E" },
-      "success-dark": {
+      "on-success": {
+        "value": "{color.ui-design.white}"
+      },
+      "on-success-container": {
         "value": "{color.status.success}",
         "type": "color-transform",
         "params": {
           "lightness": 30
         }
       },
-      "success-light": {
+      "success-container": {
         "value": "{color.status.success}",
         "type": "color-transform",
         "params": {
           "lightness": 80
         }
       },
-      "warning": { "value": "#ffa726" },
-      "warning-dark": {
+      "warning": { "value": "{color.misc.apache}" },
+      "on-warning": {
+        "value": "{color.ui-design.white}"
+      },
+      "on-warning-container": {
         "value": "{color.status.warning}",
         "type": "color-transform",
         "params": {
           "lightness": 30
         }
       },
-      "warning-light": {
+      "warning-container": {
         "value": "{color.status.warning}",
         "type": "color-transform",
         "params": {
@@ -32,14 +38,17 @@
         }
       },
       "error": { "value": "#C91432" },
-      "error-dark": {
+      "on-error": {
+        "value": "{color.ui-design.white}"
+      },
+      "on-error-container": {
         "value": "{color.status.error}",
         "type": "color-transform",
         "params": {
           "lightness": 30
         }
       },
-      "error-light": {
+      "error-container": {
         "value": "{color.status.error}",
         "type": "color-transform",
         "params": {

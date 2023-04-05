@@ -1,0 +1,26 @@
+{
+  "color": {
+    "secondary": {
+      "value": "{color.ui-design.burnt-sienna}"
+    },
+    "on-secondary": {
+      "value": "{color.ui-design.white}"
+    },
+    "on-secondary-container": {
+      "value": "{color.secondary}",
+      "type": "color-transform",
+      "comment": "Update the saturation and lightness of the secondary color",
+      "params": {
+        "saturation": 47.67,
+        "lightness": 53
+      }
+    },
+    "secondary-container": {
+      "value": "{color.secondary}",
+      "type": "color-transform",
+      "params": {
+        "alpha": 0.2
+      }
+    }
+  }
+}

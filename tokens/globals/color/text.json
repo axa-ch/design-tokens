@@ -5,14 +5,10 @@
         "value": "{color.ui-design.dark-grey}"
       },
       "link": {
-        "value": "{color.base.axa-blue}"
+        "value": "{color.primary}"
       },
       "link-hover": {
-        "value": "{color.base.axa-blue}",
-        "type": "color-transform",
-        "params": {
-          "lightness": 20
-        }
+        "value": "{color.on-primary-container}"
       }
     }
   }
