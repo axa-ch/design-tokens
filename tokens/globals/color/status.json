@@ -1,60 +1,8 @@
 {
   "color": {
     "status": {
-      "success": { "value": "#1CC54E" },
-      "on-success": {
-        "value": "{color.ui-design.white}"
-      },
-      "on-success-container": {
-        "value": "{color.status.success}",
-        "type": "color-transform",
-        "params": {
-          "lightness": 30
-        }
-      },
-      "success-container": {
-        "value": "{color.status.success}",
-        "type": "color-transform",
-        "params": {
-          "lightness": 80
-        }
-      },
-      "warning": { "value": "{color.misc.apache}" },
-      "on-warning": {
-        "value": "{color.ui-design.white}"
-      },
-      "on-warning-container": {
-        "value": "{color.status.warning}",
-        "type": "color-transform",
-        "params": {
-          "lightness": 30
-        }
-      },
-      "warning-container": {
-        "value": "{color.status.warning}",
-        "type": "color-transform",
-        "params": {
-          "lightness": 80
-        }
-      },
-      "error": { "value": "#C91432" },
-      "on-error": {
-        "value": "{color.ui-design.white}"
-      },
-      "on-error-container": {
-        "value": "{color.status.error}",
-        "type": "color-transform",
-        "params": {
-          "lightness": 30
-        }
-      },
-      "error-container": {
-        "value": "{color.status.error}",
-        "type": "color-transform",
-        "params": {
-          "lightness": 80
-        }
-      }
+      "malachite": { "value": "#1CC54E" },
+      "shy-tomato": { "value": "#C91432" }
     }
   }
 }
