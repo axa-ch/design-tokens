@@ -1,5 +1,5 @@
 {
-  "extends": "@axa-ch/myaxa-config/ts-config/base",
+  "extends": "@axa-ch/easy-config/ts-config/base",
   "compilerOptions": {
     "types": ["vite/client"]
   },
