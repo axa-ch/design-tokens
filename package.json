@@ -4,6 +4,14 @@
   "description": "AXA Design Tokens",
   "main": "./index.cjs.js",
   "module": "./index.js",
+  "keywords": [
+    "design tokens",
+    "css",
+    "scss",
+    "js",
+    "AXA",
+    "styling"
+  ],
   "files": [
     "build",
     "tokens",
