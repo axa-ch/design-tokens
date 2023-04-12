@@ -1,6 +1,6 @@
 {
   "name": "@axa-ch/design-tokens",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AXA Design Tokens",
   "main": "./index.cjs.js",
   "module": "./index.js",
