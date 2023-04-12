@@ -1,6 +1,7 @@
 # build output
 /build
 index.cjs.js
+/storybook-static
 
 # depedencies
 /node_modules
