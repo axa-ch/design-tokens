@@ -29,7 +29,13 @@
     "build-storybook": "storybook build",
     "start": "npm run build && npm run storybook"
   },
-  "author": "Gianluca Guarini gianluca.guarini@gmail.com",
+  "author": "AXA (https://axa.ch)",
+  "maintainers": [
+    {
+      "name": "Gianluca Guarini",
+      "email": "gianluca.guarini@axa.ch"
+    }
+  ],
   "license": "MIT",
   "devDependencies": {
     "@axa-ch/myaxa-config": "github:axa-ch/myaxa-config#v0.1.2",

@@ -1,11 +1,18 @@
 # AXA CH Design Tokens
 
+[![Build Status][ci-image]][ci-url]
+[![MIT License][license-image]][license-url]
+[![NPM version][npm-version-image]][npm-url]
+[![NPM downloads][npm-downloads-image]][npm-url]
+
 The AXA CH Design Tokens project exports design tokens for use in multiple technologies. The following technologies are supported:
 
 - CSS Variables + Media Queries with [@custom-media](https://drafts.csswg.org/mediaqueries-5/#custom-mq)
 - SCSS Variables
 - JS/TS Variables
 - Tailwind Config
+
+If you need our design tokens for a web project you might check this [Online demo](https://axa-ch.github.io/design-tokens)
 
 ## Supported Tokens
 
@@ -93,3 +100,11 @@ module.exports = {
   // ...
 };
 ```
+
+[ci-image]: https://img.shields.io/github/actions/workflow/status/axa-ch/design-tokens/ci.yml?style=flat-square&branch=main
+[ci-url]: https://github.com/axa-ch/design-tokens/actions
+[license-image]: http://img.shields.io/badge/license-MIT-000000.svg?style=flat-square
+[license-url]: LICENSE
+[npm-version-image]: https://img.shields.io/npm/v/@axa-ch/design-tokens.svg?style=flat-square
+[npm-downloads-image]: https://img.shields.io/npm/dm/@axa-ch/design-tokens.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@axa-ch/design-tokens
