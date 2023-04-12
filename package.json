@@ -25,6 +25,10 @@
     "import": "./index.js",
     "require": "./index.cjs.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axa-ch/design-tokens"
+  },
   "scripts": {
     "pretest": "npm run build",
     "lint": "prettier . --check && eslint . --max-warnings=0",
