@@ -2,7 +2,35 @@
   "color": {
     "status": {
       "malachite": { "value": "#1CC54E" },
-      "shy-tomato": { "value": "#C91432" }
+      "malachite-dark": {
+        "value": "{color.status.malachite}",
+        "type": "color-transform",
+        "params": {
+          "lightness": -5.69
+        }
+      },
+      "malachite-light": {
+        "value": "{color.status.malachite}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
+      "shy-tomato": { "value": "#C91432" },
+      "shy-tomato-dark": {
+        "value": "{color.status.shy-tomato}",
+        "type": "color-transform",
+        "params": {
+          "lightness": -5.69
+        }
+      },
+      "shy-tomato-light": {
+        "value": "{color.status.shy-tomato}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      }
     }
   }
 }

@@ -2,7 +2,27 @@
   "color": {
     "ui-design": {
       "axa-blue": { "value": "{color.base.axa-blue}" },
+      "axa-blue-dark": {
+        "value": "{color.base.axa-blue-dark}"
+      },
+      "axa-blue-light": {
+        "value": "{color.base.axa-blue-light}"
+      },
       "burnt-sienna": { "value": "#f07662" },
+      "burnt-sienna-dark": {
+        "value": "{color.ui-design.burnt-sienna}",
+        "type": "color-transform",
+        "params": {
+          "lightness": -5.69
+        }
+      },
+      "burnt-sienna-light": {
+        "value": "{color.ui-design.burnt-sienna}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "dark-grey": { "value": "{color.greyscale.1}" },
       "medium-grey": { "value": "{color.greyscale.2}" },
       "grey": { "value": "{color.greyscale.3}" },
