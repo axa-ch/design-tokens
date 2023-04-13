@@ -22,8 +22,14 @@
     "tokens.css"
   ],
   "exports": {
-    "import": "./index.js",
-    "require": "./index.cjs.js"
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs.js"
+    },
+    "./build/": "./build/",
+    "./token.css": "./token.css",
+    "./token.scss": "./token.scss",
+    "./tailwind.config": "./tailwind.config.js"
   },
   "repository": {
     "type": "git",
