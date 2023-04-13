@@ -27,8 +27,8 @@
       "require": "./index.cjs.js"
     },
     "./build/": "./build/",
-    "./token.css": "./token.css",
-    "./token.scss": "./token.scss",
+    "./tokens.css": "./tokens.css",
+    "./tokens.scss": "./tokens.scss",
     "./tailwind.config": "./tailwind.config.js"
   },
   "repository": {
