@@ -1,8 +1,15 @@
 @forward './build/scss/mq';
 @forward './build/scss/breakpoints';
+@forward './build/scss/mixins/breakpoints';
 @forward './build/scss/animation';
+@forward './build/scss/mixins/animation';
 @forward './build/scss/color';
+@forward './build/scss/mixins/color';
 @forward './build/scss/radius';
+@forward './build/scss/mixins/radius';
 @forward './build/scss/shadow';
+@forward './build/scss/mixins/shadow';
 @forward './build/scss/spacing';
+@forward './build/scss/mixins/spacing';
 @forward './build/scss/typography';
+@forward './build/scss/mixins/typography';

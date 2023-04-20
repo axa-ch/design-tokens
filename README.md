@@ -80,6 +80,23 @@ You can import the SCSS variables into your files as follows:
 }
 ```
 
+In case you want to import and scope the css variables into your SCSS application, without relying on the `:root` global selector, you might want to use our mixins as follows:
+
+```scss
+@use '@axa-ch/design-tokens/tokens';
+
+.component {
+  // scope the css variables under the .component class
+  @include tokens.get-animation-css-vars;
+  @include tokens.get-breakpoints-css-vars;
+  @include tokens.get-color-css-vars;
+  @include tokens.get-radius-css-vars;
+  @include tokens.get-shadow-css-vars;
+  @include tokens.get-spacing-css-vars;
+  @include tokens.get-typography-css-vars;
+}
+```
+
 ### JS/TS Usage
 
 You can import the JS variables into your files as follows:
