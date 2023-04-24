@@ -2,47 +2,34 @@
   "typography": {
     "line-height": {
       "10": {
-        "comment": "72px line height, computed with 72px/62px",
-        "value": 1.161
+        "value": 1.5
       },
       "9": {
-        "comment": "54px line height, computed with 54px/48px",
-        "value": 1.125
-      },
-      "8": {
-        "comment": "42px line height, computed with 42px/36px",
-        "value": 1.166
-      },
-      "7": {
-        "comment": "32px line height, computed with 32px/28px",
-        "value": 1.142
-      },
-      "6": {
-        "comment": "29px line height, computed with 29px/24px",
-        "value": 1.208
-      },
-
-      "5": {
-        "comment": "26px line height, computed with 26px/20px",
         "value": 1.3
       },
-
-      "4": {
-        "comment": "30px line height, computed with 30px/20px",
-        "value": 1.5
+      "8": {
+        "value": 1.214
       },
-
+      "7": {
+        "value": 1.208
+      },
+      "6": {
+        "value": 1.166
+      },
+      "5": {
+        "value": 1.161
+      },
+      "4": {
+        "value": 1.142
+      },
       "3": {
-        "comment": "27px line height, computed with 27px/18px",
-        "value": 1.5
+        "value": 1.133
       },
       "2": {
-        "comment": "24px line height, computed with 24px/16px",
-        "value": 1.5
+        "value": 1.125
       },
       "1": {
-        "comment": "17px line height, computed with 17px/14px",
-        "value": 1.214
+        "value": 1.111
       }
     }
   }

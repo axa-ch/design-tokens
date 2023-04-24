@@ -1,6 +1,7 @@
 @use '../../../build/css/typography.css';
 @use '../../../build/css/spacing.css';
 @use '../../../build/css/color.css';
+@use '../../../build/css/mq.css';
 
 @each $heading in (h1, h2, h3, h4, h5, h6) {
   #{$heading} {
@@ -10,11 +11,23 @@
 
   // primary
   .#{$heading}-primary {
-    font: var(--typography-primary-#{$heading});
+    font: var(--typography-primary-#{$heading}-small);
   }
 
   // secondary
   .#{$heading}-secondary {
-    font: var(--typography-secondary-#{$heading});
+    font: var(--typography-secondary-#{$heading}-small);
+  }
+
+  @media (--mq-respond-up-md) {
+    // primary
+    .#{$heading}-primary {
+      font: var(--typography-primary-#{$heading});
+    }
+
+    // secondary
+    .#{$heading}-secondary {
+      font: var(--typography-secondary-#{$heading});
+    }
   }
 }

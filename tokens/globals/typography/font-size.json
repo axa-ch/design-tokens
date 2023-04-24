@@ -17,18 +17,18 @@
         "type": "size"
       },
       "7": {
+        "value": 30,
+        "comment": "30px",
+        "type": "size"
+      },
+      "6": {
         "value": 28,
         "comment": "28px",
         "type": "size"
       },
-      "6": {
+      "5": {
         "value": 24,
         "comment": "24px",
-        "type": "size"
-      },
-      "5": {
-        "value": 20,
-        "comment": "20px",
         "type": "size"
       },
       "4": {

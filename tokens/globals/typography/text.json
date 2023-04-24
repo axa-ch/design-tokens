@@ -6,7 +6,7 @@
           "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
           "fontWeight": 400,
           "fontSize": "{typography.font-size.4}",
-          "lineHeight": "{typography.line-height.4}"
+          "lineHeight": "{typography.line-height.10}"
         },
         "type": "typography"
       },
@@ -15,7 +15,7 @@
           "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
           "fontWeight": 400,
           "fontSize": "{typography.font-size.3}",
-          "lineHeight": "{typography.line-height.3}"
+          "lineHeight": "{typography.line-height.10}"
         },
         "type": "typography"
       },
@@ -24,7 +24,7 @@
           "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
           "fontWeight": 400,
           "fontSize": "{typography.font-size.2}",
-          "lineHeight": "{typography.line-height.2}"
+          "lineHeight": "{typography.line-height.10}"
         },
         "type": "typography"
       },
@@ -33,7 +33,7 @@
           "fontFamily": "{typography.font-family.primary}, {typography.font-family.primary-fallback-1}, {typography.font-family.primary-fallback-2}",
           "fontWeight": 400,
           "fontSize": "{typography.font-size.1}",
-          "lineHeight": "{typography.line-height.1}"
+          "lineHeight": "{typography.line-height.8}"
         },
         "type": "typography"
       }
