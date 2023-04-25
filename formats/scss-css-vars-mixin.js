@@ -1,9 +1,5 @@
-module.exports.scssCssVarsMixinFormatter = ({ dictionary, file }) => `@mixin get-${file.tokenName}-css-vars {
-    ${dictionary.allTokens
-      .map((prop) => {
-        const { value, name } = prop;
+const formattedVariables = require('style-dictionary/lib/common/formatHelpers/formattedVariables');
 
-        return `--${name}: ${value};`;
-      })
-      .join('\n')}
+module.exports.scssCssVarsMixinFormatter = ({ dictionary, options, file }) => `@mixin get-${file.tokenName}-css-vars {
+    ${formattedVariables({ format: 'css', dictionary, ...options })}
     }`;
