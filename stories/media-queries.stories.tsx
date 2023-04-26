@@ -1,8 +1,8 @@
 import { Meta, StoryFn } from '@storybook/react';
 import { Prism } from 'react-syntax-highlighter';
 import { materialOceanic as style } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import { Heading } from './components/heading/heading';
 import { Container } from './components/container/container';
+import { Heading } from './components/heading/heading';
 import { Text } from './components/text/text';
 
 const meta = {
@@ -87,16 +87,16 @@ export const MediaQueries: StoryFn = () => (
       language='css'
     >
       {`/* Raw media queries for advanced usage */
-@custom-media --mq-base-xs (min-width: 576px);
 @custom-media --mq-base-xs-max (max-width: 575.98px);
-@custom-media --mq-base-sm (min-width: 768px);
+@custom-media --mq-base-sm (min-width: 576px);
 @custom-media --mq-base-sm-max (max-width: 767.98px);
-@custom-media --mq-base-md (min-width: 992px);
+@custom-media --mq-base-md (min-width: 768px);
 @custom-media --mq-base-md-max (max-width: 991.98px);
+@custom-media --mq-base-lg (min-width: 992px);
+@custom-media --mq-base-lg-max (max-width: 1199.98px);
 @custom-media --mq-base-xl (min-width: 1200px);
-@custom-media --mq-base-xl-max (max-width: 1199.98px);
+@custom-media --mq-base-xl-max (max-width: 1439.98px);
 @custom-media --mq-base-xxl (min-width: 1440px);
-@custom-media --mq-base-xxl-max (max-width: 1439.98px);
 
 /* User preferences and helper media queries */
 @custom-media --mq-base-hd-color (dynamic-range: high);
@@ -118,21 +118,22 @@ export const MediaQueries: StoryFn = () => (
 @custom-media --mq-base-landscape (orientation: landscape);
 
 /* Responsive design media queries */
-@custom-media --mq-respond-down-xs (max-width: 575.98px);
-@custom-media --mq-respond-down-sm (max-width: 767.98px);
-@custom-media --mq-respond-down-md (max-width: 991.98px);
+@custom-media --mq-respond-down-sm (max-width: 575.98px);
+@custom-media --mq-respond-down-md (max-width: 767.98px);
+@custom-media --mq-respond-down-lg (max-width: 991.98px);
 @custom-media --mq-respond-down-xl (max-width: 1199.98px);
 @custom-media --mq-respond-down-xxl (max-width: 1439.98px);
-@custom-media --mq-respond-up-xs (min-width: 576px);
-@custom-media --mq-respond-up-sm (min-width: 768px);
-@custom-media --mq-respond-up-md (min-width: 992px);
+@custom-media --mq-respond-up-sm (min-width: 576px);
+@custom-media --mq-respond-up-md (min-width: 768px);
+@custom-media --mq-respond-up-lg (min-width: 992px);
 @custom-media --mq-respond-up-xl (min-width: 1200px);
 @custom-media --mq-respond-up-xxl (min-width: 1440px);
 @custom-media --mq-respond-only-xs (max-width: 575.98px);
 @custom-media --mq-respond-only-sm (min-width: 576px) and (max-width: 767.98px);
 @custom-media --mq-respond-only-md (min-width: 768px) and (max-width: 991.98px);
-@custom-media --mq-respond-only-xl (min-width: 992px) and (max-width: 1199.98px);
-@custom-media --mq-respond-only-xxl (min-width: 1200px);
+@custom-media --mq-respond-only-lg (min-width: 992px) and (max-width: 1199.98px);
+@custom-media --mq-respond-only-xl (min-width: 1200px) and (max-width: 1439.98px);
+@custom-media --mq-respond-only-xxl (min-width: 1440px);
 `}
     </Prism>
   </Container>
