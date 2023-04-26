@@ -17,5 +17,5 @@ const mapBreakpoints = (tokens) =>
 module.exports.getScreens = (dictionary) => {
   const breakpoints = getBreakpointTokens(dictionary);
 
-  return mapBreakpoints(radius);
+  return mapBreakpoints(breakpoints);
 };
