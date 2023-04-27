@@ -1,29 +1,29 @@
 {
   "mq": {
     "respond": {
-      "down-xs": {
+      "down-sm": {
         "value": "{mq.base.xs-max}"
       },
-      "down-sm": {
+      "down-md": {
         "value": "{mq.base.sm-max}"
       },
-      "down-md": {
+      "down-lg": {
         "value": "{mq.base.md-max}"
       },
       "down-xl": {
-        "value": "{mq.base.xl-max}"
+        "value": "{mq.base.lg-max}"
       },
       "down-xxl": {
-        "value": "{mq.base.xxl-max}"
-      },
-      "up-xs": {
-        "value": "{mq.base.xs}"
+        "value": "{mq.base.xl-max}"
       },
       "up-sm": {
         "value": "{mq.base.sm}"
       },
       "up-md": {
         "value": "{mq.base.md}"
+      },
+      "up-lg": {
+        "value": "{mq.base.lg}"
       },
       "up-xl": {
         "value": "{mq.base.xl}"
@@ -35,16 +35,19 @@
         "value": "{mq.base.xs-max}"
       },
       "only-sm": {
-        "value": "{mq.base.xs} and {mq.base.sm-max}"
+        "value": "{mq.base.sm} and {mq.base.sm-max}"
       },
       "only-md": {
-        "value": "{mq.base.sm} and {mq.base.md-max}"
+        "value": "{mq.base.md} and {mq.base.md-max}"
+      },
+      "only-lg": {
+        "value": "{mq.base.lg} and {mq.base.lg-max}"
       },
       "only-xl": {
-        "value": "{mq.base.md} and {mq.base.xl-max}"
+        "value": "{mq.base.xl} and {mq.base.xl-max}"
       },
       "only-xxl": {
-        "value": "{mq.base.xl}"
+        "value": "{mq.base.xxl}"
       }
     }
   }
