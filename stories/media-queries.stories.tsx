@@ -129,7 +129,7 @@ export const MediaQueries: StoryFn = () => (
 @custom-media --mq-base-landscape (orientation: landscape);
 
 /* Responsive design media queries */
-/*  No media query necessary for xs breakpoint as it's effectively '@media (max-width: 0) { ... }' */
+/* No media query necessary for xs breakpoint as it's effectively '@media (max-width: 0) { ... }' */
 @custom-media --mq-respond-down-sm (max-width: 575.98px);
 @custom-media --mq-respond-down-md (max-width: 767.98px);
 @custom-media --mq-respond-down-lg (max-width: 991.98px);
