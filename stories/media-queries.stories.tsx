@@ -22,6 +22,17 @@ export const MediaQueries: StoryFn = () => (
       your components on several screen sizes. All the variables exposed allow you to target specific device features
       like touch support or user preferences.
     </Text>
+    <Text>
+      Highly inspired by&nbsp;
+      <a
+        href='https://getbootstrap.com/docs/5.0/layout/breakpoints/'
+        target='_blank'
+        rel='noreferrer'
+      >
+        <b>bootstrap</b>
+      </a>
+      &nbsp;breakpoints.
+    </Text>
     <Text>Let&apos;s check for example how you can use them with plain CSS:</Text>
     <Prism
       style={style}
@@ -118,11 +129,13 @@ export const MediaQueries: StoryFn = () => (
 @custom-media --mq-base-landscape (orientation: landscape);
 
 /* Responsive design media queries */
+// No media query necessary for xs breakpoint as it's effectively '@media (max-width: 0) { ... }'
 @custom-media --mq-respond-down-sm (max-width: 575.98px);
 @custom-media --mq-respond-down-md (max-width: 767.98px);
 @custom-media --mq-respond-down-lg (max-width: 991.98px);
 @custom-media --mq-respond-down-xl (max-width: 1199.98px);
 @custom-media --mq-respond-down-xxl (max-width: 1439.98px);
+// No media query necessary for xs breakpoint as it's effectively '@media (min-width: 0) { ... }'
 @custom-media --mq-respond-up-sm (min-width: 576px);
 @custom-media --mq-respond-up-md (min-width: 768px);
 @custom-media --mq-respond-up-lg (min-width: 992px);

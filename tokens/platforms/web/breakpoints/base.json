@@ -1,6 +1,9 @@
 {
   "breakpoints": {
     "base": {
+      "xs": {
+        "value": 0
+      },
       "xs-max": {
         "value": 575.98
       },
