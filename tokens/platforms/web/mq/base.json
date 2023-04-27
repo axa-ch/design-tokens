@@ -1,9 +1,6 @@
 {
   "mq": {
     "base": {
-      "xs": {
-        "value": "(min-width: {breakpoints.base.xs}px)"
-      },
       "xs-max": {
         "value": "(max-width: {breakpoints.base.xs-max}px)"
       },
@@ -19,6 +16,12 @@
       "md-max": {
         "value": "(max-width: {breakpoints.base.md-max}px)"
       },
+      "lg": {
+        "value": "(min-width: {breakpoints.base.lg}px)"
+      },
+      "lg-max": {
+        "value": "(max-width: {breakpoints.base.lg-max}px)"
+      },
       "xl": {
         "value": "(min-width: {breakpoints.base.xl}px)"
       },
@@ -27,9 +30,6 @@
       },
       "xxl": {
         "value": "(min-width: {breakpoints.base.xxl}px)"
-      },
-      "xxl-max": {
-        "value": "(max-width: {breakpoints.base.xxl-max}px)"
       },
       "hd-color": { "value": "(dynamic-range: high)" },
       "touch": { "value": "(hover: none) and (pointer: coarse)" },

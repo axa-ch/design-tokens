@@ -2,34 +2,37 @@
   "breakpoints": {
     "base": {
       "xs": {
-        "value": 576
+        "value": 0
       },
       "xs-max": {
         "value": 575.98
       },
       "sm": {
-        "value": 768
+        "value": 576
       },
       "sm-max": {
         "value": 767.98
       },
       "md": {
-        "value": 992
+        "value": 768
       },
       "md-max": {
         "value": 991.98
+      },
+      "lg": {
+        "value": 992
+      },
+      "lg-max": {
+        "value": 1199.98
       },
       "xl": {
         "value": 1200
       },
       "xl-max": {
-        "value": 1199.98
+        "value": 1439.98
       },
       "xxl": {
         "value": 1440
-      },
-      "xxl-max": {
-        "value": 1439.98
       }
     }
   }
