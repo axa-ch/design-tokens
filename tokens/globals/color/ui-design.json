@@ -11,17 +11,13 @@
       "burnt-sienna": { "value": "#f07662" },
       "burnt-sienna-dark": {
         "value": "{color.ui-design.burnt-sienna}",
-        "type": "color-transform",
-        "params": {
-          "lightness": -5.69
-        }
+        "type": "color-shade",
+        "shade": "dark"
       },
       "burnt-sienna-light": {
         "value": "{color.ui-design.burnt-sienna}",
-        "type": "color-transform",
-        "params": {
-          "alpha": -0.8
-        }
+        "type": "color-shade",
+        "shade": "light"
       },
       "dark-grey": { "value": "{color.greyscale.1}" },
       "medium-grey": { "value": "{color.greyscale.2}" },

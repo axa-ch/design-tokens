@@ -1,15 +1,5 @@
 const sass = require('sass');
-
-// assuming that the input is a 7 chars string length
-const hexToRgb = (hex, name) => {
-  if (!hex) throw new Error(`The value for ${name} is undefined`);
-  if (hex.length < 7) throw new Error(`The value provided for ${name} doesn't seem to be in hex format`);
-  return {
-    red: parseInt(hex.slice(1, 3), 16),
-    green: parseInt(hex.slice(3, 5), 16),
-    blue: parseInt(hex.slice(5, 7), 16),
-  };
-};
+const { hexToRgb } = require('./utils');
 
 module.exports.sassColorTransform = {
   type: 'value',
@@ -17,7 +7,7 @@ module.exports.sassColorTransform = {
   transformer: (token) => {
     if (!token.params) throw new Error('Please provide the params key needed for the sass.color.change method');
     const rgb = hexToRgb(token.value, token.name);
-    const color = new sass.SassColor({ ...rgb });
+    const color = new sass.SassColor({ red: rgb.r, green: rgb.g, blue: rgb.b, alpha: rgb.a });
     // use the values modifying the initial color properties for example:
     // given token.params.alpha - 0.2 -> we reduce the opacity of the 20%
     // color.alpha() + token.params.alpha

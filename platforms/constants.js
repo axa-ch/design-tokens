@@ -1,7 +1,7 @@
 const MEDIA_QUERY_TOKEN_NAME = 'mq';
 const TYPOGRAPHY_TOKEN_NAME = 'typography';
 const TOKENS_LIST = [TYPOGRAPHY_TOKEN_NAME, 'color', 'shadow', 'radius', 'animation', 'spacing', 'breakpoints'];
-const SHARED_TRANSFORM_LIST = ['scss/color-transform'];
+const SHARED_TRANSFORM_LIST = ['scss/color-transform', 'color-shade-transform'];
 const CUSTOM_CSS_TRANSFORM_LIST = [
   'shadow/css',
   'cubicBezier/css',

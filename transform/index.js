@@ -4,6 +4,7 @@ const { dimensionPixelToRem } = require('style-dictionary-utils/dist/transformer
 const { cubicBezierCss } = require('style-dictionary-utils/dist/transformer/cubic-bezier-css');
 const defaultTransforms = require('style-dictionary/lib/common/transforms');
 const { sassColorTransform } = require('./scss-color-transform');
+const { colorShadeTransform } = require('./color-shade-transform');
 
 // create a matcher filtering the token type attribute
 const createMatcher = (type) => (token) => token.type === type || token.$type === type;
@@ -28,5 +29,9 @@ module.exports = {
   'scss/color-transform': {
     ...sassColorTransform,
     matcher: createMatcher('color-transform'),
+  },
+  'color-shade-transform': {
+    ...colorShadeTransform,
+    matcher: createMatcher('color-shade'),
   },
 };

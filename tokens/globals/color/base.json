@@ -4,32 +4,24 @@
       "axa-blue": { "value": "#00008f" },
       "axa-blue-dark": {
         "value": "{color.base.axa-blue}",
-        "type": "color-transform",
-        "params": {
-          "lightness": -5.69
-        }
+        "type": "color-shade",
+        "shade": "dark"
       },
       "axa-blue-light": {
         "value": "{color.base.axa-blue}",
-        "type": "color-transform",
-        "params": {
-          "alpha": -0.8
-        }
+        "type": "color-shade",
+        "shade": "light"
       },
       "axa-red": { "value": "#ff1721" },
       "axa-red-dark": {
         "value": "{color.base.axa-red}",
-        "type": "color-transform",
-        "params": {
-          "lightness": -5.69
-        }
+        "type": "color-shade",
+        "shade": "dark"
       },
       "axa-red-light": {
         "value": "{color.base.axa-red}",
-        "type": "color-transform",
-        "params": {
-          "alpha": -0.8
-        }
+        "type": "color-shade",
+        "shade": "light"
       }
     }
   }

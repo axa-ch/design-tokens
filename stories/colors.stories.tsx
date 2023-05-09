@@ -16,6 +16,7 @@ const meta = {
 } satisfies Meta<typeof ColorList>;
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
 type SortingFn = (a: string[], b: string[]) => number;
@@ -24,17 +25,17 @@ const sortBySaturation: SortingFn = ([, valueA], [, valueB]) => {
   const colorA = colorUtil.color(valueA);
   const colorB = colorUtil.color(valueB);
 
-  if (colorA.hsl.s - colorA.hsl.l < colorB.hsl.s - colorB.hsl.l) return 1;
-  if (colorA.hsl.s - colorA.hsl.l > colorB.hsl.s - colorB.hsl.l) return -1;
+  if (colorA.hsl.s + colorA.hsl.h - colorA.hsl.l < colorB.hsl.s + colorB.hsl.h - colorB.hsl.l) return 1;
+  if (colorA.hsl.s + colorA.hsl.h - colorA.hsl.l > colorB.hsl.s + colorB.hsl.h - colorB.hsl.l) return -1;
   return 0;
 };
 
-const sortBySaturationAndLuminosity: SortingFn = ([, valueA], [, valueB]) => {
+const sortByHue: SortingFn = ([, valueA], [, valueB]) => {
   const colorA = colorUtil.color(valueA);
   const colorB = colorUtil.color(valueB);
 
-  if (colorA.hsl.h - colorA.hsl.s < colorB.hsl.h - colorB.hsl.s) return 1;
-  if (colorA.hsl.h - colorA.hsl.s > colorB.hsl.h - colorB.hsl.s) return -1;
+  if (colorA.hsl.h > colorB.hsl.h) return 1;
+  if (colorA.hsl.h < colorB.hsl.h) return -1;
   return 0;
 };
 
@@ -45,7 +46,7 @@ const filterColor = (fn: (name: string, value: string) => boolean, sortingFn = s
 
 export const CoreAXAColors: Story = {
   args: {
-    colors: filterColor((name) => /base/gi.test(name)),
+    colors: filterColor((name) => /base/gi.test(name), sortByHue),
   },
   render: (args) => (
     <Container>
@@ -74,7 +75,7 @@ export const UIDesign: Story = {
 
 export const BackgroundsAndIllustrations: Story = {
   args: {
-    colors: filterColor((name) => /misc/gi.test(name)),
+    colors: filterColor((name) => /misc/gi.test(name), sortByHue),
   },
   render: (args) => (
     <Container>
@@ -87,7 +88,7 @@ export const BackgroundsAndIllustrations: Story = {
 
 export const Status: Story = {
   args: {
-    colors: filterColor((name) => /status/gi.test(name), sortBySaturationAndLuminosity),
+    colors: filterColor((name) => /status/gi.test(name)),
   },
   render: (args) => (
     <Container>

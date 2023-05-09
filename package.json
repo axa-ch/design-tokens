@@ -69,6 +69,7 @@
     "@vitejs/plugin-react-swc": "^3.3.0",
     "chaestli": "^3.1.0",
     "clsx": "^1.2.1",
+    "color-blend": "^4.0.0",
     "color-util": "^2.2.3",
     "eslint": "^8.38.0",
     "eslint-config-airbnb-base": "^15.0.0",
