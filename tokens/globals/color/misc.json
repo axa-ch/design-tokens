@@ -2,6 +2,13 @@
   "color": {
     "misc": {
       "ocean-blue": { "value": "#4976BA" },
+      "ocean-blue-20": {
+        "value": "{color.misc.ocean-blue}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "ocean-blue-dark": {
         "value": "{color.misc.ocean-blue}",
         "type": "color-shade",
@@ -13,6 +20,13 @@
         "shade": "light"
       },
       "teal": { "value": "#027180" },
+      "teal-20": {
+        "value": "{color.misc.teal}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "teal-dark": {
         "value": "{color.misc.teal}",
         "type": "color-shade",
@@ -24,6 +38,13 @@
         "shade": "light"
       },
       "viridia-green": { "value": "#668980" },
+      "viridia-green-20": {
+        "value": "{color.misc.viridia-green}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "viridia-green-dark": {
         "value": "{color.misc.viridia-green}",
         "type": "color-shade",
@@ -35,6 +56,13 @@
         "shade": "light"
       },
       "pacific": { "value": "#00ADC6" },
+      "pacific-20": {
+        "value": "{color.misc.pacific}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "pacific-dark": {
         "value": "{color.misc.pacific}",
         "type": "color-shade",
@@ -46,6 +74,13 @@
         "shade": "light"
       },
       "greyjoy": { "value": "#9FBEAF" },
+      "greyjoy-20": {
+        "value": "{color.misc.greyjoy}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "greyjoy-dark": {
         "value": "{color.misc.greyjoy}",
         "type": "color-shade",
@@ -57,6 +92,13 @@
         "shade": "light"
       },
       "aqua-green": { "value": "#9FD9B4" },
+      "aqua-green-20": {
+        "value": "{color.misc.aqua-green}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "aqua-green-dark": {
         "value": "{color.misc.aqua-green}",
         "type": "color-shade",
@@ -68,6 +110,13 @@
         "shade": "light"
       },
       "tosca": { "value": "#914146" },
+      "tosca-20": {
+        "value": "{color.misc.tosca}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "tosca-dark": {
         "value": "{color.misc.tosca}",
         "type": "color-shade",
@@ -79,6 +128,13 @@
         "shade": "light"
       },
       "azalea": { "value": "#E196AA" },
+      "azalea-20": {
+        "value": "{color.misc.azalea}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "azalea-dark": {
         "value": "{color.misc.azalea}",
         "type": "color-shade",
@@ -90,6 +146,13 @@
         "shade": "light"
       },
       "cotton-candy": { "value": "#FAD6DE" },
+      "cotton-candy-20": {
+        "value": "{color.misc.cotton-candy}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "cotton-candy-dark": {
         "value": "{color.misc.cotton-candy}",
         "type": "color-shade",
@@ -101,6 +164,13 @@
         "shade": "light"
       },
       "apache": { "value": "#BC9D45" },
+      "apache-20": {
+        "value": "{color.misc.apache}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "apache-dark": {
         "value": "{color.misc.apache}",
         "type": "color-shade",
@@ -112,6 +182,13 @@
         "shade": "light"
       },
       "dune": { "value": "#FCD385" },
+      "dune-20": {
+        "value": "{color.misc.dune}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "dune-dark": {
         "value": "{color.misc.dune}",
         "type": "color-shade",
@@ -123,6 +200,13 @@
         "shade": "light"
       },
       "acid": { "value": "#F0FF93" },
+      "acid-20": {
+        "value": "{color.misc.acid}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "acid-dark": {
         "value": "{color.misc.acid}",
         "type": "color-shade",
@@ -134,6 +218,13 @@
         "shade": "light"
       },
       "logan": { "value": "#9190AC" },
+      "logan-20": {
+        "value": "{color.misc.logan}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "logan-dark": {
         "value": "{color.misc.logan}",
         "type": "color-shade",
@@ -145,6 +236,13 @@
         "shade": "light"
       },
       "igloo": { "value": "#B5D0EE" },
+      "igloo-20": {
+        "value": "{color.misc.igloo}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "igloo-dark": {
         "value": "{color.misc.igloo}",
         "type": "color-shade",

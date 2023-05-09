@@ -2,6 +2,13 @@
   "color": {
     "ui-design": {
       "axa-blue": { "value": "{color.base.axa-blue}" },
+      "axa-blue-20": {
+        "value": "{color.ui-design.axa-blue}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "axa-blue-dark": {
         "value": "{color.base.axa-blue-dark}"
       },
@@ -9,6 +16,13 @@
         "value": "{color.base.axa-blue-light}"
       },
       "burnt-sienna": { "value": "#f07662" },
+      "burnt-sienna-20": {
+        "value": "{color.ui-design.burnt-sienna}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "burnt-sienna-dark": {
         "value": "{color.ui-design.burnt-sienna}",
         "type": "color-shade",

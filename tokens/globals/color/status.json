@@ -2,6 +2,13 @@
   "color": {
     "status": {
       "malachite": { "value": "#1CC54E" },
+      "malachite-20": {
+        "value": "{color.status.malachite}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "malachite-dark": {
         "value": "{color.status.malachite}",
         "type": "color-shade",
@@ -13,6 +20,13 @@
         "shade": "light"
       },
       "shy-tomato": { "value": "#C91432" },
+      "shy-tomato-20": {
+        "value": "{color.status.shy-tomato}",
+        "type": "color-transform",
+        "params": {
+          "alpha": -0.8
+        }
+      },
       "shy-tomato-dark": {
         "value": "{color.status.shy-tomato}",
         "type": "color-shade",
