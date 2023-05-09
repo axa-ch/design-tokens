@@ -71,7 +71,7 @@
 
   &:hover {
     span {
-      transform: translate(-50%, -50%) scale(7);
+      transform: translate(-50%, -50%) scale(5);
       border-radius: var(--radius-base-large);
     }
   }
@@ -129,6 +129,6 @@
   }
 
   100% {
-    transform: translate(200%, -50%) scale(1.5);
+    transform: translate(150%, -50%) scale(1.5);
   }
 }
