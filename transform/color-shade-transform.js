@@ -1,5 +1,5 @@
 const { normal } = require('color-blend');
-const { hexToRgb, rgbToHex } = require('./utils');
+const { hexToRgbaObject, rgbObjectToHexString } = require('./utils');
 
 const darkShade = {
   r: 0,
@@ -20,10 +20,10 @@ module.exports.colorShadeTransform = {
   transformer: (token) => {
     if (!token?.shade) throw new Error('Please provide the shade param "dark|light" needed for this transformer');
 
-    const rgb = hexToRgb(token.value, token.name);
+    const rgba = hexToRgbaObject(token.value, token.name);
 
     try {
-      return rgbToHex(normal({ ...rgb, a: 1 }, token.shade === 'light' ? lightShade : darkShade));
+      return rgbObjectToHexString(normal(rgba, token.shade === 'light' ? lightShade : darkShade), token.name);
     } catch (error) {
       throw new Error(`Unable to change the color ${token.name}`, { cause: error });
     }
