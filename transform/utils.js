@@ -1,6 +1,8 @@
+const { isUndefined } = require('lodash');
+
 // hex string into rgba object
 const hexToRgbaObject = (hex, name) => {
-  if (!hex) throw new Error(`The value for ${name} is undefined`);
+  if (isUndefined(hex)) throw new Error(`The value for ${name} is undefined`);
   if (hex.length < 7) throw new Error(`The value provided for ${name} doesn't seem to be in hex format`);
 
   try {
