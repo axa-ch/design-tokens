@@ -4,12 +4,12 @@ import { ColorCard } from '../color-card/color-card';
 import classes from './color-list.module.scss';
 
 export type ColorListProps = {
-  colors: [string, string][];
+  colors: { name: string; value: string }[];
 };
 
 export const ColorList: FC<ColorListProps> = ({ colors }) => (
   <ul className={classes.list}>
-    {colors.map(([name, value]) => (
+    {colors.map(({ name, value }) => (
       <li
         className={classes.item}
         key={name}

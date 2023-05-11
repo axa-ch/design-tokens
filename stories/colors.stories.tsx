@@ -1,6 +1,7 @@
 import { StoryObj, Meta } from '@storybook/react';
 // @ts-ignore
 import colorUtil from 'color-util';
+import { sortBy, chain } from 'lodash';
 import * as colors from '../build/js/color';
 import { ColorList } from './components/color-list/color-list';
 import { Heading } from './components/heading/heading';
@@ -19,34 +20,23 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-type SortingFn = (a: string[], b: string[]) => number;
-
-const sortBySaturation: SortingFn = ([, valueA], [, valueB]) => {
-  const colorA = colorUtil.color(valueA);
-  const colorB = colorUtil.color(valueB);
-
-  if (colorA.hsl.s + colorA.hsl.h - colorA.hsl.l < colorB.hsl.s + colorB.hsl.h - colorB.hsl.l) return 1;
-  if (colorA.hsl.s + colorA.hsl.h - colorA.hsl.l > colorB.hsl.s + colorB.hsl.h - colorB.hsl.l) return -1;
-  return 0;
-};
-
-const sortByHue: SortingFn = ([, valueA], [, valueB]) => {
-  const colorA = colorUtil.color(valueA);
-  const colorB = colorUtil.color(valueB);
-
-  if (colorA.hsl.h > colorB.hsl.h) return 1;
-  if (colorA.hsl.h < colorB.hsl.h) return -1;
-  return 0;
-};
-
-const filterColor = (fn: (name: string, value: string) => boolean, sortingFn = sortBySaturation) =>
+const filterColor = (fn: (name: string, value: string) => boolean) =>
   Object.entries(colors)
     .filter(([name, value]) => fn(name, value))
-    .sort(sortingFn);
+    .map(([name, value]) => {
+      const color = colorUtil.color(value);
+
+      return { name, value, ...color.hsl };
+    });
 
 export const CoreAXAColors: Story = {
   args: {
-    colors: filterColor((name) => /base/gi.test(name), sortByHue),
+    colors: chain(filterColor((name) => /base/gi.test(name)))
+      .groupBy((color) => Math.round(color.h * 100))
+      .values()
+      .map((colorGroup) => sortBy(colorGroup, 'l'))
+      .flatten()
+      .value(),
   },
   render: (args) => (
     <Container>
@@ -59,7 +49,13 @@ export const CoreAXAColors: Story = {
 
 export const UIDesign: Story = {
   args: {
-    colors: filterColor((name) => /design/gi.test(name)),
+    colors: chain(filterColor((name) => /design/gi.test(name)))
+      .groupBy((color) => Math.round(color.h * 100))
+      .values()
+      .map((colorGroup) => sortBy(colorGroup, 'l').reverse())
+      .flatten()
+      .value()
+      .reverse(),
   },
   render: (args) => (
     <Container>
@@ -75,7 +71,12 @@ export const UIDesign: Story = {
 
 export const BackgroundsAndIllustrations: Story = {
   args: {
-    colors: filterColor((name) => /misc/gi.test(name), sortByHue),
+    colors: chain(filterColor((name) => /misc/gi.test(name)))
+      .groupBy((color) => color.name.split(/(?=[A-Z])/)[2])
+      .values()
+      .map((colorGroup) => sortBy(colorGroup, 'l'))
+      .flatten()
+      .value(),
   },
   render: (args) => (
     <Container>
@@ -88,7 +89,12 @@ export const BackgroundsAndIllustrations: Story = {
 
 export const Status: Story = {
   args: {
-    colors: filterColor((name) => /status/gi.test(name)),
+    colors: chain(filterColor((name) => /status/gi.test(name)))
+      .groupBy((color) => Math.round(color.h * 100))
+      .values()
+      .map((colorGroup) => sortBy(colorGroup, 'l', 'desc'))
+      .flatten()
+      .value(),
   },
   render: (args) => (
     <Container>
