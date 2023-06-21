@@ -63,7 +63,7 @@ export const MediaQueries: StoryFn = () => (
       style={style}
       language='scss'
     >
-      {`@use '@axa-ch/design-tokens/tokens';
+      {`@use '@axa-ch/design-tokens/tokens.scss';
 
 .component {
   width: 100px;

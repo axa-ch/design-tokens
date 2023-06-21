@@ -69,7 +69,7 @@ Note that for CSS media queries via [@custom-media](https://drafts.csswg.org/med
 You can import the SCSS variables into your files as follows:
 
 ```scss
-@use '@axa-ch/design-tokens/tokens';
+@use '@axa-ch/design-tokens/tokens.scss';
 
 .component {
   width: tokens.$spacing-base-3;
@@ -83,7 +83,7 @@ You can import the SCSS variables into your files as follows:
 In case you want to import and scope the css variables into your SCSS application, without relying on the `:root` global selector, you might want to use our mixins as follows:
 
 ```scss
-@use '@axa-ch/design-tokens/tokens';
+@use '@axa-ch/design-tokens/tokens.scss';
 
 .component {
   // scope the css variables under the .component class
