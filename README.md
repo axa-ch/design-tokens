@@ -118,6 +118,11 @@ module.exports = {
 };
 ```
 
+### Figma usage
+
+You can import the [`tokens.json`](https://raw.githubusercontent.com/axa-ch/design-tokens/main/tokens.json) into figma via [Tokens Studio Plugin](https://docs.tokens.studio/).
+This will allow to sync your figma library with the tokens exposed in this project.
+
 [ci-image]: https://img.shields.io/github/actions/workflow/status/axa-ch/design-tokens/ci.yml?style=flat-square&branch=main
 [ci-url]: https://github.com/axa-ch/design-tokens/actions
 [license-image]: http://img.shields.io/badge/license-MIT-000000.svg?style=flat-square
