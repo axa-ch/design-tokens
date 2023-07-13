@@ -46,7 +46,7 @@
     "test": "npm run lint && sass tests/mixins.spec.scss tests/mixins.spec.css && vitest",
     "coverage": "vitest run --coverage",
     "clean": "rimraf build",
-    "build": "npm run clean && style-dictionary build && prettier --write tokens.json build/{js,scss,css,tailwind} && vite build",
+    "build": "npm run clean && style-dictionary build && prettier --write tokens.json build && vite build",
     "prepublishOnly": "npm run build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
