@@ -7,13 +7,19 @@ const { sassColorTransform } = require('./scss-color-transform');
 const { colorShadeTransform } = require('./color-shade-transform');
 
 // create a matcher filtering the token type attribute
-const createMatcher = (type) => (token) => token.type === type || token.$type === type;
+const createMatcher = (type) => (token) => token.transform === type;
 
 // Custom transform needed for this project
 module.exports = {
-  'shadow/css': shadowCss,
+  'shadow/css': {
+    ...shadowCss,
+    matcher: createMatcher('shadow'),
+  },
   'font/css': fontCss,
-  'cubicBezier/css': cubicBezierCss,
+  'cubicBezier/css': {
+    ...cubicBezierCss,
+    matcher: createMatcher('cubicBezier'),
+  },
   'animationDuration/css': {
     ...defaultTransforms['time/seconds'],
     matcher: createMatcher('duration'),

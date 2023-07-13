@@ -1,40 +1,46 @@
 {
   "color": {
     "status": {
-      "malachite": { "value": "#1CC54E" },
+      "malachite": { "type": "color", "value": "#1CC54E" },
       "malachite-20": {
+        "type": "color",
         "value": "{color.status.malachite}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "malachite-dark": {
+        "type": "color",
         "value": "{color.status.malachite}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "malachite-light": {
+        "type": "color",
         "value": "{color.status.malachite}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "shy-tomato": { "value": "#C91432" },
+      "shy-tomato": { "type": "color", "value": "#C91432" },
       "shy-tomato-20": {
+        "type": "color",
         "value": "{color.status.shy-tomato}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "shy-tomato-dark": {
+        "type": "color",
         "value": "{color.status.shy-tomato}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "shy-tomato-light": {
+        "type": "color",
         "value": "{color.status.shy-tomato}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       }
     }

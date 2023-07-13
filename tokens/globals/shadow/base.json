@@ -7,9 +7,11 @@
           "y": "1px",
           "blur": "8px",
           "spread": "0px",
-          "color": "rgba(0, 0, 0, 0.15)"
+          "color": "rgba(0, 0, 0, 0.15)",
+          "type": "dropShadow"
         },
-        "type": "shadow"
+        "transform": "shadow",
+        "type": "boxShadow"
       },
       "2": {
         "value": {
@@ -17,9 +19,11 @@
           "y": "1px",
           "blur": "20px",
           "spread": "0px",
-          "color": "rgba(0, 0, 0, 0.15)"
+          "color": "rgba(0, 0, 0, 0.15)",
+          "type": "dropShadow"
         },
-        "type": "shadow"
+        "transform": "shadow",
+        "type": "boxShadow"
       }
     }
   }

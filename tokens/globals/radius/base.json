@@ -3,15 +3,18 @@
     "base": {
       "small": {
         "value": 4,
-        "type": "size"
+        "transform": "size",
+        "type": "borderRadius"
       },
       "medium": {
         "value": 8,
-        "type": "size"
+        "transform": "size",
+        "type": "borderRadius"
       },
       "large": {
         "value": 16,
-        "type": "size"
+        "transform": "size",
+        "type": "borderRadius"
       }
     }
   }

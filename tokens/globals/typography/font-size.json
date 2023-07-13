@@ -4,52 +4,62 @@
       "10": {
         "value": 62,
         "comment": "62px",
-        "type": "size"
+        "transform": "size",
+        "type": "fontSize"
       },
       "9": {
         "value": 48,
         "comment": "48px",
-        "type": "size"
+        "transform": "size",
+        "type": "fontSize"
       },
       "8": {
         "value": 36,
         "comment": "36px",
-        "type": "size"
+        "transform": "size",
+        "type": "fontSize"
       },
       "7": {
         "value": 30,
         "comment": "30px",
-        "type": "size"
+        "transform": "size",
+        "type": "fontSize"
       },
       "6": {
         "value": 28,
         "comment": "28px",
-        "type": "size"
+        "transform": "size",
+        "type": "fontSize"
       },
       "5": {
         "value": 24,
         "comment": "24px",
-        "type": "size"
+        "transform": "size",
+        "type": "fontSize"
       },
       "4": {
         "value": 20,
         "comment": "20px",
-        "type": "size"
+        "transform": "size",
+        "type": "fontSize"
       },
       "3": {
         "value": 18,
         "comment": "18px",
-        "type": "size"
+        "transform": "size",
+        "type": "fontSize"
       },
       "2": {
         "value": 16,
         "comment": "16px",
-        "type": "size"
+        "transform": "size",
+        "type": "fontSize"
       },
       "1": {
         "value": 14,
         "comment": "14px",
-        "type": "size"
+        "transform": "size",
+        "type": "fontSize"
       }
     }
   }

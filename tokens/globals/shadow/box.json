@@ -2,10 +2,12 @@
   "shadow": {
     "box": {
       "default": {
-        "value": "{shadow.base.1}"
+        "value": "{shadow.base.1}",
+        "type": "boxShadow"
       },
       "high": {
-        "value": "{shadow.base.2}"
+        "value": "{shadow.base.2}",
+        "type": "boxShadow"
       }
     }
   }

@@ -1,47 +1,53 @@
 {
   "color": {
     "ui-design": {
-      "axa-blue": { "value": "{color.base.axa-blue}" },
+      "axa-blue": { "type": "color", "value": "{color.base.axa-blue}" },
       "axa-blue-20": {
+        "type": "color",
         "value": "{color.ui-design.axa-blue}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "axa-blue-dark": {
+        "type": "color",
         "value": "{color.base.axa-blue-dark}"
       },
       "axa-blue-light": {
+        "type": "color",
         "value": "{color.base.axa-blue-light}"
       },
-      "burnt-sienna": { "value": "#f07662" },
+      "burnt-sienna": { "type": "color", "value": "#f07662" },
       "burnt-sienna-20": {
+        "type": "color",
         "value": "{color.ui-design.burnt-sienna}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "burnt-sienna-dark": {
+        "type": "color",
         "value": "{color.ui-design.burnt-sienna}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "burnt-sienna-light": {
+        "type": "color",
         "value": "{color.ui-design.burnt-sienna}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "dark-grey": { "value": "{color.greyscale.1}" },
-      "medium-grey": { "value": "{color.greyscale.2}" },
-      "grey": { "value": "{color.greyscale.3}" },
-      "light-grey": { "value": "{color.greyscale.4}" },
-      "silver": { "value": "{color.greyscale.5}" },
-      "mercury": { "value": "{color.greyscale.6}" },
-      "wild-sand": { "value": "{color.greyscale.7}" },
-      "alabaster": { "value": "{color.greyscale.8}" },
-      "white": { "value": "{color.greyscale.9}" }
+      "dark-grey": { "type": "color", "value": "{color.greyscale.1}" },
+      "medium-grey": { "type": "color", "value": "{color.greyscale.2}" },
+      "grey": { "type": "color", "value": "{color.greyscale.3}" },
+      "light-grey": { "type": "color", "value": "{color.greyscale.4}" },
+      "silver": { "type": "color", "value": "{color.greyscale.5}" },
+      "mercury": { "type": "color", "value": "{color.greyscale.6}" },
+      "wild-sand": { "type": "color", "value": "{color.greyscale.7}" },
+      "alabaster": { "type": "color", "value": "{color.greyscale.8}" },
+      "white": { "type": "color", "value": "{color.greyscale.9}" }
     }
   }
 }

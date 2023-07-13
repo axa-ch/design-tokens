@@ -1,256 +1,298 @@
 {
   "color": {
     "misc": {
-      "ocean-blue": { "value": "#4976BA" },
+      "ocean-blue": { "type": "color", "value": "#4976BA" },
       "ocean-blue-20": {
+        "type": "color",
         "value": "{color.misc.ocean-blue}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "ocean-blue-dark": {
+        "type": "color",
         "value": "{color.misc.ocean-blue}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "ocean-blue-light": {
+        "type": "color",
         "value": "{color.misc.ocean-blue}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "teal": { "value": "#027180" },
+      "teal": { "type": "color", "value": "#027180" },
       "teal-20": {
+        "type": "color",
         "value": "{color.misc.teal}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "teal-dark": {
+        "type": "color",
         "value": "{color.misc.teal}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "teal-light": {
+        "type": "color",
         "value": "{color.misc.teal}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "viridia-green": { "value": "#668980" },
+      "viridia-green": { "type": "color", "value": "#668980" },
       "viridia-green-20": {
+        "type": "color",
         "value": "{color.misc.viridia-green}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "viridia-green-dark": {
+        "type": "color",
         "value": "{color.misc.viridia-green}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "viridia-green-light": {
+        "type": "color",
         "value": "{color.misc.viridia-green}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "pacific": { "value": "#00ADC6" },
+      "pacific": { "type": "color", "value": "#00ADC6" },
       "pacific-20": {
+        "type": "color",
         "value": "{color.misc.pacific}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "pacific-dark": {
+        "type": "color",
         "value": "{color.misc.pacific}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "pacific-light": {
+        "type": "color",
         "value": "{color.misc.pacific}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "greyjoy": { "value": "#9FBEAF" },
+      "greyjoy": { "type": "color", "value": "#9FBEAF" },
       "greyjoy-20": {
+        "type": "color",
         "value": "{color.misc.greyjoy}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "greyjoy-dark": {
+        "type": "color",
         "value": "{color.misc.greyjoy}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "greyjoy-light": {
+        "type": "color",
         "value": "{color.misc.greyjoy}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "aqua-green": { "value": "#9FD9B4" },
+      "aqua-green": { "type": "color", "value": "#9FD9B4" },
       "aqua-green-20": {
+        "type": "color",
         "value": "{color.misc.aqua-green}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "aqua-green-dark": {
+        "type": "color",
         "value": "{color.misc.aqua-green}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "aqua-green-light": {
+        "type": "color",
         "value": "{color.misc.aqua-green}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "tosca": { "value": "#914146" },
+      "tosca": { "type": "color", "value": "#914146" },
       "tosca-20": {
+        "type": "color",
         "value": "{color.misc.tosca}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "tosca-dark": {
+        "type": "color",
         "value": "{color.misc.tosca}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "tosca-light": {
+        "type": "color",
         "value": "{color.misc.tosca}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "azalea": { "value": "#E196AA" },
+      "azalea": { "type": "color", "value": "#E196AA" },
       "azalea-20": {
+        "type": "color",
         "value": "{color.misc.azalea}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "azalea-dark": {
+        "type": "color",
         "value": "{color.misc.azalea}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "azalea-light": {
+        "type": "color",
         "value": "{color.misc.azalea}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "cotton-candy": { "value": "#FAD6DE" },
+      "cotton-candy": { "type": "color", "value": "#FAD6DE" },
       "cotton-candy-20": {
+        "type": "color",
         "value": "{color.misc.cotton-candy}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "cotton-candy-dark": {
+        "type": "color",
         "value": "{color.misc.cotton-candy}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "cotton-candy-light": {
+        "type": "color",
         "value": "{color.misc.cotton-candy}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "apache": { "value": "#BC9D45" },
+      "apache": { "type": "color", "value": "#BC9D45" },
       "apache-20": {
+        "type": "color",
         "value": "{color.misc.apache}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "apache-dark": {
+        "type": "color",
         "value": "{color.misc.apache}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "apache-light": {
+        "type": "color",
         "value": "{color.misc.apache}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "dune": { "value": "#FCD385" },
+      "dune": { "type": "color", "value": "#FCD385" },
       "dune-20": {
+        "type": "color",
         "value": "{color.misc.dune}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "dune-dark": {
+        "type": "color",
         "value": "{color.misc.dune}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "dune-light": {
+        "type": "color",
         "value": "{color.misc.dune}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "acid": { "value": "#F0FF93" },
+      "acid": { "type": "color", "value": "#F0FF93" },
       "acid-20": {
+        "type": "color",
         "value": "{color.misc.acid}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "acid-dark": {
+        "type": "color",
         "value": "{color.misc.acid}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "acid-light": {
+        "type": "color",
         "value": "{color.misc.acid}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "logan": { "value": "#9190AC" },
+      "logan": { "type": "color", "value": "#9190AC" },
       "logan-20": {
+        "type": "color",
         "value": "{color.misc.logan}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "logan-dark": {
+        "type": "color",
         "value": "{color.misc.logan}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "logan-light": {
+        "type": "color",
         "value": "{color.misc.logan}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       },
-      "igloo": { "value": "#B5D0EE" },
+      "igloo": { "type": "color", "value": "#B5D0EE" },
       "igloo-20": {
+        "type": "color",
         "value": "{color.misc.igloo}",
-        "type": "color-transform",
+        "transform": "color-transform",
         "params": {
           "alpha": -0.8
         }
       },
       "igloo-dark": {
+        "type": "color",
         "value": "{color.misc.igloo}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "dark"
       },
       "igloo-light": {
+        "type": "color",
         "value": "{color.misc.igloo}",
-        "type": "color-shade",
+        "transform": "color-shade",
         "shade": "light"
       }
     }

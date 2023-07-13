@@ -3,15 +3,18 @@
     "easing": {
       "standard": {
         "value": [0.4, 0, 0.2, 1],
-        "type": "cubicBezier"
+        "transform": "cubicBezier",
+        "type": "motion"
       },
       "decelerated": {
         "value": [0, 0, 0.2, 1],
-        "type": "cubicBezier"
+        "transform": "cubicBezier",
+        "type": "motion"
       },
       "accelerated": {
         "value": [0.4, 0, 1, 1],
-        "type": "cubicBezier"
+        "transform": "cubicBezier",
+        "type": "motion"
       }
     }
   }

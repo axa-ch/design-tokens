@@ -2,34 +2,44 @@
   "typography": {
     "line-height": {
       "10": {
-        "value": 1.5
+        "value": 1.5,
+        "type": "lineHeight"
       },
       "9": {
-        "value": 1.3
+        "value": 1.3,
+        "type": "lineHeight"
       },
       "8": {
-        "value": 1.214
+        "value": 1.214,
+        "type": "lineHeight"
       },
       "7": {
-        "value": 1.208
+        "value": 1.208,
+        "type": "lineHeight"
       },
       "6": {
-        "value": 1.166
+        "value": 1.166,
+        "type": "lineHeight"
       },
       "5": {
-        "value": 1.161
+        "value": 1.161,
+        "type": "lineHeight"
       },
       "4": {
-        "value": 1.142
+        "value": 1.142,
+        "type": "lineHeight"
       },
       "3": {
-        "value": 1.133
+        "value": 1.133,
+        "type": "lineHeight"
       },
       "2": {
-        "value": 1.125
+        "value": 1.125,
+        "type": "lineHeight"
       },
       "1": {
-        "value": 1.111
+        "value": 1.111,
+        "type": "lineHeight"
       }
     }
   }

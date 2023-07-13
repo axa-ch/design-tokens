@@ -2,52 +2,68 @@
   "typography": {
     "margin": {
       "h1-top": {
-        "value": "{spacing.base.7}"
+        "value": "{spacing.base.7}",
+        "type": "size"
       },
       "h1-bottom": {
-        "value": "{spacing.base.5}"
+        "value": "{spacing.base.5}",
+        "type": "size"
       },
       "h2-top": {
-        "value": "{spacing.base.7}"
+        "value": "{spacing.base.7}",
+        "type": "size"
       },
       "h2-bottom": {
-        "value": "{spacing.base.5}"
+        "value": "{spacing.base.5}",
+        "type": "size"
       },
       "h3-top": {
-        "value": "{spacing.base.6}"
+        "value": "{spacing.base.6}",
+        "type": "size"
       },
       "h3-bottom": {
-        "value": "{spacing.base.4}"
+        "value": "{spacing.base.4}",
+        "type": "size"
       },
       "h4-top": {
-        "value": "{spacing.base.6}"
+        "value": "{spacing.base.6}",
+        "type": "size"
       },
       "h4-bottom": {
-        "value": "{spacing.base.4}"
+        "value": "{spacing.base.4}",
+        "type": "size"
       },
       "h5-top": {
-        "value": "{spacing.base.5}"
+        "value": "{spacing.base.5}",
+        "type": "size"
       },
       "h5-bottom": {
-        "value": "{spacing.base.3}"
+        "value": "{spacing.base.3}",
+        "type": "size"
       },
       "h6-top": {
-        "value": "{spacing.base.5}"
+        "value": "{spacing.base.5}",
+        "type": "size"
       },
       "h6-bottom": {
-        "value": "{spacing.base.3}"
+        "value": "{spacing.base.3}",
+        "type": "size"
       },
       "text-1-bottom": {
-        "value": "{spacing.base.6}"
+        "value": "{spacing.base.6}",
+        "type": "size"
       },
       "text-2-bottom": {
-        "value": "{spacing.base.6}"
+        "value": "{spacing.base.6}",
+        "type": "size"
       },
       "text-3-bottom": {
-        "value": "{spacing.base.5}"
+        "value": "{spacing.base.5}",
+        "type": "size"
       },
       "text-4-bottom": {
-        "value": "{spacing.base.5}"
+        "value": "{spacing.base.5}",
+        "type": "size"
       }
     }
   }

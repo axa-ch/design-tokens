@@ -3,43 +3,53 @@
     "base": {
       "1": {
         "value": 4,
-        "type": "size"
+        "transform": "size",
+        "type": "spacing"
       },
       "2": {
         "value": 8,
-        "type": "size"
+        "transform": "size",
+        "type": "spacing"
       },
       "3": {
         "value": 12,
-        "type": "size"
+        "transform": "size",
+        "type": "spacing"
       },
       "4": {
         "value": 16,
-        "type": "size"
+        "transform": "size",
+        "type": "spacing"
       },
       "5": {
         "value": 20,
-        "type": "size"
+        "transform": "size",
+        "type": "spacing"
       },
       "6": {
         "value": 28,
-        "type": "size"
+        "transform": "size",
+        "type": "spacing"
       },
       "7": {
         "value": 40,
-        "type": "size"
+        "transform": "size",
+        "type": "spacing"
       },
       "8": {
         "value": 60,
-        "type": "size"
+        "transform": "size",
+        "type": "spacing"
       },
       "9": {
         "value": 80,
-        "type": "size"
+        "transform": "size",
+        "type": "spacing"
       },
       "10": {
         "value": 120,
-        "type": "size"
+        "transform": "size",
+        "type": "spacing"
       }
     }
   }

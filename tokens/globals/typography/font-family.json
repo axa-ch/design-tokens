@@ -2,22 +2,28 @@
   "typography": {
     "font-family": {
       "primary": {
-        "value": "Source Sans Pro"
+        "value": "Source Sans Pro",
+        "type": "fontFamily"
       },
       "secondary": {
-        "value": "Publico Headline"
+        "value": "Publico Headline",
+        "type": "fontFamily"
       },
       "primary-fallback-1": {
-        "value": "Arial"
+        "value": "Arial",
+        "type": "fontFamily"
       },
       "secondary-fallback-1": {
-        "value": "Georgia"
+        "value": "Georgia",
+        "type": "fontFamily"
       },
       "primary-fallback-2": {
-        "value": "sans-serif"
+        "value": "sans-serif",
+        "type": "fontFamily"
       },
       "secondary-fallback-2": {
-        "value": "serif"
+        "value": "serif",
+        "type": "fontFamily"
       }
     }
   }

@@ -1,16 +1,16 @@
 {
   "color": {
     "greyscale": {
-      "0": { "value": "#000000" },
-      "1": { "value": "#333333" },
-      "2": { "value": "#5F5F5F" },
-      "3": { "value": "#7F7F7F" },
-      "4": { "value": "#999999" },
-      "5": { "value": "#CCCCCC" },
-      "6": { "value": "#E5E5E5" },
-      "7": { "value": "#F5F5F5" },
-      "8": { "value": "#FAFAFA" },
-      "9": { "value": "#FFFFFF" }
+      "0": { "value": "#000000", "type": "color" },
+      "1": { "value": "#333333", "type": "color" },
+      "2": { "value": "#5F5F5F", "type": "color" },
+      "3": { "value": "#7F7F7F", "type": "color" },
+      "4": { "value": "#999999", "type": "color" },
+      "5": { "value": "#CCCCCC", "type": "color" },
+      "6": { "value": "#E5E5E5", "type": "color" },
+      "7": { "value": "#F5F5F5", "type": "color" },
+      "8": { "value": "#FAFAFA", "type": "color" },
+      "9": { "value": "#FFFFFF", "type": "color" }
     }
   }
 }
