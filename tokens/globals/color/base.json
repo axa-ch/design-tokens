@@ -1,8 +1,7 @@
 {
   "color": {
     "base": {
-      "axa-blue": { "value": "#00008f" },
-      "type": "color",
+      "axa-blue": { "value": "#00008f", "type": "color" },
       "axa-blue-20": {
         "value": "{color.base.axa-blue}",
         "type": "color",

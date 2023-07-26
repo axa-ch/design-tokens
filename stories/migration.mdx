@@ -1,0 +1,98 @@
+import { Meta, Unstyled } from '@storybook/blocks';
+import { Heading } from './components/heading/heading';
+import { Text } from './components/text/text';
+
+<Meta title='Migration' />
+
+
+<Unstyled>
+  <Heading as='h1'>Migration guide</Heading>
+
+  <Text as='div'>
+  To migrate your sass files from `@axa-ch-webhub-cloud/materials` to `@axa-ch/design-tokens` search for the value on the left side and replace it with the value on the right side. After you replaced all old variables you can replace your imports with `@use '@axa-ch/design-tokens/tokens.scss';`
+  </Text>
+
+## variables.scss
+
+```
+min-width: $breakpoint-xs                     tokens.$mq-respond-up-sm
+min-width: $breakpoint-sm                     tokens.$mq-respond-up-md
+min-width: $breakpoint-md                     tokens.$mq-respond-up-lg
+min-width: $breakpoint-xl                     tokens.$mq-respond-up-xl
+min-width: $breakpoint-xxl                    tokens.$mq-respond-up-xxl
+
+$spacing-1                                    tokens.$spacing-base-1
+$spacing-2                                    tokens.$spacing-base-2
+$spacing-3                                    tokens.$spacing-base-3
+$spacing-4                                    tokens.$spacing-base-4
+$spacing-5                                    tokens.$spacing-base-5
+$spacing-6                                    tokens.$spacing-base-6
+$spacing-7                                    tokens.$spacing-base-7
+$spacing-8                                    tokens.$spacing-base-9
+$spacing-9                                    tokens.$spacing-base-10
+
+$box-shadow-default                           tokens.$shadow-box-default
+$box-shadow-high                              tokens.$shadow-box-high
+```
+
+## 00-colors.scss
+
+```
+$color-axa-blue                               tokens.$color-base-axa-blue
+$color-axa-red                                tokens.$color-base-axa-red
+$color-burnt-sienna                           tokens.$color-ui-design-burnt-sienna
+$color-black                                  tokens.$color-ui-design-black
+$color-dark-grey                              tokens.$color-ui-design-dark-grey
+$color-medium-grey                            tokens.$color-ui-design-medium-grey
+$color-grey                                   tokens.$color-ui-design-grey
+$color-light-grey                             tokens.$color-ui-design-light-grey
+$color-silver                                 tokens.$color-ui-design-silver
+$color-mercury                                tokens.$color-ui-design-mercury
+$color-wild-sand                              tokens.$color-ui-design-wild-sand
+$color-alabaster                              tokens.$color-ui-design-alabaster
+$color-prim-white                             tokens.$color-ui-design-white
+$color-ocean-blue-dark                        tokens.$color-misc-ocean-blue-dark
+$color-ocean-blue                             tokens.$color-misc-ocean-blue
+$color-teal                                   tokens.$color-misc-teal
+$color-viridian-green                         tokens.$color-misc-viridia-green
+$color-pacific                                tokens.$color-misc-pacific
+$color-greyjoy                                tokens.$color-misc-greyjoy
+$color-aqua-green                             tokens.$color-misc-aqua-green
+$color-tosca                                  tokens.$color-misc-tosca
+$color-azalea                                 tokens.$color-misc-azalea
+$color-cotton-candy                           tokens.$color-misc-cotton-candy
+$color-underbrush                             tokens.$color-misc-apache
+$color-dune                                   tokens.$color-misc-dune
+$color-acid                                   tokens.$color-misc-acid
+$color-logan                                  tokens.$color-misc-logan
+$color-igloo                                  tokens.$color-misc-igloo
+$color-malachite                              tokens.$color-status-malachite
+$color-shy-tomato                             tokens.$color-status-shy-tomato
+```
+
+### Removed colors
+
+```
+$color-deep-sapphire                          #00005b
+$color-azure                                  #3032c1
+$color-dark-indigo                            #3b3fd8
+$color-flamingo                               #ec4d33
+$color-apache                                 #ddbe65
+```
+
+## 20-animations.scss
+
+```
+$transition-small-expanding                   tokens.$animation-duration-small
+$transition-small-colapsing                   tokens.$animation-duration-small
+$transition-medium-expanding                  tokens.$animation-duration-medium-expanding
+$transition-medium-colapsing                  tokens.$animation-duration-medium-collapsing
+$transition-large-expanding                   tokens.$animation-duration-large-expanding
+$transition-large-colapsing                   tokens.$animation-duration-large-collapsing
+
+$standard-easing                              tokens.$animation-easing-standard
+$decelerated-easing                           tokens.$animation-easing-decelerated
+$accelerated-easing                           tokens.$animation-easing-accelerated
+```
+
+</Unstyled>
