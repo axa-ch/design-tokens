@@ -2,10 +2,8 @@
   "animation": {
     "duration": {
       "small": { "value": 100, "type": "duration", "transform": "duration" },
-      "medium": { "value": 250, "type": "duration", "transform": "duration" },
       "medium-expanding": { "value": 250, "type": "duration", "transform": "duration" },
       "medium-collapsing": { "value": 200, "type": "duration", "transform": "duration" },
-      "large": { "value": 300, "type": "duration", "transform": "duration" },
       "large-expanding": { "value": 300, "type": "duration", "transform": "duration" },
       "large-collapsing": { "value": 200, "type": "duration", "transform": "duration" }
     }
