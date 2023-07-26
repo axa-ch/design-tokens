@@ -57,12 +57,14 @@
     span {
       transform: translate(-50%, -50%) scale(3);
       border-radius: var(--radius-base-medium);
+      animation-duration: var(--animation-duration-medium-expanding);
+      transition-duration: var(--animation-duration-medium-expanding);
     }
   }
 
   span {
-    animation-duration: var(--animation-duration-medium);
-    transition-duration: var(--animation-duration-medium);
+    animation-duration: var(--animation-duration-medium-collapsing);
+    transition-duration: var(--animation-duration-medium-collapsing);
   }
 }
 
@@ -73,12 +75,14 @@
     span {
       transform: translate(-50%, -50%) scale(5);
       border-radius: var(--radius-base-large);
+      animation-duration: var(--animation-duration-large-expanding);
+      transition-duration: var(--animation-duration-large-expanding);
     }
   }
 
   span {
-    animation-duration: var(--animation-duration-large);
-    transition-duration: var(--animation-duration-large);
+    animation-duration: var(--animation-duration-large-collapsing);
+    transition-duration: var(--animation-duration-large-collapsing);
   }
 }
 
