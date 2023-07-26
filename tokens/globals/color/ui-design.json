@@ -39,6 +39,7 @@
         "transform": "color-shade",
         "shade": "light"
       },
+      "black": { "type": "color", "value": "{color.greyscale.0}" },
       "dark-grey": { "type": "color", "value": "{color.greyscale.1}" },
       "medium-grey": { "type": "color", "value": "{color.greyscale.2}" },
       "grey": { "type": "color", "value": "{color.greyscale.3}" },
