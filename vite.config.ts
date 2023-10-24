@@ -5,12 +5,20 @@ import react from '@vitejs/plugin-react-swc';
 export default defineConfig({
   build: {
     outDir: './',
-    minify: false,
+    minify: true,
     emptyOutDir: false,
     lib: {
       entry: 'index.js',
       formats: ['cjs'],
       fileName: 'index.cjs',
+    },
+    rollupOptions: {
+      output: {
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === 'style.css') return 'tokens.min.css';
+          return assetInfo.name;
+        },
+      },
     },
   },
   plugins: [react()],

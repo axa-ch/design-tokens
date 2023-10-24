@@ -1,8 +1,11 @@
 {
   "shadow": {
+    "$comment": "Here we need to redundantly define 2 shadow offset values as long as https://github.com/tokens-studio/figma-plugin/issues/2052 is still open",
     "base": {
       "1": {
         "value": {
+          "offsetX": "0px",
+          "offsetY": "1px",
           "x": "0px",
           "y": "1px",
           "blur": "8px",
@@ -15,6 +18,8 @@
       },
       "2": {
         "value": {
+          "offsetX": "0px",
+          "offsetY": "1px",
           "x": "0px",
           "y": "1px",
           "blur": "20px",
