@@ -64,6 +64,8 @@ Note that for CSS media queries via [@custom-media](https://drafts.csswg.org/med
 }
 ```
 
+#### Plain CSS
+
 If you want to simply import the pre-bundled css variables without relying on a build process, you can import the minified `tokens.min.css` file as follows:
 
 ```html
@@ -72,6 +74,8 @@ If you want to simply import the pre-bundled css variables without relying on a 
   href="@axa-ch/design-tokens/tokens.min.css"
 />
 ```
+
+Note that the css above doesn't contain `@custom-media` variables because this directive is not yet supported by any modern browser.
 
 ### SCSS Usage
 
