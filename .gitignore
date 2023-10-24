@@ -1,6 +1,7 @@
 # build output
 /build
 index.cjs.js
+/tokens.min.css
 /storybook-static
 /tests/*.map
 /tests/*.css
