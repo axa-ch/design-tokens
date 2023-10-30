@@ -9,8 +9,8 @@ export default defineConfig({
     emptyOutDir: false,
     lib: {
       entry: 'index.js',
-      formats: ['cjs'],
-      fileName: 'index.cjs',
+      formats: ['es', 'cjs'],
+      fileName: 'tokens',
     },
     rollupOptions: {
       output: {
