@@ -2,9 +2,9 @@
   "name": "@axa-ch/design-tokens",
   "version": "2.1.0",
   "description": "AXA Design Tokens",
-  "main": "./index.cjs.js",
-  "module": "./index.js",
-  "types": "./index.d.ts",
+  "main": "./tokens.js",
+  "module": "./tokens.mjs",
+  "types": "./tokens.d.ts",
   "keywords": [
     "design tokens",
     "css",
@@ -17,9 +17,9 @@
     "build",
     "tokens",
     "tailwind.config.js",
-    "index.js",
-    "index.d.ts",
-    "index.cjs.js",
+    "tokens.js",
+    "tokens.mjs",
+    "tokens.d.ts",
     "tokens.json",
     "tokens.scss",
     "tokens.css",
@@ -27,9 +27,9 @@
   ],
   "exports": {
     ".": {
-      "import": "./index.js",
-      "require": "./index.cjs.js",
-      "types": "./index.d.ts"
+      "import": "./tokens.mjs",
+      "require": "./tokens.js",
+      "types": "./tokens.d.ts"
     },
     "./build/": "./build/",
     "./tokens.json": "./tokens.json",
