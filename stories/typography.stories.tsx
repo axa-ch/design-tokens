@@ -117,6 +117,13 @@ export const SecondaryHeadings: Story = {
   ),
 };
 
+const textAliases = {
+  'text-1': 'text-xl',
+  'text-2': 'text-lg',
+  'text-3': 'text-base',
+  'text-4': 'text-sm',
+};
+
 export const Texts: Story = {
   render: () => (
     <Container>
@@ -127,7 +134,7 @@ export const Texts: Story = {
             as={'h3'}
             facet={'primary'}
           >
-            {startCase(facet)}
+            {startCase(facet)} (alias {textAliases[facet as keyof typeof textAliases]})
           </Heading>
           <Text facet={facet}>{lorem}</Text>
           <Text facet={facet}>{lorem}</Text>
