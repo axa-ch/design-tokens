@@ -52,16 +52,16 @@ describe('Tailwind Config specs', () => {
   });
 
   it('Font-size aliases are properly generated for text-* utilities', () => {
-    expect(tailwindConfig.theme.fontSize.sm).toEqual(tailwindConfig.theme.fontSize['4']);
-    expect(tailwindConfig.theme.fontSize.base).toEqual(tailwindConfig.theme.fontSize['3']);
-    expect(tailwindConfig.theme.fontSize.lg).toEqual(tailwindConfig.theme.fontSize['2']);
-    expect(tailwindConfig.theme.fontSize.xl).toEqual(tailwindConfig.theme.fontSize['1']);
+    expect(tailwindConfig.theme.fontSize.sm).toEqual(tailwindConfig.theme.fontSize['text-4']);
+    expect(tailwindConfig.theme.fontSize.base).toEqual(tailwindConfig.theme.fontSize['text-3']);
+    expect(tailwindConfig.theme.fontSize.lg).toEqual(tailwindConfig.theme.fontSize['text-2']);
+    expect(tailwindConfig.theme.fontSize.xl).toEqual(tailwindConfig.theme.fontSize['text-1']);
   });
 
   it('Font-size <number> utilities are still available for backward compatibility', () => {
-    expect(tailwindConfig.theme.fontSize['1'][0]).toMatch(/rem$/);
-    expect(tailwindConfig.theme.fontSize['2'][0]).toMatch(/rem$/);
-    expect(tailwindConfig.theme.fontSize['3'][0]).toMatch(/rem$/);
-    expect(tailwindConfig.theme.fontSize['4'][0]).toMatch(/rem$/);
+    expect(tailwindConfig.theme.fontSize['text-1'][0]).toMatch(/rem$/);
+    expect(tailwindConfig.theme.fontSize['text-2'][0]).toMatch(/rem$/);
+    expect(tailwindConfig.theme.fontSize['text-3'][0]).toMatch(/rem$/);
+    expect(tailwindConfig.theme.fontSize['text-4'][0]).toMatch(/rem$/);
   });
 });
