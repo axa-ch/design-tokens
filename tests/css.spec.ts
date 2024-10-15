@@ -18,6 +18,17 @@ describe('Css Tokens specs', () => {
     cssFiles.forEach((css) => expect(postcss.parse(css)).toBeTypeOf('object'));
   });
 
+  it('Check that the color shades are properly created', () => {
+    const root = postcss.parse(color);
+    const colorDeclarations = (root.nodes[1] as Rule).nodes.filter(({ type }) => type === 'decl') as Declaration[];
+    const colorsMap = colorDeclarations.reduce((acc, { prop, value }) => ({ ...acc, [prop]: value }), {});
+
+    expect(colorsMap['--color-base-axa-blue']).to.be.equal('#00008f');
+    expect(colorsMap['--color-base-axa-blue-dark']).to.be.equal('#000072');
+    expect(colorsMap['--color-base-axa-blue-light']).to.be.equal('#4040ab');
+    expect(colorsMap['--color-base-axa-blue-20']).to.be.equal('#cccce9');
+  });
+
   it('Colors are properly exported', () => {
     const root = postcss.parse(color);
     const colorDeclarations = (root.nodes[1] as Rule).nodes.filter(({ type }) => type === 'decl') as Declaration[];
