@@ -46,7 +46,7 @@
   "scripts": {
     "pretest": "npm run build",
     "lint": "prettier --ignore-path .prettierignore . --check && biome lint .",
-    "test": "npm run lint && sass tests/mixins.spec.scss tests/mixins.spec.css && vitest",
+    "test": "npm run lint && sass tests/mixins.spec.scss tests/mixins.spec.css && vitest run",
     "coverage": "vitest run --coverage",
     "clean": "rimraf build",
     "build": "npm run clean && node ./build.js && prettier --write --ignore-path .prettierignore tokens.json build && vite build",
