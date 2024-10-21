@@ -14,8 +14,8 @@ export const tailwindFormatter = ({ dictionary }) =>
 /** @type {import('tailwindcss').Config} */
 export default {
     theme: {
-        fontFamily:  ${formatTokens(getFontFamily(dictionary))},
-        fontSize:  ${formatTokens(getFontSize(dictionary))},
+        fontFamily: ${formatTokens(getFontFamily(dictionary))},
+        fontSize: ${formatTokens(getFontSize(dictionary))},
         extend: {
            screens: ${formatTokens(getScreens(dictionary))},
            spacing: ${formatTokens(getSpacing(dictionary))},

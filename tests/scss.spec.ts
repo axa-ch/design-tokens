@@ -77,14 +77,16 @@ describe('SCSS Tokens specs', () => {
   it('Typography variables are properly exported', () => {
     const root = postcss.parse(typography);
     const typographyDeclarations = root.nodes.filter(({ type }) => type === 'decl') as Declaration[];
-    const fontSize1 = typographyDeclarations.find(({ prop }) => prop?.includes('font-size-1')) as Declaration;
-    const secondaryH5 = typographyDeclarations.find(({ prop }) => prop?.includes('secondary-h5')) as Declaration;
-    const fontFamilyPrimary = typographyDeclarations.find(({ prop }) =>
-      prop?.includes('font-family-primary'),
+    const fontSize1 = typographyDeclarations.find(({ prop }) => prop === '$typography-font-size-1') as Declaration;
+    const secondaryH5 = typographyDeclarations.find(({ prop }) => prop === '$typography-secondary-h5') as Declaration;
+    const fontFamilyPrimary = typographyDeclarations.find(
+      ({ prop }) => prop === '$typography-font-family-primary',
     ) as Declaration;
 
     expect(fontSize1.value).toMatch(/rem$/);
-    expect(secondaryH5.value).toEqual('700 1.5rem/1.208 Publico Headline, Georgia, serif');
-    expect(fontFamilyPrimary.value).toEqual('Source Sans Pro');
+    expect(secondaryH5.value).toEqual(`700 1.5rem/1.208 'Publico Headline',
+  Georgia,
+  serif`);
+    expect(fontFamilyPrimary.value).toEqual("'Source Sans Pro'");
   });
 });

@@ -3,4 +3,5 @@ package-lock.json
 stories/*.mdx
 /tokens.js
 /tokens.cjs
+/tests/mixins.spec.css
 tokens.min.css
