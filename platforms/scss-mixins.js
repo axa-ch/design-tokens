@@ -1,17 +1,21 @@
-const transformGroups = require('style-dictionary/lib/common/transformGroups');
-const { CUSTOM_CSS_TRANSFORM_LIST, TOKENS_LIST, TYPOGRAPHY_TOKEN_NAME, OUTPUT_BASE_DIR } = require('./constants');
+import { CUSTOM_CSS_TRANSFORM_LIST, TOKENS_LIST, TYPOGRAPHY_TOKEN_NAME, OUTPUT_BASE_DIR } from './constants.js';
+import { outputReferencesFilter, outputReferencesTransformed } from 'style-dictionary/utils';
 
-module.exports.scssMixin = {
+export const scssMixin = {
   buildPath: `${OUTPUT_BASE_DIR}/scss/mixins/`,
-  transforms: [...transformGroups.css, ...CUSTOM_CSS_TRANSFORM_LIST],
+  transforms: [...CUSTOM_CSS_TRANSFORM_LIST],
   files: [
     ...TOKENS_LIST.map((tokenName) => ({
       destination: `${tokenName}.scss`,
       tokenName,
       filter: (token) => token?.attributes?.category === tokenName,
       format: 'scss/css-vars-mixin',
+
       options: {
-        outputReferences: tokenName !== TYPOGRAPHY_TOKEN_NAME,
+        outputReferences: (token, options) =>
+          outputReferencesFilter(token, options) &&
+          outputReferencesTransformed(token, options) &&
+          tokenName !== TYPOGRAPHY_TOKEN_NAME,
       },
     })),
   ],

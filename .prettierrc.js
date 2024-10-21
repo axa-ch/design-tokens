@@ -1,3 +1,3 @@
-const { prettier } = require('@axa-ch/easy-config');
+import { prettier } from '@axa-ch/easy-config';
 
-module.exports = prettier.base;
+export default prettier.base;

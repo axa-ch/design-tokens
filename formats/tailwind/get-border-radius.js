@@ -1,16 +1,16 @@
-const { filterTokenByPathName } = require('./utils');
+import { filterTokenByPathName } from './utils.js';
 
 const getRadiusTokens = filterTokenByPathName('radius');
 const mapRadiusTokens = (tokens) =>
   tokens.reduce(
     (acc, token) => ({
       ...acc,
-      [token.name.replace(`radius-base-`, '')]: token.value,
+      [token.name.replace('radius-base-', '')]: token.value,
     }),
     {},
   );
 
-module.exports.getBorderRadius = (dictionary) => {
+export const getBorderRadius = (dictionary) => {
   const radius = getRadiusTokens(dictionary);
 
   return mapRadiusTokens(radius);

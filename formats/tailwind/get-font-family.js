@@ -1,8 +1,8 @@
-const { filterTokenByPathName } = require('./utils');
+import { filterTokenByPathName } from './utils.js';
 
 const getFontFamiliesTokens = filterTokenByPathName('typography.font');
 
-module.exports.getFontFamily = (dictionary) => {
+export const getFontFamily = (dictionary) => {
   const fontFamilies = getFontFamiliesTokens(dictionary).reduce(
     (acc, token) => ({
       ...acc,

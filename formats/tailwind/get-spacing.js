@@ -1,16 +1,16 @@
-const { filterTokenByPathName } = require('./utils');
+import { filterTokenByPathName } from './utils.js';
 
 const getSpacingTokens = filterTokenByPathName('spacing');
 const mapSpacingTokens = (tokens) =>
   tokens.reduce(
     (acc, token) => ({
       ...acc,
-      [token.name.replace(`spacing-base-`, '')]: token.value,
+      [token.name.replace('spacing-base-', '')]: token.value,
     }),
     {},
   );
 
-module.exports.getSpacing = (dictionary) => {
+export const getSpacing = (dictionary) => {
   const spacing = getSpacingTokens(dictionary);
 
   return mapSpacingTokens(spacing);

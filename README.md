@@ -125,8 +125,9 @@ console.log(tokens.ColorBaseAxaBlue);
 You can extend your `tailwind.config.js` file as follows:
 
 ```js
-module.exports = {
-  presets: [require('@axa-ch/design-tokens/tailwind.config')],
+import axaBaseTailwindConfig from '@axa-ch/design-tokens/tailwind.config';
+export default {
+  presets: [axaBaseTailwindConfig],
   // ...
 };
 ```

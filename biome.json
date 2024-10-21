@@ -1,0 +1,17 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "extends": ["./node_modules/@axa-ch/easy-config/biome/base.json"],
+  "files": {
+    "ignore": ["build/**/*", "tokens.js", "tokens.cjs", "tokens.css"]
+  },
+  "linter": {
+    "rules": {
+      "complexity": {
+        "noForEach": "off"
+      },
+      "performance": {
+        "noAccumulatingSpread": "off"
+      }
+    }
+  }
+}

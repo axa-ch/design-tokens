@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef, createElement } from 'react';
+import { type ComponentPropsWithoutRef, createElement } from 'react';
 import clsx from 'clsx';
 import classes from './text.module.scss';
 

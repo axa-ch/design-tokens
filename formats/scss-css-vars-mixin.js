@@ -1,5 +1,5 @@
-const formattedVariables = require('style-dictionary/lib/common/formatHelpers/formattedVariables');
+import { formattedVariables } from 'style-dictionary/utils';
 
-module.exports.scssCssVarsMixinFormatter = ({ dictionary, options, file }) => `@mixin get-${file.tokenName}-css-vars {
+export const scssCssVarsMixinFormatter = ({ dictionary, options, file }) => `@mixin get-${file.tokenName}-css-vars {
     ${formattedVariables({ format: 'css', dictionary, ...options })}
     }`;

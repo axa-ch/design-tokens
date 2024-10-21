@@ -1,16 +1,16 @@
-const { filterTokenByPathName } = require('./utils');
+import { filterTokenByPathName } from './utils.js';
 
 const getColorTokens = filterTokenByPathName('color');
 const mapColorTokens = (tokens) =>
   tokens.reduce(
     (acc, token) => ({
       ...acc,
-      [token.name.replace(`color-`, '')]: token.value,
+      [token.name.replace('color-', '')]: token.value,
     }),
     {},
   );
 
-module.exports.getColors = (dictionary) => {
+export const getColors = (dictionary) => {
   const colors = getColorTokens(dictionary);
 
   return mapColorTokens(colors);
