@@ -1,4 +1,4 @@
-const { filterTokenByPathName } = require('./utils');
+import { filterTokenByPathName } from './utils.js';
 
 const getBreakpointTokens = filterTokenByPathName('breakpoints');
 const mapBreakpoints = (tokens) =>
@@ -9,12 +9,12 @@ const mapBreakpoints = (tokens) =>
         ? acc
         : {
             ...acc,
-            [token.name.replace(`breakpoints-base-`, '').replace('xxl', '2xl')]: `${token.value}px`,
+            [token.name.replace('breakpoints-base-', '').replace('xxl', '2xl')]: `${token.value}px`,
           },
     {},
   );
 
-module.exports.getScreens = (dictionary) => {
+export const getScreens = (dictionary) => {
   const breakpoints = getBreakpointTokens(dictionary);
 
   return mapBreakpoints(breakpoints);

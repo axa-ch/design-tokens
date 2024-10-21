@@ -4,11 +4,7 @@
       "axa-blue": { "type": "color", "value": "{color.base.axa-blue}" },
       "axa-blue-20": {
         "type": "color",
-        "value": "{color.ui-design.axa-blue}",
-        "transform": "color-transform",
-        "params": {
-          "alpha": -0.8
-        }
+        "value": "{color.base.axa-blue-20}"
       },
       "axa-blue-dark": {
         "type": "color",

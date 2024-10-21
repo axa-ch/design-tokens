@@ -1,10 +1,10 @@
-const { filterTokenByPathName } = require('./utils');
+import { filterTokenByPathName } from './utils.js';
 
 const getPrimaryFontSizesTokens = filterTokenByPathName('typography.primary');
 const getSecondaryFontSizesTokens = filterTokenByPathName('typography.secondary');
 const getTextFontSizesTokens = filterTokenByPathName('typography.text');
 
-module.exports.getFontSize = (dictionary) => {
+export const getFontSize = (dictionary) => {
   const primaryFontSizes = getPrimaryFontSizesTokens(dictionary);
   const secondaryFontSizes = getSecondaryFontSizesTokens(dictionary);
   const textFontSizes = getTextFontSizesTokens(dictionary);

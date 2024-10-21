@@ -1,6 +1,6 @@
-const customMedia = require('postcss-custom-media');
+import customMedia from 'postcss-custom-media';
 
-module.exports = () => {
+export default () => {
   return {
     plugins: [customMedia],
   };

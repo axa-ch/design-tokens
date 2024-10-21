@@ -1,9 +1,8 @@
-const transformGroups = require('style-dictionary/lib/common/transformGroups');
-const { SHARED_TRANSFORM_LIST, TOKENS_LIST, MEDIA_QUERY_TOKEN_NAME, OUTPUT_BASE_DIR } = require('./constants');
+import { SHARED_TRANSFORM_LIST, TOKENS_LIST, MEDIA_QUERY_TOKEN_NAME, OUTPUT_BASE_DIR } from './constants.js';
 
-module.exports.javascript = {
+export const javascript = {
   buildPath: `${OUTPUT_BASE_DIR}/js/`,
-  transforms: [...transformGroups.js, ...SHARED_TRANSFORM_LIST],
+  transforms: ['attribute/cti', 'name/pascal', 'color/hex', ...SHARED_TRANSFORM_LIST],
   files: [...TOKENS_LIST, MEDIA_QUERY_TOKEN_NAME].flatMap((tokenName) => [
     {
       destination: `${tokenName}.js`,

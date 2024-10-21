@@ -1,4 +1,4 @@
-module.exports.customMediaFormatter = ({ dictionary }) =>
+export const customMediaFormatter = ({ dictionary }) =>
   dictionary.allTokens
     .map((prop) => {
       const { value, name } = prop;

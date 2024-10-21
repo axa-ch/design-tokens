@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import { kebabCase } from 'lodash';
 import { ColorCard } from '../color-card/color-card';
 import classes from './color-list.module.scss';

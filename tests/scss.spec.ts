@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { Declaration } from 'postcss';
+import type { Declaration } from 'postcss';
 import postcss from 'postcss-scss';
 import { loadFile } from './utils';
 

@@ -1,15 +1,33 @@
-const { isUndefined } = require('lodash');
+import { isUndefined } from 'lodash-es';
+
+export const isHexColor = (value) => /^#[0-9A-F]{6}$/i.test(value);
+
+// convert a rgba string into an objectt that can be parsed by sass
+export const rgbaStringToRgbaObject = (rgba, name) => {
+  const regex = /^rgba?\((\d+),\s*(\d+),\s*(\d+),\s*([\d.]+)\)$/;
+  const result = regex.exec(rgba);
+
+  if (!result) throw new Error(`The value for ${name} doesn't seem to be an rgba string`);
+
+  return {
+    r: Number.parseInt(result[1], 10),
+    g: Number.parseInt(result[2], 10),
+    b: Number.parseInt(result[3], 10),
+    a: Number.parseFloat(result[4]),
+  };
+};
 
 // hex string into rgba object
-const hexToRgbaObject = (hex, name) => {
+export const hexToRgbaObject = (hex, name) => {
   if (isUndefined(hex)) throw new Error(`The value for ${name} is undefined`);
-  if (hex.length < 7) throw new Error(`The value provided for ${name} doesn't seem to be in hex format`);
+  if (!isHexColor(hex))
+    throw new Error(`The value provided for ${name} doesn't seem to be in hex format. Current value: ${hex}`);
 
   try {
     return {
-      r: parseInt(hex.slice(1, 3), 16),
-      g: parseInt(hex.slice(3, 5), 16),
-      b: parseInt(hex.slice(5, 7), 16),
+      r: Number.parseInt(hex.slice(1, 3), 16),
+      g: Number.parseInt(hex.slice(3, 5), 16),
+      b: Number.parseInt(hex.slice(5, 7), 16),
       a: 1,
     };
   } catch (error) {
@@ -24,7 +42,7 @@ const toHex = (c) => {
 };
 
 // Convert a rgb object into a hex string
-const rgbObjectToHexString = ({ r, g, b }, name) => {
+export const rgbObjectToHexString = ({ r, g, b }, name) => {
   try {
     return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
   } catch (error) {
@@ -34,7 +52,7 @@ const rgbObjectToHexString = ({ r, g, b }, name) => {
 
 // borrowed from https://codepen.io/splintmi/pen/zwOLpO
 // converting the alpha channel assuming that the background is white
-const rgbaStringToHexString = (color, name) => {
+export const rgbaStringToHexString = (color, name) => {
   const channels = color.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/);
   const r = Math.round(channels[1] * channels[4] + 255 * (1 - channels[4]));
   const g = Math.round(channels[2] * channels[4] + 255 * (1 - channels[4]));
@@ -44,11 +62,4 @@ const rgbaStringToHexString = (color, name) => {
     throw new Error(`The value for ${name} doesn't seem to be an rgba string`);
   }
   return rgbObjectToHexString({ r, g, b }, name);
-};
-
-module.exports = {
-  rgbObjectToHexString,
-  hexToRgbaObject,
-  toHex,
-  rgbaStringToHexString,
 };

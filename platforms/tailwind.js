@@ -1,16 +1,9 @@
-const transformGroups = require('style-dictionary/lib/common/transformGroups');
-const { SHARED_TRANSFORM_LIST, MEDIA_QUERY_TOKEN_NAME, OUTPUT_BASE_DIR } = require('./constants');
+import { MEDIA_QUERY_TOKEN_NAME, OUTPUT_BASE_DIR, SHARED_TRANSFORM_LIST } from './constants.js';
+import styleDictionary from 'style-dictionary';
 
-module.exports.tailwind = {
+export const tailwind = {
   buildPath: `${OUTPUT_BASE_DIR}/tailwind/`,
-  transforms: [
-    ...transformGroups.css,
-    'shadow/css',
-    'cubicBezier/css',
-    'size/px',
-    'dimension/pixelToRem',
-    ...SHARED_TRANSFORM_LIST,
-  ],
+  transforms: ['shadow/css', 'cubicBezier/css', 'size/px', 'dimension/pixelToRem', ...SHARED_TRANSFORM_LIST],
   files: [
     {
       destination: 'tailwind.config.js',

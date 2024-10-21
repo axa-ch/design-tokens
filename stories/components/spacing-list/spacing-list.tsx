@@ -1,4 +1,4 @@
-import { CSSProperties, FC } from 'react';
+import type { CSSProperties, FC } from 'react';
 import { sortBy } from 'lodash';
 import * as Spacing from '../../../build/js/spacing';
 import classes from './spacing-list.module.scss';

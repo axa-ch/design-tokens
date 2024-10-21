@@ -1,18 +1,18 @@
-const { getFontFamily } = require('./get-font-family');
-const { getColors } = require('./get-colors');
-const { getFontSize } = require('./get-font-size');
-const { getBoxShadow } = require('./get-box-shadow');
-const { getBorderRadius } = require('./get-border-radius');
-const { getScreens } = require('./get-screens');
-const { getSpacing } = require('./get-spacing');
-const { getTransitionTimingFunction } = require('./get-transition-timing-function');
+import { getFontFamily } from './get-font-family.js';
+import { getColors } from './get-colors.js';
+import { getFontSize } from './get-font-size.js';
+import { getBoxShadow } from './get-box-shadow.js';
+import { getBorderRadius } from './get-border-radius.js';
+import { getScreens } from './get-screens.js';
+import { getSpacing } from './get-spacing.js';
+import { getTransitionTimingFunction } from './get-transition-timing-function.js';
 
 const formatTokens = (tokens) => JSON.stringify(tokens);
 
-module.exports.tailwindFormatter = ({ dictionary }) =>
+export const tailwindFormatter = ({ dictionary }) =>
   `
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
     theme: {
         fontFamily:  ${formatTokens(getFontFamily(dictionary))},
         fontSize:  ${formatTokens(getFontSize(dictionary))},

@@ -1,12 +1,14 @@
-const sass = require('sass');
-const { hexToRgbaObject, rgbaStringToHexString } = require('./utils');
+import * as sass from 'sass';
+import { hexToRgbaObject, isHexColor, rgbaStringToHexString, rgbaStringToRgbaObject } from './utils.js';
 
-module.exports.sassColorTransform = {
+export const sassColorTransform = {
   type: 'value',
   transitive: true,
-  transformer: (token) => {
+  transform: (token) => {
     if (!token.params) throw new Error('Please provide the params key needed for the sass.color.change method');
-    const rgba = hexToRgbaObject(token.value, token.name);
+    const rgba = isHexColor(token.value)
+      ? hexToRgbaObject(token.value, token.name)
+      : rgbaStringToRgbaObject(token.value, token.name);
     const color = new sass.SassColor({ red: rgba.r, green: rgba.g, blue: rgba.b, alpha: rgba.a });
     // use the values modifying the initial color properties for example:
     // given token.params.alpha - 0.2 -> we reduce the opacity of the 20%
@@ -22,7 +24,7 @@ module.exports.sassColorTransform = {
 
       if (output.includes('rgba')) {
         // make sure that the rgba values get converted to valid hex values
-        return rgbaStringToHexString(color.change(relativeValues).toString(), token.name);
+        return rgbaStringToHexString(output, token.name);
       }
 
       return output;

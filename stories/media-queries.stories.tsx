@@ -1,4 +1,4 @@
-import { Meta, StoryFn } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import { Prism } from 'react-syntax-highlighter';
 import { materialOceanic as style } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Container } from './components/container/container';
