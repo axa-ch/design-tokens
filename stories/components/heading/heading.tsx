@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef, createElement } from 'react';
+import { type ComponentPropsWithoutRef, createElement } from 'react';
 import classes from './heading.module.scss';
 
 export type AllowedDomElement = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';

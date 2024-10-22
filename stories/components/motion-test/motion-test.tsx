@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import clsx from 'clsx';
 import classes from './motion-test.module.scss';
 

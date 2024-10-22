@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react';
+import type { FC, PropsWithChildren } from 'react';
 import classes from './responsive-headings.module.scss';
 
 export type ResponsiveHeadingsProps = PropsWithChildren;

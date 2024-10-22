@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import postcss, { AtRule, Declaration, Rule } from 'postcss';
+import postcss, { type AtRule, type Declaration, type Rule } from 'postcss';
 import { loadFile } from './utils';
 
 const animation = loadFile('/build/css/animation.css');
@@ -21,7 +21,10 @@ describe('Css Tokens specs', () => {
   it('Check that the color shades are properly created', () => {
     const root = postcss.parse(color);
     const colorDeclarations = (root.nodes[1] as Rule).nodes.filter(({ type }) => type === 'decl') as Declaration[];
-    const colorsMap = colorDeclarations.reduce((acc, { prop, value }) => ({ ...acc, [prop]: value }), {});
+    const colorsMap = colorDeclarations.reduce<Record<string, string>>(
+      (acc, { prop, value }) => ({ ...acc, [prop]: value }),
+      {},
+    );
 
     expect(colorsMap['--color-base-axa-blue']).to.be.equal('#00008f');
     expect(colorsMap['--color-base-axa-blue-dark']).to.be.equal('#000072');
@@ -88,13 +91,13 @@ describe('Css Tokens specs', () => {
     const root = postcss.parse(typography);
     const typographyDeclarations = (root.nodes[1] as Rule).nodes.filter(({ type }) => type === 'decl') as Declaration[];
     const fontSize1 = typographyDeclarations.find(({ prop }) => prop?.includes('font-size-1')) as Declaration;
-    const secondaryH5 = typographyDeclarations.find(({ prop }) => prop?.includes('secondary-h5')) as Declaration;
-    const fontFamilyPrimary = typographyDeclarations.find(({ prop }) =>
-      prop?.includes('font-family-primary'),
+    const secondaryH5 = typographyDeclarations.find(({ prop }) => prop === '--typography-secondary-h5') as Declaration;
+    const fontFamilyPrimary = typographyDeclarations.find(
+      ({ prop }) => prop === '--typography-font-family-primary',
     ) as Declaration;
 
     expect(fontSize1.value).toMatch(/rem$/);
-    expect(secondaryH5.value).toEqual('700 1.5rem/1.208 Publico Headline, Georgia, serif');
-    expect(fontFamilyPrimary.value).toEqual('Source Sans Pro');
+    expect(secondaryH5.value).toEqual("700 1.5rem/1.208 'Publico Headline', Georgia, serif");
+    expect(fontFamilyPrimary.value).toEqual("'Source Sans Pro'");
   });
 });

@@ -1,7 +1,10 @@
 {
   "extends": "@axa-ch/easy-config/ts-config/base",
   "compilerOptions": {
-    "types": ["vite/client"]
+    "checkJs": true,
+    "allowJs": true,
+    "types": ["vite/client", "./types/style-dictionary.d.ts", "./types/style-dictionary-utils.d.ts"]
   },
+  "include": ["build.ts", "transform", "platforms", "formats", "tests", "build"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

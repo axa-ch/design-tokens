@@ -1,4 +1,4 @@
-import { StoryObj, Meta } from '@storybook/react';
+import type { StoryObj, Meta } from '@storybook/react';
 // @ts-ignore
 import colorUtil from 'color-util';
 import { sortBy, chain } from 'lodash';

@@ -1,8 +1,8 @@
-import { StoryObj } from '@storybook/react';
+import type { StoryObj } from '@storybook/react';
 import { startCase } from 'lodash';
 import { Heading } from './components/heading/heading';
 import { Container } from './components/container/container';
-import { Text, TextProps } from './components/text/text';
+import { Text, type TextProps } from './components/text/text';
 import { ResponsiveHeadings } from './components/responsive-headings/responsive-headings';
 
 const meta = {

@@ -1,5 +1,6 @@
-const { normal } = require('color-blend');
-const { hexToRgbaObject, rgbObjectToHexString } = require('./utils');
+import { normal } from 'color-blend/dist/index';
+import { hexToRgbaObject, isHexColor, rgbObjectToHexString } from './utils';
+import type { Transform } from 'style-dictionary/types';
 
 const darkShade = {
   r: 0,
@@ -14,13 +15,13 @@ const lightShade = {
   a: 0.25,
 };
 
-module.exports.colorShadeTransform = {
+export const colorShadeTransform: Omit<Transform, 'name'> = {
   type: 'value',
   transitive: true,
-  transformer: (token) => {
+  transform: (token) => {
     if (!token?.shade) throw new Error('Please provide the shade param "dark|light" needed for this transformer');
 
-    const rgba = hexToRgbaObject(token.value, token.name);
+    const rgba = isHexColor(token.value) ? hexToRgbaObject(token.value, token.name) : token.value;
 
     try {
       return rgbObjectToHexString(normal(rgba, token.shade === 'light' ? lightShade : darkShade), token.name);

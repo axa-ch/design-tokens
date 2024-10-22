@@ -1,10 +1,7 @@
 import { describe, it, expect } from 'vitest';
-import { OptionalConfig, ThemeConfig } from 'tailwindcss/types/config';
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const defaultTailwindConfig: OptionalConfig = require('tailwindcss/stubs/config.full.js');
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const tailwindConfig: ThemeConfig = require('../build/tailwind/tailwind.config.js');
+// @ts-ignore
+import defaultTailwindConfig from 'tailwindcss/stubs/config.full';
+import tailwindConfig from '../build/tailwind/tailwind.config';
 
 const allowedTailwindThemeProps = Object.keys(defaultTailwindConfig.theme);
 
@@ -46,7 +43,7 @@ describe('Tailwind Config specs', () => {
 
   it('Typography variables are properly exported', () => {
     expect(tailwindConfig.theme.fontSize['primary-h5'][0]).toMatch(/rem$/);
-    expect(tailwindConfig.theme.fontSize['primary-h5'][1].lineHeight).toBeTypeOf('number');
+    expect((tailwindConfig.theme.fontSize['primary-h5'][1] as { lineHeight: string }).lineHeight).toBeTypeOf('string');
     expect(tailwindConfig.theme.fontFamily.primary).toHaveLength(3);
     expect(tailwindConfig.theme.fontFamily.secondary).toHaveLength(3);
   });

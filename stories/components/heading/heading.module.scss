@@ -1,8 +1,3 @@
-@use '../../../build/css/typography.css';
-@use '../../../build/css/spacing.css';
-@use '../../../build/css/color.css';
-@use '../../../build/css/mq.css';
-
 @each $heading in (h1, h2, h3, h4, h5, h6) {
   #{$heading} {
     margin-top: var(--typography-margin-#{$heading}-top);
