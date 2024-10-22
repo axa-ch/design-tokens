@@ -19,7 +19,7 @@
     "tokens",
     "tailwind.config.js",
     "tokens.js",
-    "tokens.mjs",
+    "tokens.cjs",
     "tokens.d.ts",
     "tokens.json",
     "tokens.scss",
