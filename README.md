@@ -120,6 +120,191 @@ import * as tokens from '@axa-ch/design-tokens';
 console.log(tokens.ColorBaseAxaBlue);
 ```
 
+<details>
+  <summary>MUI Theme Config Starter</summary>
+
+The following theme config might be used as starter for your MUI theme
+
+```ts
+import {
+  BreakpointsBaseLg,
+  BreakpointsBaseMd,
+  BreakpointsBaseSm,
+  BreakpointsBaseXl,
+  BreakpointsBaseXs,
+  BreakpointsBaseXxl,
+  ColorBaseAxaBlue,
+  ColorBaseAxaBlueDark,
+  ColorBaseAxaBlueLight,
+  ColorStatusMalachite,
+  ColorStatusShyTomato,
+  ColorGreyscale9,
+  ColorGreyscale3,
+  ColorUiDesignBurntSienna,
+  ColorUiDesignBurntSiennaDark,
+  ColorUiDesignBurntSiennaLight,
+  ColorUiDesignDarkGrey,
+  ColorUiDesignAlabaster,
+  SpacingBase1,
+  SpacingBase10,
+  SpacingBase2,
+  SpacingBase3,
+  SpacingBase4,
+  SpacingBase5,
+  SpacingBase6,
+  SpacingBase7,
+  SpacingBase8,
+  SpacingBase9,
+  TypographyPrimaryH1,
+  TypographyPrimaryH1Small,
+  TypographyPrimaryH2,
+  TypographyPrimaryH2Small,
+  TypographyPrimaryH3,
+  TypographyPrimaryH3Small,
+  TypographyPrimaryH4,
+  TypographyPrimaryH4Small,
+  TypographyPrimaryH5,
+  TypographyPrimaryH5Small,
+  TypographyPrimaryH6,
+  TypographyPrimaryH6Small,
+  TypographyText3,
+  ShadowBoxDefault,
+} from '@axa-ch/design-tokens';
+import { createTheme } from '@mui/material';
+
+const { breakpoints } = createTheme({
+  breakpoints: {
+    values: {
+      xs: BreakpointsBaseXs,
+      sm: BreakpointsBaseSm,
+      md: BreakpointsBaseMd,
+      lg: BreakpointsBaseLg,
+      xl: BreakpointsBaseXl,
+      xxl: BreakpointsBaseXxl,
+    },
+  },
+});
+
+// borrowed from styledictionary
+// @link https://github.com/amzn/style-dictionary/blob/399de1331adfa16a94ba3f724a54f9267aa23345/lib/common/transforms.js#L1343C6-L1352C9
+const stringifyShadow = (val: {
+  type: string;
+  color: string;
+  offsetX: string;
+  offsetX: string;
+  blur: string;
+  spread: string;
+}) => {
+  const { type, color, offsetX, offsetY, blur, spread } = val;
+
+  return `${type ? `${type} ` : ''}${offsetX ?? 0} ${offsetY ?? 0} ${blur ?? 0} ${
+    spread ? `${spread} ` : ''
+  }${color ?? `#000000`}`;
+};
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: ColorBaseAxaBlue,
+      dark: ColorBaseAxaBlueDark,
+      light: ColorBaseAxaBlueLight,
+    },
+    secondary: {
+      main: ColorUiDesignBurntSienna,
+      dark: ColorUiDesignBurntSiennaDark,
+      light: ColorUiDesignBurntSiennaLight,
+    },
+    error: {
+      main: ColorStatusShyTomato,
+    },
+    success: {
+      main: ColorStatusMalachite,
+    },
+    background: {
+      default: ColorUiDesignAlabaster,
+      paper: ColorGreyscale9,
+    },
+    text: {
+      primary: ColorUiDesignDarkGrey,
+      secondary: ColorGreyscale3,
+    },
+  },
+  spacing: [
+    0,
+    SpacingBase1,
+    SpacingBase2,
+    SpacingBase3,
+    SpacingBase4,
+    SpacingBase5,
+    SpacingBase6,
+    SpacingBase7,
+    SpacingBase8,
+    SpacingBase9,
+    SpacingBase10,
+  ],
+  breakpoints: {
+    values: {
+      xs: BreakpointsBaseXs,
+      sm: BreakpointsBaseSm,
+      md: BreakpointsBaseMd,
+      lg: BreakpointsBaseLg,
+      xl: BreakpointsBaseXl,
+      xxl: BreakpointsBaseXxl,
+    },
+  },
+  typography: {
+    fontFamily: TypographyText3.fontFamily,
+    fontSize: TypographyText3.fontSize,
+
+    allVariants: {
+      fontFamily: TypographyText3.fontFamily,
+      fontSize: TypographyText3.fontSize,
+      lineHeight: TypographyText3.lineHeight,
+      color: ColorUiDesignDarkGrey,
+    },
+
+    body1: {
+      fontFamily: TypographyText3.fontFamily,
+      fontSize: TypographyText3.fontSize,
+      lineHeight: TypographyText3.lineHeight,
+    },
+
+    h1: {
+      ...TypographyPrimaryH1Small,
+      [breakpoints.up('md')]: TypographyPrimaryH1,
+    },
+    h2: {
+      ...TypographyPrimaryH2Small,
+      [breakpoints.up('md')]: TypographyPrimaryH2,
+    },
+    h3: {
+      ...TypographyPrimaryH3Small,
+      [breakpoints.up('md')]: TypographyPrimaryH3,
+    },
+    h4: {
+      ...TypographyPrimaryH4Small,
+      [breakpoints.up('md')]: TypographyPrimaryH4,
+    },
+    h5: {
+      ...TypographyPrimaryH5Small,
+      [breakpoints.up('md')]: TypographyPrimaryH5,
+    },
+    h6: {
+      ...TypographyPrimaryH6Small,
+      [breakpoints.up('md')]: TypographyPrimaryH6,
+    },
+  },
+  shadows: ['none', stringifyShadow(ShadowBoxDefault)],
+  shape: {
+    borderRadius: 0,
+  },
+});
+
+export default theme;
+```
+
+</details>
+
 ### Tailwind Usage
 
 You can extend your `tailwind.config.js` file as follows:
