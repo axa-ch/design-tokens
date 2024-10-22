@@ -1,6 +1,3 @@
-@use '../../../build/css/mq.css';
-@use '../../../build/css/typography.css';
-
 .container {
   @media (--mq-respond-down-sm) {
     h1 {

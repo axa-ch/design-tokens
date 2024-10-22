@@ -21,7 +21,10 @@ describe('Css Tokens specs', () => {
   it('Check that the color shades are properly created', () => {
     const root = postcss.parse(color);
     const colorDeclarations = (root.nodes[1] as Rule).nodes.filter(({ type }) => type === 'decl') as Declaration[];
-    const colorsMap = colorDeclarations.reduce((acc, { prop, value }) => ({ ...acc, [prop]: value }), {});
+    const colorsMap = colorDeclarations.reduce<Record<string, string>>(
+      (acc, { prop, value }) => ({ ...acc, [prop]: value }),
+      {},
+    );
 
     expect(colorsMap['--color-base-axa-blue']).to.be.equal('#00008f');
     expect(colorsMap['--color-base-axa-blue-dark']).to.be.equal('#000072');

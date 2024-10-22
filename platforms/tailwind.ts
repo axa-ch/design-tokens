@@ -1,6 +1,7 @@
-import { MEDIA_QUERY_TOKEN_NAME, OUTPUT_BASE_DIR, SHARED_TRANSFORM_LIST } from './constants.js';
+import type { PlatformConfig } from 'style-dictionary/types';
+import { MEDIA_QUERY_TOKEN_NAME, OUTPUT_BASE_DIR, SHARED_TRANSFORM_LIST } from './constants';
 
-export const tailwind = {
+export const tailwind: PlatformConfig = {
   buildPath: `${OUTPUT_BASE_DIR}/tailwind/`,
   transforms: [
     'shadow/css',

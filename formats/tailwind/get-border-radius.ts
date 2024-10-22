@@ -1,7 +1,8 @@
-import { filterTokenByPathName } from './utils.js';
+import type { Dictionary, TransformedToken } from 'style-dictionary/types';
+import { filterTokenByPathName } from './utils';
 
 const getRadiusTokens = filterTokenByPathName('radius');
-const mapRadiusTokens = (tokens) =>
+const mapRadiusTokens = (tokens: TransformedToken[]) =>
   tokens.reduce(
     (acc, token) => ({
       ...acc,
@@ -10,7 +11,7 @@ const mapRadiusTokens = (tokens) =>
     {},
   );
 
-export const getBorderRadius = (dictionary) => {
+export const getBorderRadius = (dictionary: Dictionary) => {
   const radius = getRadiusTokens(dictionary);
 
   return mapRadiusTokens(radius);

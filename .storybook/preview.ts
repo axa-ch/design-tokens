@@ -3,6 +3,8 @@ import { ensure, themes } from '@storybook/theming';
 
 // load custom fonts
 import '../stories/assets/css/fonts.css';
+// load the tokens
+import '../tokens.css';
 
 const preview: Preview = {
   parameters: {

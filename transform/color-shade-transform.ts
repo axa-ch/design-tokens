@@ -1,5 +1,6 @@
-import { normal } from 'color-blend';
-import { hexToRgbaObject, isHexColor, rgbObjectToHexString } from './utils.js';
+import { normal } from 'color-blend/dist/index';
+import { hexToRgbaObject, isHexColor, rgbObjectToHexString } from './utils';
+import type { Transform } from 'style-dictionary/types';
 
 const darkShade = {
   r: 0,
@@ -14,7 +15,7 @@ const lightShade = {
   a: 0.25,
 };
 
-export const colorShadeTransform = {
+export const colorShadeTransform: Omit<Transform, 'name'> = {
   type: 'value',
   transitive: true,
   transform: (token) => {

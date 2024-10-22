@@ -1,4 +1,6 @@
-export const jsonTransformer = ({ dictionary }) => {
+import type { FormatFn } from 'style-dictionary/types';
+
+export const jsonTransformer: FormatFn = ({ dictionary }) => {
   return JSON.stringify(
     dictionary.allTokens.reduce(
       (acc, token) => ({
