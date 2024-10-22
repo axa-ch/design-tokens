@@ -43,7 +43,7 @@ describe('Tailwind Config specs', () => {
 
   it('Typography variables are properly exported', () => {
     expect(tailwindConfig.theme.fontSize['primary-h5'][0]).toMatch(/rem$/);
-    expect((tailwindConfig.theme.fontSize['primary-h5'][1] as { lineHeight: number }).lineHeight).toBeTypeOf('number');
+    expect((tailwindConfig.theme.fontSize['primary-h5'][1] as { lineHeight: string }).lineHeight).toBeTypeOf('string');
     expect(tailwindConfig.theme.fontFamily.primary).toHaveLength(3);
     expect(tailwindConfig.theme.fontFamily.secondary).toHaveLength(3);
   });
