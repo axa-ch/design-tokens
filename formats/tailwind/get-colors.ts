@@ -1,7 +1,8 @@
-import { filterTokenByPathName } from './utils.js';
+import type { Dictionary, TransformedToken } from 'style-dictionary/types';
+import { filterTokenByPathName } from './utils';
 
 const getColorTokens = filterTokenByPathName('color');
-const mapColorTokens = (tokens) =>
+const mapColorTokens = (tokens: TransformedToken[]) =>
   tokens.reduce(
     (acc, token) => ({
       ...acc,
@@ -10,7 +11,7 @@ const mapColorTokens = (tokens) =>
     {},
   );
 
-export const getColors = (dictionary) => {
+export const getColors = (dictionary: Dictionary) => {
   const colors = getColorTokens(dictionary);
 
   return mapColorTokens(colors);

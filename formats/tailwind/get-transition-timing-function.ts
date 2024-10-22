@@ -1,7 +1,8 @@
-import { filterTokenByPathName } from './utils.js';
+import type { Dictionary, TransformedToken } from 'style-dictionary/types';
+import { filterTokenByPathName } from './utils';
 
 const getEasingTokens = filterTokenByPathName('animation.easing');
-const mapEasingTokens = (tokens) =>
+const mapEasingTokens = (tokens: TransformedToken[]) =>
   tokens.reduce(
     (acc, token) => ({
       ...acc,
@@ -10,7 +11,7 @@ const mapEasingTokens = (tokens) =>
     {},
   );
 
-export const getTransitionTimingFunction = (dictionary) => {
+export const getTransitionTimingFunction = (dictionary: Dictionary) => {
   const easing = getEasingTokens(dictionary);
 
   return mapEasingTokens(easing);

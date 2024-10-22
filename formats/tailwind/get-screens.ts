@@ -1,7 +1,8 @@
-import { filterTokenByPathName } from './utils.js';
+import type { Dictionary, TransformedToken } from 'style-dictionary/types';
+import { filterTokenByPathName } from './utils';
 
 const getBreakpointTokens = filterTokenByPathName('breakpoints');
-const mapBreakpoints = (tokens) =>
+const mapBreakpoints = (tokens: TransformedToken[]) =>
   tokens.reduce(
     (acc, token) =>
       // filter out the breakpoints max boundaries and map the breakpoint names to match tailwind defaults
@@ -14,7 +15,7 @@ const mapBreakpoints = (tokens) =>
     {},
   );
 
-export const getScreens = (dictionary) => {
+export const getScreens = (dictionary: Dictionary) => {
   const breakpoints = getBreakpointTokens(dictionary);
 
   return mapBreakpoints(breakpoints);
