@@ -11,6 +11,8 @@ import { scss } from './platforms/scss';
 import { json } from './platforms/json';
 import { javascript } from './platforms/javascript';
 import { scssMixin } from './platforms/scss-mixins';
+import { tailwindv4Formatter } from './formats/tailwindv4';
+import { tailwindv4 } from './platforms/tailwindv4';
 
 const styleDictionary = new StyleDictionary({
   source: ['tokens/**/*.json'],
@@ -21,6 +23,7 @@ const styleDictionary = new StyleDictionary({
       'scss/css-vars-mixin': scssCssVarsMixinFormatter,
       'json/tokens': jsonTransformer,
       tailwind: tailwindFormatter,
+      tailwindv4: tailwindv4Formatter,
     },
   },
   platforms: {
@@ -30,6 +33,7 @@ const styleDictionary = new StyleDictionary({
     scssMixin,
     js: javascript,
     json,
+    tailwindv4,
   },
 });
 
