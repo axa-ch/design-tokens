@@ -14,7 +14,7 @@ const getFontSizesTokens = filterTokenByPathName('typography.font-size');
 const getFontLineHeightTokens = filterTokenByPathName('typography.line-height');
 const getFontFamiliesTokens = filterTokenByPathName('typography.font');
 
-export const tailwindv4Formatter: FormatFn = ({ dictionary, options }) => {
+export const tailwindThemeCssFormatter: FormatFn = ({ dictionary, options }) => {
   const radiusTokensTransformed = getRadiusTokens(dictionary).map((token) => ({
     ...token,
     name: token.name.replace('base-', ''),
