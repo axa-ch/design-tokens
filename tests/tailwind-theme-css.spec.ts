@@ -74,7 +74,7 @@ describe('Tailwind Theme specs', () => {
   });
 
   it('correctly exports the breakpoint tokens', () => {
-    const breakpointTokens = getDeclarationsStartingWith('--radius');
+    const breakpointTokens = getDeclarationsStartingWith('--breakpoint');
 
     expect(breakpointTokens.length).toBeGreaterThan(0);
     breakpointTokens.forEach(({ value }) => expect(value).toMatch(/px$/));
@@ -85,11 +85,11 @@ describe('Tailwind Theme specs', () => {
 
     // only export the box shadows
     expect(shadowTokens.length).toBe(2);
-    shadowTokens.forEach(({ value }) => expect(value).toMatch(/^(\d+px\s){4}rgba\((\d+(\.\d*)?,?\s?){4}\);$/));
+    shadowTokens.forEach(({ value }) => expect(value).toMatch(/^(\d+px\s){4}rgba\((\d+(\.\d*)?,?\s?){4}\)$/));
   });
 
   it('correctly exports the animation tokens', () => {
-    const animationTokens = getDeclarationsStartingWith('--radius');
+    const animationTokens = getDeclarationsStartingWith('--ease');
 
     expect(animationTokens.length).toBeGreaterThan(0);
     animationTokens.forEach(({ value }) => expect(value).toMatch(/^cubic-bezier/));
