@@ -24,7 +24,8 @@
     "tokens.json",
     "tokens.scss",
     "tokens.css",
-    "tokens.min.css"
+    "tokens.min.css",
+    "tailwind-theme.css"
   ],
   "exports": {
     ".": {
@@ -37,7 +38,8 @@
     "./tokens.css": "./tokens.css",
     "./tokens.min.css": "./tokens.min.css",
     "./tokens.scss": "./tokens.scss",
-    "./tailwind.config": "./tailwind.config.js"
+    "./tailwind.config": "./tailwind.config.js",
+    "./tailwind-theme": "./tailwind-theme.css"
   },
   "repository": {
     "type": "git",
