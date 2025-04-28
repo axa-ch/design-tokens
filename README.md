@@ -317,6 +317,16 @@ export default {
 };
 ```
 
+### CSS Tailwind Theme Usage
+
+You can extend your top level `index.css` file as follows:
+
+```css
+@import 'tailwindcss';
+
+@import '@axa-ch/design-tokens/tailwind-theme.css' layer(theme);
+```
+
 ### Figma usage
 
 You can import the [`tokens.json`](https://raw.githubusercontent.com/axa-ch/design-tokens/main/tokens.json) into figma via [Tokens Studio Plugin](https://docs.tokens.studio/).
