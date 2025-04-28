@@ -74,10 +74,10 @@ describe('Tailwind Theme specs', () => {
   });
 
   it('correctly exports the breakpoint tokens', () => {
-    const radiusTokens = getDeclarationsStartingWith('--radius');
+    const breakpointTokens = getDeclarationsStartingWith('--radius');
 
-    expect(radiusTokens.length).toBeGreaterThan(0);
-    radiusTokens.forEach(({ value }) => expect(value).toMatch(/px$/));
+    expect(breakpointTokens.length).toBeGreaterThan(0);
+    breakpointTokens.forEach(({ value }) => expect(value).toMatch(/px$/));
   });
 
   it('correctly exports the shadow tokens', () => {
