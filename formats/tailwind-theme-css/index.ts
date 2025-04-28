@@ -7,7 +7,7 @@ import { replaceStyleDictionaryFontSizesWithTailwindFontSizes } from './get-font
 // We don't export the spacing tokens since we use the default steps from tailwind (0.25rem)
 const getRadiusTokens = filterTokenByPathName('radius');
 const getColorTokens = filterTokenByPathName('color');
-const getShadowTokens = filterTokenByPathName('shadow');
+const getShadowTokens = filterTokenByPathName('shadow.box');
 const getBreakpointTokens = filterTokenByPathName('breakpoints');
 const getFontSizesTokens = filterTokenByPathName('typography.font-size');
 const getFontLineHeightTokens = filterTokenByPathName('typography.line-height');
