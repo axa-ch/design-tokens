@@ -324,7 +324,7 @@ You can extend your top level `index.css` file as follows:
 ```css
 @import 'tailwindcss';
 
-@import '@axa-ch/design-tokens/tailwind-theme.css' layer(theme);
+@import '@axa-ch/design-tokens/tailwind-theme' layer(theme);
 ```
 
 ### Figma usage
