@@ -1,4 +1,4 @@
-import type { StoryObj } from '@storybook/react';
+import type { StoryObj } from '@storybook/react-vite';
 import { startCase } from 'lodash';
 import { Heading } from './components/heading/heading';
 import { Container } from './components/container/container';

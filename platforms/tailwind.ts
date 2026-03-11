@@ -7,7 +7,7 @@ export const tailwind: PlatformConfig = {
     'shadow/css',
     'cubicBezier/css',
     'size/px',
-    'dimension/pixelToRem',
+    'size/pxToRem',
     'attribute/cti',
     'name/kebab',
     'time/seconds',

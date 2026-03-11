@@ -1,5 +1,5 @@
-import type { Preview } from '@storybook/react';
-import { ensure, themes } from '@storybook/theming';
+import type { Preview } from '@storybook/react-vite';
+import { ensure, themes } from 'storybook/theming';
 
 // load custom fonts
 import '../stories/assets/css/fonts.css';
