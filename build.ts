@@ -13,6 +13,7 @@ import { javascript } from './platforms/javascript';
 import { scssMixin } from './platforms/scss-mixins';
 import { tailwindThemeCssFormatter } from './formats/tailwind-theme-css';
 import { tailwindThemeCss } from './platforms/tailwind-theme-css';
+import { logVerbosityLevels } from 'style-dictionary/enums';
 
 const styleDictionary = new StyleDictionary({
   source: ['tokens/**/*.json'],
@@ -25,6 +26,9 @@ const styleDictionary = new StyleDictionary({
       tailwind: tailwindFormatter,
       'tailwind-theme-css': tailwindThemeCssFormatter,
     },
+  },
+  log: {
+    verbosity: logVerbosityLevels.verbose,
   },
   platforms: {
     tailwind,

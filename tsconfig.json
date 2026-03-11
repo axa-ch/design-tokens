@@ -5,6 +5,6 @@
     "allowJs": true,
     "types": ["vite/client", "./types/style-dictionary.d.ts", "./types/style-dictionary-utils.d.ts"]
   },
-  "include": ["build.ts", "transform", "platforms", "formats", "tests", "build"],
+  "include": ["build.ts", "transform", "platforms", "formats", "build"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
