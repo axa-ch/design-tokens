@@ -1,4 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react-vite';
+// biome-ignore lint/suspicious/noTsIgnore: no types are provided for this package
 // @ts-ignore
 import colorUtil from 'color-util';
 import { sortBy, chain } from 'lodash';

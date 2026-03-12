@@ -1,7 +1,9 @@
 package-lock.json
 .storybook/*.html
+/storybook-static
 stories/*.mdx
 /tokens.js
 /tokens.cjs
 /tests/mixins.spec.css
 tokens.min.css
+tokens.css
