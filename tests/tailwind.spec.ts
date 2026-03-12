@@ -1,9 +1,10 @@
 import { describe, it, expect } from 'vitest';
+// biome-ignore lint/suspicious/noTsIgnore: just ignore these types
 // @ts-ignore
-import defaultTailwindConfig from 'tailwindcss/stubs/config.full';
+import defaultTailwindConfig from 'tailwindcss/defaultTheme';
 import tailwindConfig from '../build/tailwind/tailwind.config';
 
-const allowedTailwindThemeProps = Object.keys(defaultTailwindConfig.theme);
+const allowedTailwindThemeProps = Object.keys(defaultTailwindConfig);
 
 describe('Tailwind Config specs', () => {
   it('The tailwind config file is properly generated', () => {
