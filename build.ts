@@ -1,19 +1,19 @@
+import { logVerbosityLevels } from 'style-dictionary/enums';
 import { StyleDictionary } from 'style-dictionary-utils';
-import './transform/index';
 import { customMediaFormatter } from './formats/custom-media';
+import { jsonTransformer } from './formats/json';
 import { scssCssVarsMixinFormatter } from './formats/scss-css-vars-mixin';
 import { scssMediaQueryFormatter } from './formats/scss-mq';
 import { tailwindFormatter } from './formats/tailwind/index';
-import { jsonTransformer } from './formats/json';
-import { tailwind } from './platforms/tailwind';
-import { css } from './platforms/css';
-import { scss } from './platforms/scss';
-import { json } from './platforms/json';
-import { javascript } from './platforms/javascript';
-import { scssMixin } from './platforms/scss-mixins';
 import { tailwindThemeCssFormatter } from './formats/tailwind-theme-css';
+import { css } from './platforms/css';
+import { javascript } from './platforms/javascript';
+import { json } from './platforms/json';
+import { scss } from './platforms/scss';
+import { scssMixin } from './platforms/scss-mixins';
+import { tailwind } from './platforms/tailwind';
 import { tailwindThemeCss } from './platforms/tailwind-theme-css';
-import { logVerbosityLevels } from 'style-dictionary/enums';
+import { customTransforms } from './transform/index';
 
 const styleDictionary = new StyleDictionary({
   source: ['tokens/**/*.json'],
@@ -26,6 +26,7 @@ const styleDictionary = new StyleDictionary({
       tailwind: tailwindFormatter,
       'tailwind-theme-css': tailwindThemeCssFormatter,
     },
+    transforms: customTransforms,
   },
   log: {
     verbosity: logVerbosityLevels.verbose,

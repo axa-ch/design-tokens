@@ -6,8 +6,6 @@
         "value": {
           "offsetX": "0px",
           "offsetY": "1px",
-          "x": "0px",
-          "y": "1px",
           "blur": "8px",
           "spread": "0px",
           "color": "rgba(0, 0, 0, 0.15)",
@@ -20,8 +18,6 @@
         "value": {
           "offsetX": "0px",
           "offsetY": "1px",
-          "x": "0px",
-          "y": "1px",
           "blur": "20px",
           "spread": "0px",
           "color": "rgba(0, 0, 0, 0.15)",

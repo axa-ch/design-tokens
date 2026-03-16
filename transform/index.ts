@@ -1,45 +1,50 @@
-import { StyleDictionary } from 'style-dictionary-utils';
-import { transforms } from 'style-dictionary/enums';
 import OriginalStyleDictionary from 'style-dictionary';
-import { sassColorTransform } from './scss-color-transform';
+import type { Transform, TransformedToken } from 'style-dictionary/types';
 import { colorShadeTransform } from './color-shade-transform';
-import type { TransformedToken, ValueTransform } from 'style-dictionary/types';
+import { sassColorTransform } from './scss-color-transform';
 
-// create a filter filtering the token type attribute
+type TransformWithoutName = Omit<Transform, 'name'>;
+
+// create a filter filtering the token "transform" attribute
 const createFilter = (type: string) => (token: TransformedToken) => token.transform === type;
 
-StyleDictionary.registerTransform({
-  name: 'scss/color-transform',
-  ...sassColorTransform,
-  filter: createFilter('color-transform'),
-} as ValueTransform);
+/**
+ * Custom transforms to be passed via hooks.transforms in the StyleDictionary config.
+ *
+ * Using `registerTransform` with the same name as a built-in transform does not
+ * propagate to StyleDictionary instances (the instance copies the originals at
+ * construction time). Passing them through `hooks.transforms` in the config
+ * ensures the instance picks up the overrides.
+ *
+ */
+export const customTransforms: Record<string, TransformWithoutName> = {
+  'scss/color-transform': {
+    ...sassColorTransform,
+    filter: createFilter('color-transform'),
+  },
 
-StyleDictionary.registerTransform({
-  name: 'color-shade-transform',
-  ...colorShadeTransform,
-  filter: createFilter('color-shade'),
-} as ValueTransform);
+  'color-shade-transform': {
+    ...colorShadeTransform,
+    filter: createFilter('color-shade'),
+  },
 
-StyleDictionary.registerTransform({
-  name: 'shadow/css',
-  ...StyleDictionary.hooks?.transforms?.['shadow/css'],
-  filter: createFilter('shadow'),
-} as ValueTransform);
+  'shadow/css': {
+    ...OriginalStyleDictionary.hooks?.transforms['shadow/css/shorthand'],
+    filter: createFilter('shadow'),
+  },
 
-StyleDictionary.registerTransform({
-  name: 'animationDuration/css',
-  ...StyleDictionary.hooks?.transforms?.['time/seconds'],
-  filter: createFilter('duration'),
-} as ValueTransform);
+  'animationDuration/css': {
+    ...OriginalStyleDictionary.hooks?.transforms?.['time/seconds'],
+    filter: createFilter('duration'),
+  },
 
-StyleDictionary.registerTransform({
-  name: 'size/px',
-  ...OriginalStyleDictionary.hooks?.transforms?.['size/px'],
-  filter: createFilter('size'),
-} as ValueTransform);
+  'size/px': {
+    ...OriginalStyleDictionary.hooks?.transforms?.['size/px'],
+    filter: createFilter('size'),
+  },
 
-StyleDictionary.registerTransform({
-  name: 'size/pxToRem',
-  ...OriginalStyleDictionary.hooks?.transforms?.['size/pxToRem'],
-  filter: createFilter('size'),
-} as ValueTransform);
+  'size/pxToRem': {
+    ...OriginalStyleDictionary.hooks?.transforms?.['size/pxToRem'],
+    filter: createFilter('size'),
+  },
+};

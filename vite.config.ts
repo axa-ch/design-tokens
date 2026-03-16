@@ -3,13 +3,6 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: 'modern-compiler', // or "modern"
-      },
-    },
-  },
   build: {
     outDir: './',
     minify: true,
@@ -22,8 +15,9 @@ export default defineConfig({
     rollupOptions: {
       output: {
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name === 'style.css') return 'tokens.min.css';
-          return assetInfo.name;
+          const [name] = assetInfo.names;
+          if (name === 'tokens.css') return 'tokens.min.css';
+          return name;
         },
       },
     },
