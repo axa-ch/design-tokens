@@ -1,5 +1,5 @@
-import './transform/index';
 import { StyleDictionary } from 'style-dictionary-utils';
+import './transform/index';
 import { customMediaFormatter } from './formats/custom-media';
 import { scssCssVarsMixinFormatter } from './formats/scss-css-vars-mixin';
 import { scssMediaQueryFormatter } from './formats/scss-mq';
