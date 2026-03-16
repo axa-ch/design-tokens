@@ -1,5 +1,6 @@
 # build output
 /build
+/tokens.cjs
 /tokens.js
 /tokens.mjs
 /tokens.min.css

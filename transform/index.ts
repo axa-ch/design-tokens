@@ -1,7 +1,14 @@
-import OriginalStyleDictionary from 'style-dictionary';
+import { transforms } from 'style-dictionary/enums';
+import StyleDictionary from 'style-dictionary';
 import type { Transform, TransformedToken } from 'style-dictionary/types';
 import { colorShadeTransform } from './color-shade-transform';
 import { sassColorTransform } from './scss-color-transform';
+import {
+  animationDurationTransform,
+  scssColorTransform,
+  shadowCssTransform,
+  colorShadeTransform as shadeTransform,
+} from '../platforms/constants';
 
 type TransformWithoutName = Omit<Transform, 'name'>;
 
@@ -18,33 +25,29 @@ const createFilter = (type: string) => (token: TransformedToken) => token.transf
  *
  */
 export const customTransforms: Record<string, TransformWithoutName> = {
-  'scss/color-transform': {
+  [scssColorTransform]: {
     ...sassColorTransform,
     filter: createFilter('color-transform'),
   },
-
-  'color-shade-transform': {
+  [shadeTransform]: {
     ...colorShadeTransform,
     filter: createFilter('color-shade'),
   },
-
-  'shadow/css': {
-    ...OriginalStyleDictionary.hooks?.transforms['shadow/css/shorthand'],
-    filter: createFilter('shadow'),
-  },
-
-  'animationDuration/css': {
-    ...OriginalStyleDictionary.hooks?.transforms?.['time/seconds'],
+  [animationDurationTransform]: {
+    ...StyleDictionary.hooks?.transforms?.[transforms.timeSeconds],
     filter: createFilter('duration'),
   },
-
-  'size/px': {
-    ...OriginalStyleDictionary.hooks?.transforms?.['size/px'],
+  [shadowCssTransform]: {
+    ...StyleDictionary.hooks?.transforms[transforms.shadowCssShorthand],
+    filter: createFilter('shadow'),
+  },
+  // overwrite the default transforms of the style dictionary to use our custom filter function
+  [transforms.sizePx]: {
+    ...StyleDictionary.hooks?.transforms?.[transforms.sizePx],
     filter: createFilter('size'),
   },
-
-  'size/pxToRem': {
-    ...OriginalStyleDictionary.hooks?.transforms?.['size/pxToRem'],
+  [transforms.sizePxToRem]: {
+    ...StyleDictionary.hooks?.transforms?.[transforms.sizePxToRem],
     filter: createFilter('size'),
   },
 };
