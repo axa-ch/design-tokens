@@ -64,32 +64,30 @@
         "transform": "color-shade",
         "shade": "light"
       },
-
       "viridia-green": {
         "type": "color",
         "value": "{color.misc.viridian-green}",
         "deprecated": true,
-        "deprecated_comment": "The color name contains a typo"
+        "deprecatedComment": "The color name contains a typo, use \"viridian-green\" instead"
       },
       "viridia-green-20": {
         "type": "color",
         "value": "{color.misc.viridian-green-20}",
         "deprecated": true,
-        "deprecated_comment": "The color name contains a typo"
+        "deprecatedComment": "The color name contains a typo, use \"viridian-green-20\" instead"
       },
       "viridia-green-dark": {
         "type": "color",
         "value": "{color.misc.viridian-green-dark}",
         "deprecated": true,
-        "deprecated_comment": "The color name contains a typo"
+        "deprecatedComment": "The color name contains a typo, use \"viridian-green-dark\" instead"
       },
       "viridia-green-light": {
         "type": "color",
         "value": "{color.misc.viridian-green-light}",
         "deprecated": true,
-        "deprecated_comment": "The color name contains a typo"
+        "deprecatedComment": "The color name contains a typo, use \"viridian-green-light\" instead"
       },
-
       "pacific": { "type": "color", "value": "#00ADC6" },
       "pacific-20": {
         "type": "color",
