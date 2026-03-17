@@ -46,7 +46,7 @@
       "viridian-green": { "type": "color", "value": "#668980" },
       "viridian-green-20": {
         "type": "color",
-        "value": "{color.misc.viridia-green}",
+        "value": "{color.misc.viridian-green}",
         "transform": "color-transform",
         "params": {
           "alpha": -0.8
@@ -54,13 +54,13 @@
       },
       "viridian-green-dark": {
         "type": "color",
-        "value": "{color.misc.viridia-green}",
+        "value": "{color.misc.viridian-green}",
         "transform": "color-shade",
         "shade": "dark"
       },
       "viridian-green-light": {
         "type": "color",
-        "value": "{color.misc.viridia-green}",
+        "value": "{color.misc.viridian-green}",
         "transform": "color-shade",
         "shade": "light"
       },
