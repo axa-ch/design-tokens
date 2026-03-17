@@ -43,8 +43,8 @@
         "transform": "color-shade",
         "shade": "light"
       },
-      "viridia-green": { "type": "color", "value": "#668980" },
-      "viridia-green-20": {
+      "viridian-green": { "type": "color", "value": "#668980" },
+      "viridian-green-20": {
         "type": "color",
         "value": "{color.misc.viridia-green}",
         "transform": "color-transform",
@@ -52,18 +52,44 @@
           "alpha": -0.8
         }
       },
-      "viridia-green-dark": {
+      "viridian-green-dark": {
         "type": "color",
         "value": "{color.misc.viridia-green}",
         "transform": "color-shade",
         "shade": "dark"
       },
-      "viridia-green-light": {
+      "viridian-green-light": {
         "type": "color",
         "value": "{color.misc.viridia-green}",
         "transform": "color-shade",
         "shade": "light"
       },
+
+      "viridia-green": {
+        "type": "color",
+        "value": "{color.misc.viridian-green}",
+        "deprecated": true,
+        "deprecated_comment": "The color name contains a typo"
+      },
+      "viridia-green-20": {
+        "type": "color",
+        "value": "{color.misc.viridian-green-20}",
+        "deprecated": true,
+        "deprecated_comment": "The color name contains a typo"
+      },
+      "viridia-green-dark": {
+        "type": "color",
+        "value": "{color.misc.viridian-green-dark}",
+        "deprecated": true,
+        "deprecated_comment": "The color name contains a typo"
+      },
+      "viridia-green-light": {
+        "type": "color",
+        "value": "{color.misc.viridian-green-light}",
+        "deprecated": true,
+        "deprecated_comment": "The color name contains a typo"
+      },
+
       "pacific": { "type": "color", "value": "#00ADC6" },
       "pacific-20": {
         "type": "color",
