@@ -5,7 +5,11 @@ export const jsonTransformer: FormatFn = ({ dictionary }) => {
     dictionary.allTokens.reduce(
       (acc, token) => ({
         [token.name]: {
-          $value: token.value,
+          $value:
+            // create the proper alias link to the original token name
+            token.type !== 'color' && token.original.value?.replaceAll
+              ? token.original.value.replaceAll('.', '-')
+              : token.value,
           $type: token.type,
           $deprecated: token.deprecatedComment,
         },
