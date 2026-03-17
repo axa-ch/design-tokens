@@ -3,67 +3,67 @@
     "margin": {
       "h1-top": {
         "value": "{spacing.base.7}",
-        "type": "size"
+        "type": "dimension"
       },
       "h1-bottom": {
         "value": "{spacing.base.5}",
-        "type": "size"
+        "type": "dimension"
       },
       "h2-top": {
         "value": "{spacing.base.7}",
-        "type": "size"
+        "type": "dimension"
       },
       "h2-bottom": {
         "value": "{spacing.base.5}",
-        "type": "size"
+        "type": "dimension"
       },
       "h3-top": {
         "value": "{spacing.base.6}",
-        "type": "size"
+        "type": "dimension"
       },
       "h3-bottom": {
         "value": "{spacing.base.4}",
-        "type": "size"
+        "type": "dimension"
       },
       "h4-top": {
         "value": "{spacing.base.6}",
-        "type": "size"
+        "type": "dimension"
       },
       "h4-bottom": {
         "value": "{spacing.base.4}",
-        "type": "size"
+        "type": "dimension"
       },
       "h5-top": {
         "value": "{spacing.base.5}",
-        "type": "size"
+        "type": "dimension"
       },
       "h5-bottom": {
         "value": "{spacing.base.3}",
-        "type": "size"
+        "type": "dimension"
       },
       "h6-top": {
         "value": "{spacing.base.5}",
-        "type": "size"
+        "type": "dimension"
       },
       "h6-bottom": {
         "value": "{spacing.base.3}",
-        "type": "size"
+        "type": "dimension"
       },
       "text-1-bottom": {
         "value": "{spacing.base.6}",
-        "type": "size"
+        "type": "dimension"
       },
       "text-2-bottom": {
         "value": "{spacing.base.6}",
-        "type": "size"
+        "type": "dimension"
       },
       "text-3-bottom": {
         "value": "{spacing.base.5}",
-        "type": "size"
+        "type": "dimension"
       },
       "text-4-bottom": {
         "value": "{spacing.base.5}",
-        "type": "size"
+        "type": "dimension"
       }
     }
   }

@@ -38,16 +38,20 @@
         "type": "typography"
       },
       "base": {
-        "value": "{typography.text.3}"
+        "value": "{typography.text.3}",
+        "type": "typography"
       },
       "sm": {
-        "value": "{typography.text.4}"
+        "value": "{typography.text.4}",
+        "type": "typography"
       },
       "lg": {
-        "value": "{typography.text.2}"
+        "value": "{typography.text.2}",
+        "type": "typography"
       },
       "xl": {
-        "value": "{typography.text.1}"
+        "value": "{typography.text.1}",
+        "type": "typography"
       }
     }
   }
