@@ -3,11 +3,11 @@
     "box": {
       "default": {
         "value": "{shadow.base.1}",
-        "type": "boxShadow"
+        "type": "shadow"
       },
       "high": {
         "value": "{shadow.base.2}",
-        "type": "boxShadow"
+        "type": "shadow"
       }
     }
   }
