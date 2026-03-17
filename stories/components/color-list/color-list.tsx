@@ -15,6 +15,7 @@ export const ColorList: FC<ColorListProps> = ({ colors }) => (
         key={name}
       >
         <ColorCard
+          isDeprecated={/Viridia[A-Z]/.test(name)}
           name={kebabCase(name)}
           value={value}
         />

@@ -1,11 +1,21 @@
 .container {
   display: grid;
-  align-content: flex-start;
-  grid-auto-flow: row;
+  grid-template-rows: auto auto auto 1fr;
   height: 100%;
   width: 100%;
   box-shadow: var(--shadow-base-1);
   padding-bottom: var(--spacing-base-1);
+}
+
+.deprecated {
+  background: var(--color-ui-design-mercury);
+  opacity: 0.8;
+
+  h1,
+  h2,
+  h3 {
+    color: var(--color-ui-design-grey);
+  }
 }
 
 .preview {
@@ -17,6 +27,7 @@
 
 .name,
 .value,
+.info,
 .variableName {
   margin: 0;
   padding: 0 var(--spacing-base-2);
@@ -35,4 +46,11 @@
 .variableName {
   color: var(--color-base-medium-grey);
   font: var(--typography-primary-text-3);
+}
+
+.info:is(h3) {
+  margin-top: var(--spacing-base-2);
+  padding: var(--spacing-base-2) var(--spacing-base-2);
+  color: var(--color-ui-design-white);
+  background: var(--color-status-shy-tomato-dark);
 }
