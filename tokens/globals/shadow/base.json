@@ -8,11 +8,10 @@
           "offsetY": "1px",
           "blur": "8px",
           "spread": "0px",
-          "color": "rgba(0, 0, 0, 0.15)",
-          "type": "dropShadow"
+          "color": "rgba(0, 0, 0, 0.15)"
         },
         "transform": "shadow",
-        "type": "boxShadow"
+        "type": "shadow"
       },
       "2": {
         "value": {
@@ -20,11 +19,10 @@
           "offsetY": "1px",
           "blur": "20px",
           "spread": "0px",
-          "color": "rgba(0, 0, 0, 0.15)",
-          "type": "dropShadow"
+          "color": "rgba(0, 0, 0, 0.15)"
         },
         "transform": "shadow",
-        "type": "boxShadow"
+        "type": "shadow"
       }
     }
   }

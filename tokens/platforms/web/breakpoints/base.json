@@ -3,47 +3,47 @@
     "base": {
       "xs": {
         "value": 0,
-        "type": "dimension"
+        "type": "number"
       },
       "xs-max": {
         "value": 575.98,
-        "type": "dimension"
+        "type": "number"
       },
       "sm": {
         "value": 576,
-        "type": "dimension"
+        "type": "number"
       },
       "sm-max": {
         "value": 767.98,
-        "type": "dimension"
+        "type": "number"
       },
       "md": {
         "value": 768,
-        "type": "dimension"
+        "type": "number"
       },
       "md-max": {
         "value": 991.98,
-        "type": "dimension"
+        "type": "number"
       },
       "lg": {
         "value": 992,
-        "type": "dimension"
+        "type": "number"
       },
       "lg-max": {
         "value": 1199.98,
-        "type": "dimension"
+        "type": "number"
       },
       "xl": {
         "value": 1200,
-        "type": "dimension"
+        "type": "number"
       },
       "xl-max": {
         "value": 1439.98,
-        "type": "dimension"
+        "type": "number"
       },
       "xxl": {
         "value": 1440,
-        "type": "dimension"
+        "type": "number"
       }
     }
   }
