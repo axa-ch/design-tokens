@@ -2,37 +2,48 @@
   "breakpoints": {
     "base": {
       "xs": {
-        "value": 0
+        "value": 0,
+        "type": "dimension"
       },
       "xs-max": {
-        "value": 575.98
+        "value": 575.98,
+        "type": "dimension"
       },
       "sm": {
-        "value": 576
+        "value": 576,
+        "type": "dimension"
       },
       "sm-max": {
-        "value": 767.98
+        "value": 767.98,
+        "type": "dimension"
       },
       "md": {
-        "value": 768
+        "value": 768,
+        "type": "dimension"
       },
       "md-max": {
-        "value": 991.98
+        "value": 991.98,
+        "type": "dimension"
       },
       "lg": {
-        "value": 992
+        "value": 992,
+        "type": "dimension"
       },
       "lg-max": {
-        "value": 1199.98
+        "value": 1199.98,
+        "type": "dimension"
       },
       "xl": {
-        "value": 1200
+        "value": 1200,
+        "type": "dimension"
       },
       "xl-max": {
-        "value": 1439.98
+        "value": 1439.98,
+        "type": "dimension"
       },
       "xxl": {
-        "value": 1440
+        "value": 1440,
+        "type": "dimension"
       }
     }
   }

@@ -4,52 +4,52 @@
       "1": {
         "value": 4,
         "transform": "size",
-        "type": "spacing"
+        "type": "dimension"
       },
       "2": {
         "value": 8,
         "transform": "size",
-        "type": "spacing"
+        "type": "dimension"
       },
       "3": {
         "value": 12,
         "transform": "size",
-        "type": "spacing"
+        "type": "dimension"
       },
       "4": {
         "value": 16,
         "transform": "size",
-        "type": "spacing"
+        "type": "dimension"
       },
       "5": {
         "value": 20,
         "transform": "size",
-        "type": "spacing"
+        "type": "dimension"
       },
       "6": {
         "value": 28,
         "transform": "size",
-        "type": "spacing"
+        "type": "dimension"
       },
       "7": {
         "value": 40,
         "transform": "size",
-        "type": "spacing"
+        "type": "dimension"
       },
       "8": {
         "value": 60,
         "transform": "size",
-        "type": "spacing"
+        "type": "dimension"
       },
       "9": {
         "value": 80,
         "transform": "size",
-        "type": "spacing"
+        "type": "dimension"
       },
       "10": {
         "value": 120,
         "transform": "size",
-        "type": "spacing"
+        "type": "dimension"
       }
     }
   }
