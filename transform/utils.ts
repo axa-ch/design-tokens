@@ -65,7 +65,7 @@ export const rgbObjectToHexString = ({ r, g, b }: RgbaObject, name: string): Hex
 export const rgbaStringToHexString = (color: RgbaString, name: string): HexString => {
   const channels = color.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/);
 
-  if (!channels || channels.length !== 5) {
+  if (channels?.length !== 5) {
     throw new Error(`The value for ${name} doesn't seem to be an rgba string`);
   }
   const r = Math.round(Number(channels[1]) * Number(channels[4]) + 255 * (1 - Number(channels[4])));
