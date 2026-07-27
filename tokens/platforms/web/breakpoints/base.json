@@ -6,19 +6,19 @@
         "type": "number"
       },
       "xs-max": {
-        "value": 575.98,
+        "value": 478.98,
         "type": "number"
       },
       "sm": {
-        "value": 576,
+        "value": 479,
         "type": "number"
       },
       "sm-max": {
-        "value": 767.98,
+        "value": 768.98,
         "type": "number"
       },
       "md": {
-        "value": 768,
+        "value": 769,
         "type": "number"
       },
       "md-max": {
@@ -30,19 +30,11 @@
         "type": "number"
       },
       "lg-max": {
-        "value": 1199.98,
+        "value": 1440.98,
         "type": "number"
       },
       "xl": {
-        "value": 1200,
-        "type": "number"
-      },
-      "xl-max": {
-        "value": 1439.98,
-        "type": "number"
-      },
-      "xxl": {
-        "value": 1440,
+        "value": 1441,
         "type": "number"
       }
     }

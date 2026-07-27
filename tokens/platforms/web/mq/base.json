@@ -25,12 +25,6 @@
       "xl": {
         "value": "(min-width: {breakpoints.base.xl}px)"
       },
-      "xl-max": {
-        "value": "(max-width: {breakpoints.base.xl-max}px)"
-      },
-      "xxl": {
-        "value": "(min-width: {breakpoints.base.xxl}px)"
-      },
       "hd-color": { "value": "(dynamic-range: high)" },
       "touch": { "value": "(hover: none) and (pointer: coarse)" },
       "stylus": { "value": "(hover: none) and (pointer: fine)" },

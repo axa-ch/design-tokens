@@ -13,9 +13,6 @@
       "down-xl": {
         "value": "{mq.base.lg-max}"
       },
-      "down-xxl": {
-        "value": "{mq.base.xl-max}"
-      },
       "up-sm": {
         "value": "{mq.base.sm}"
       },
@@ -27,9 +24,6 @@
       },
       "up-xl": {
         "value": "{mq.base.xl}"
-      },
-      "up-xxl": {
-        "value": "{mq.base.xxl}"
       },
       "only-xs": {
         "value": "{mq.base.xs-max}"
@@ -44,10 +38,7 @@
         "value": "{mq.base.lg} and {mq.base.lg-max}"
       },
       "only-xl": {
-        "value": "{mq.base.xl} and {mq.base.xl-max}"
-      },
-      "only-xxl": {
-        "value": "{mq.base.xxl}"
+        "value": "{mq.base.xl}"
       }
     }
   }
