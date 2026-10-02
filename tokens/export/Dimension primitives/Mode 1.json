@@ -1,0 +1,180 @@
+{
+  "dimension": {
+    "0": {
+      "value": 0,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "2": {
+      "value": 2,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "4": {
+      "value": 4,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "8": {
+      "value": 8,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "12": {
+      "value": 12,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "16": {
+      "value": 16,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "20": {
+      "value": 20,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "24": {
+      "value": 24,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "32": {
+      "value": 32,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "40": {
+      "value": 40,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "48": {
+      "value": 48,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "56": {
+      "value": 56,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "64": {
+      "value": 64,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "80": {
+      "value": 80,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "96": {
+      "value": 96,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    },
+    "128": {
+      "value": 128,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Internally-owned tier-1 dimension primitive, rebuilt to replace the inaccessible external 'Dimensions' library."
+    }
+  }
+}

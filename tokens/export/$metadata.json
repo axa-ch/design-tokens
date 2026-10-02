@@ -1,0 +1,17 @@
+{
+  "tokenSetOrder": [
+    "",
+    "Colors/light",
+    "Typography/Desktop",
+    "Typography/Mobile",
+    "Typography primitives/Desktop",
+    "Effects/Mode 1",
+    "Shapes/Mode 1",
+    "Spacing/Mode 1",
+    "Containers/Mode 1",
+    "Motion/Value (in ms)",
+    "Breakpoints/screen-width",
+    "Grid/Mode 1",
+    "Dimension primitives/Mode 1"
+  ]
+}

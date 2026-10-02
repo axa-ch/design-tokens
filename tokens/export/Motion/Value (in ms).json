@@ -1,0 +1,42 @@
+{
+  "xs": {
+    "value": 100,
+    "type": "number",
+    "$extensions": {
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    }
+  },
+  "sm": {
+    "value": 200,
+    "type": "number",
+    "$extensions": {
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    }
+  },
+  "md": {
+    "value": 250,
+    "type": "number",
+    "$extensions": {
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    }
+  },
+  "lg": {
+    "value": 300,
+    "type": "number",
+    "$extensions": {
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    }
+  }
+}

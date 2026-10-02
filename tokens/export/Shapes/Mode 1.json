@@ -1,0 +1,182 @@
+{
+  "radius": {
+    "none": {
+      "value": "{dimension.0}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "radius/none/px"
+        }
+      },
+      "description": "Use for elements with no rounding, creating sharp corners. This is applied to create a clean, minimalist aesthetic or when edges need to be distinctly clear and non-rounded."
+    },
+    "xs": {
+      "value": "{dimension.2}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for very small radius, offering a slight curve for elements that require a gentle touch of rounding, such as small icons or buttons. It maintains the clarity of the element while softening the edges."
+    },
+    "sm": {
+      "value": "{dimension.4}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for small radius. This rounding is commonly used for smaller elements, such as inputs, cards, and buttons, giving them a subtle but functional curvature for a friendly and approachable design."
+    },
+    "md": {
+      "value": "{dimension.8}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for medium radius. This is the most common radius size, offering a balanced curve for larger containers, helping establish visual hierarchy and improving touch targets without overwhelming the design."
+    },
+    "lg": {
+      "value": "{dimension.12}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for large radius. Larger elements like modals, dropdowns, or cards benefit from this rounding, creating a more approachable and soft visual impression. It’s ideal for more prominent, expressive components."
+    },
+    "circle": {
+      "value": 100,
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.hiddenFromPublishing": false,
+        "com.figma.codeSyntax": {
+          "Web": "radius/full/%"
+        }
+      },
+      "description": "Use for full rounding when creating circular elements, like avatars or round buttons, for strong visual emphasis and consistent brand language."
+    },
+    "button": {
+      "default": {
+        "value": "{dimension.64}",
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "CORNER_RADIUS"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for buttons, ensuring both accessibility and prominence in UI design."
+      }
+    },
+    "popover": {
+      "container": {
+        "value": "{dimension.4}",
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "CORNER_RADIUS"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for popover containers, such as dropdown menus or tooltips."
+      }
+    },
+    "forms": {
+      "input": {
+        "value": "{dimension.8}",
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "CORNER_RADIUS"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for form input fields, providing a comfortable user experience without excessive curvature."
+      }
+    },
+    "image": {
+      "lg": {
+        "value": "{dimension.12}",
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "CORNER_RADIUS"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for default image containers, use when the shortest edge is smaller than 80px (e.g. thumbnails)."
+      },
+      "sm": {
+        "value": "{dimension.8}",
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "CORNER_RADIUS"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for images where the shortest edge is 80px or larger (e.g. article covers, product visuals,...)"
+      }
+    },
+    "xl": {
+      "value": "{dimension.16}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for extra-large radius. This size is applied to create highly expressive elements that are meant to stand out, such as large containers or UI elements that need a bold, approachable design."
+    }
+  },
+  "stroke": {
+    "width": {
+      "md": {
+        "value": 2,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "STROKE_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "stroke/width/subtle/px"
+          }
+        },
+        "description": "Use for thin strokes. This narrower stroke is ideal for secondary borders or less prominent elements where clarity is needed without drawing too much attention. It’s often used for dividers, subtle borders, or decorative lines."
+      },
+      "default": {
+        "value": 1,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "STROKE_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "stroke/width/subtle/px"
+          }
+        },
+        "description": "Use for the default thickness of a stroke. This width is suitable for most UI elements that require clear, consistent boundaries, like borders around containers, buttons, or text inputs."
+      }
+    }
+  }
+}

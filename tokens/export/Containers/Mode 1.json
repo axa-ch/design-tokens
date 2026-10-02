@@ -1,0 +1,62 @@
+{
+  "container": {
+    "size": {
+      "sm": {
+        "value": 968,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "container/sm/px"
+          }
+        },
+        "description": "Define max-width for small containers, ideal for compact UI elements or side panels."
+      },
+      "md": {
+        "value": 1120,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "container/md/px"
+          }
+        },
+        "description": "Define max-width for medium containers, perfect for standard content layouts."
+      },
+      "lg": {
+        "value": 1240,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "container/lg/px"
+          }
+        },
+        "description": "Define max-width for large containers, providing ample space for expansive content or wide layouts."
+      },
+      "xl": {
+        "value": 1440,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "com.figma.hiddenFromPublishing": false,
+          "com.figma.codeSyntax": {
+            "Web": "container/xl/px"
+          }
+        },
+        "description": "Define max-width for extra-large containers, ideal for full-width layouts or large sections."
+      }
+    }
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "gap": {
+    "2xl": {
+      "value": "{dimension.20}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for wider separations, often for visual clarity between large components or in wide layouts with considerable space between elements."
+    },
+    "xl": {
+      "value": "{dimension.16}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for significant separation, such as between major sections or larger containers in the layout, giving enough breathing room for larger UI pieces."
+    },
+    "none": {
+      "value": "{dimension.0}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for no space between elements. Ideal for compact UI elements or when you want items to be tightly grouped together."
+    },
+    "6xl": {
+      "value": "{dimension.48}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for large scale layouts, creating significant breathing space between large elements or in massive container-based designs."
+    },
+    "4xl": {
+      "value": "{dimension.32}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for very large layouts, commonly used to separate major sections in a page or across large grid designs."
+    },
+    "lg": {
+      "value": "{dimension.12}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for separating more prominent UI elements such as between sections or larger components to ensure visual hierarchy."
+    },
+    "xs": {
+      "value": "{dimension.2}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for tiny spacing between small icons, badges, or buttons, as well as tight grouping of elements within a container."
+    },
+    "sm": {
+      "value": "{dimension.4}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for separating small UI elements, such as between icon buttons, table cells, or text and icons in a compact layout."
+    },
+    "5xl": {
+      "value": "{dimension.40}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for large layouts, spacing significant sections of content, ensuring clear visual distinction between the most important UI pieces."
+    },
+    "md": {
+      "value": "{dimension.8}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for larger UI components like form fields, buttons, or within cards to ensure proper readability and separation between elements."
+    },
+    "3xl": {
+      "value": "{dimension.24}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for major separation in extensive layouts, typically seen in large screen designs with wide space between sections or blocks of content."
+    },
+    "7xl": {
+      "value": "{dimension.56}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for very open layouts that require significant visual spacing to clearly separate extensive content blocks."
+    },
+    "8xl": {
+      "value": "{dimension.64}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for  expansive layouts with maximum spacing, creating clear sections for large-scale content separation in a visual hierarchy."
+    }
+  },
+  "padding": {
+    "none": {
+      "value": "{dimension.0}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for no padding around elements, creating compact layouts or for areas where no extra space is needed around the content."
+    },
+    "xs": {
+      "value": "{dimension.2}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for small containers, offering just a hint of internal space, often used for compact UI elements such as buttons, small cards, or icons."
+    },
+    "sm": {
+      "value": "{dimension.4}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for smaller UI components like icon buttons, badges, or input fields, where the content needs a slight separation from the edges."
+    },
+    "md": {
+      "value": "{dimension.8}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for standard padding size used for most UI components, including form fields, buttons, and card components, providing comfortable space between content and the container."
+    },
+    "lg": {
+      "value": "{dimension.12}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for larger UI elements, such as large buttons, cards, or sections, ensuring there’s adequate breathing room and structure within larger containers."
+    },
+    "xl": {
+      "value": "{dimension.16}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for large containers or sections that require ample space between the content and container edges for better visual distinction."
+    },
+    "2xl": {
+      "value": "{dimension.20}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for larger layouts where generous spacing is required, often used to separate sections or ensure clear visibility between major elements."
+    },
+    "3xl": {
+      "value": "{dimension.24}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for large elements or layouts, used when significant space between content and container is needed for clarity."
+    },
+    "4xl": {
+      "value": "{dimension.32}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for spacious layouts or containers that require a lot of internal space for content, such as large cards or detailed forms."
+    },
+    "5xl": {
+      "value": "{dimension.40}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for extensive padding needs, often in high-impact UI elements, to provide ample space for content in wide sections or full-page designs."
+    },
+    "6xl": {
+      "value": "{dimension.48}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for spacious layouts that require significant internal space, typically used for large-scale designs or full-screen elements."
+    },
+    "7xl": {
+      "value": "{dimension.56}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for very spacious layouts with high content separation needs."
+    },
+    "8xl": {
+      "value": "{dimension.64}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for expansive, high-clarity layouts requiring maximum space to make content stand out with minimal crowding."
+    },
+    "9xl": {
+      "value": "{dimension.80}",
+      "type": "number",
+      "$extensions": {
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for vast sections or areas where ample breathing room is necessary for large-scale designs or to separate extensive content blocks."
+    }
+  }
+}

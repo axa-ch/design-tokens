@@ -1,0 +1,273 @@
+{
+  "blur": {
+    "size": {
+      "xs": {
+        "value": 24,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for very light blur to create subtle background effects."
+      },
+      "md": {
+        "value": 48,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for moderate blur to soften images or overlays."
+      },
+      "lg": {
+        "value": 64,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for strong blur to separate content from background."
+      },
+      "xl": {
+        "value": 92,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for extra-strong blur to enhance immersive overlays."
+      },
+      "full": {
+        "value": 124,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for maximum blur to completely abstract the background."
+      }
+    }
+  },
+  "drop-shadow": {
+    "xs": {
+      "x": {
+        "value": 0,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "y": {
+        "value": 1,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "blur": {
+        "value": 4,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "spread": {
+        "value": 0,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      }
+    },
+    "sm": {
+      "x": {
+        "value": 0,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "y": {
+        "value": 4,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "blur": {
+        "value": 8,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "spread": {
+        "value": 0,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      }
+    },
+    "md": {
+      "x": {
+        "value": 0,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "y": {
+        "value": 8,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "blur": {
+        "value": 16,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "spread": {
+        "value": 0,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      }
+    },
+    "lg": {
+      "x": {
+        "value": 0,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "y": {
+        "value": 16,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "blur": {
+        "value": 16,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "spread": {
+        "value": 0,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      }
+    },
+    "xl": {
+      "x": {
+        "value": 0,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "y": {
+        "value": 24,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "blur": {
+        "value": 24,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "spread": {
+        "value": 0,
+        "type": "number",
+        "$extensions": {
+          "com.figma.scopes": [
+            "EFFECT_FLOAT"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3424 @@
+{
+  "bg": {
+    "base": {
+      "value": "{white.100}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for standard background surfaces and default UI areas."
+    },
+    "interaction": {
+      "secondary": {
+        "soft": {
+          "default-inverse": {
+            "value": "{white.20}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for secondary actions (less important actions) with a soft background, adding a discreet accent while remaining light on dark, colored, or high-contrast backgrounds."
+          },
+          "default": {
+            "value": "{gray.200}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for secondary actions (less important actions) with a soft background, adding a discreet accent while remaining light."
+          },
+          "hover": {
+            "value": "{gray.400}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for secondary actions (less important actions) with a soft background when hovered, reinforcing discrete emphasis."
+          },
+          "active": {
+            "value": "{gray.500}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for secondary actions (less important actions) with a soft background when active or pressed."
+          },
+          "hover-inverse": {
+            "value": "{white.30}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for secondary actions (less important actions) with a soft background when hovered, reinforcing discrete emphasis on dark, colored, or high-contrast backgrounds."
+          },
+          "active-inverse": {
+            "value": "{white.60}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for secondary actions (less important actions) with a soft background when active or pressed on dark, colored, or high-contrast backgrounds."
+          },
+          "ghost": {
+            "value": "{black.0}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use as an alternative initial state for low-emphasis secondary action backgrounds."
+          },
+          "ghost-inverse": {
+            "value": "{white.0}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use as an alternative initial state for low-emphasis secondary action, on dark, colored, or high-contrast backgrounds."
+          }
+        },
+        "default": {
+          "value": "{gray.800}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for secondary actions (less important actions) in their default state with strong visibility, such as button."
+        },
+        "hover": {
+          "value": "{gray.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for secondary actions (less important actions) when hovered, highlighting interactivity."
+        },
+        "active": {
+          "value": "{gray.950}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for secondary actions (less important actions) when active or pressed, signaling user engagement."
+        },
+        "default-inverse": {
+          "value": "{white.80}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for secondary actions (less important actions) in their default state with strong visibility, such as button, on dark, colored, or high-contrast backgrounds."
+        },
+        "hover-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for secondary actions (less important actions) when hovered, highlighting interactivity, on dark, colored, or high-contrast backgrounds."
+        },
+        "active-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for secondary actions (less important actions) when active or pressed, signaling user engagement, on dark, colored, or high-contrast backgrounds."
+        },
+        "subtle": {
+          "default": {
+            "value": "{gray.25}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for secondary actions (less important actions) with a subtle neutral background, providing minimal emphasis that help structure the layout without adding visual weight."
+          },
+          "hover": {
+            "value": "{gray.50}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for secondary actions (less important actions) with a subtle neutral background when hovered, adding slight visibility."
+          },
+          "active": {
+            "value": "{gray.200}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for secondary actions (less important actions) with a subtle neutral background when active or pressed."
+          },
+          "default-inverse": {
+            "value": "{white.5}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for secondary actions (less important actions) with a subtle neutral background, providing minimal emphasis that help structure the layout without adding visual weight on dark, colored or high-contrast backgrounds."
+          },
+          "hover-inverse": {
+            "value": "{white.10}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for secondary actions (less important actions) with a subtle neutral background when hovered, adding slight visibility on dark, colored, or high-contrast backgrounds."
+          },
+          "active-inverse": {
+            "value": "{white.15}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for secondary actions (less important actions) with subtle backgrounds when active or pressed on dark, colored, or high-contrast backgrounds."
+          },
+          "ghost": {
+            "value": "{black.0}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use as an alternative initial state for very low-emphasis secondary action backgrounds."
+          },
+          "ghost-inverse": {
+            "value": "{white.0}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use as an alternative initial state for very low-emphasis secondary action backgrounds (less important actions) on dark, colored, or high-contrast backgrounds."
+          }
+        },
+        "ghost": {
+          "value": "{black.0}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for ghost-style secondary actions (less important actions) with no emphasis, keeping the background invisible."
+        },
+        "ghost-inverse": {
+          "value": "{white.0}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use as an alternative initial state for secondary actions (less important actions) on dark, colored, or high-contrast backgrounds."
+        }
+      },
+      "blur": {
+        "default": {
+          "value": "{white.5}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for actions with a very low-emphasis translucent background."
+        },
+        "hover": {
+          "value": "{white.15}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for actions with a translucent background when hovered, increasing visibility slightly."
+        },
+        "active": {
+          "value": "{white.30}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for actions with a translucent background when active or pressed, with higher visibility."
+        },
+        "ghost": {
+          "value": "{white.0}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use as an alternative initial state for very low-emphasis translucent action background."
+        }
+      },
+      "primary": {
+        "soft": {
+          "default": {
+            "value": "{blue.25}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for primary actions with a soft background, adding a discreet accent while remaining light."
+          },
+          "hover": {
+            "value": "{blue.50}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for primary actions with a soft background when hovered, reinforcing discrete emphasis."
+          },
+          "active": {
+            "value": "{blue.50}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for primary actions with a soft background when active or pressed."
+          },
+          "default-inverse": {
+            "value": "{white.30}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for primary actions with a soft background, adding a discreet accent while remaining light on dark, colored, or high-contrast backgrounds."
+          },
+          "hover-inverse": {
+            "value": "{white.60}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for primary actions when hovered, highlighting interactivity, on dark, colored, or high-contrast backgrounds."
+          },
+          "active-inverse": {
+            "value": "{white.100}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for primary actions with a soft background when active or pressed on dark, colored, or high-contrast backgrounds."
+          },
+          "ghost": {
+            "value": "{white.0}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use as an alternative initial state for low-emphasis primary action backgrounds."
+          },
+          "ghost-inverse": {
+            "value": "{white.0}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use as an alternative initial state for low-emphasis primary action backgrounds, on dark, colored, or high-contrast backgrounds."
+          }
+        },
+        "default": {
+          "value": "{blue.500}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for primary actions in their default state with strong visibility, such as button."
+        },
+        "hover": {
+          "value": "{blue.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for primary actions when hovered, highlighting interactivity."
+        },
+        "active": {
+          "value": "{blue.400}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for primary actions when active or pressed, signaling user engagement."
+        },
+        "default-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for primary actions in their default state with strong visibility, such as button, on dark, colored, or high-contrast backgrounds."
+        },
+        "hover-inverse": {
+          "value": "{gray.200}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for primary actions when hovered, highlighting interactivity, on dark, colored, or high-contrast backgrounds."
+        },
+        "active-inverse": {
+          "value": "{gray.400}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for primary actions when active or pressed, signaling user engagement, on dark, colored, or high-contrast backgrounds."
+        },
+        "subtle": {
+          "ghost": {
+            "value": "{black.0}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use as an alternative initial state for very low-emphasis primary action backgrounds."
+          },
+          "hover": {
+            "value": "{gray.50}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for primary actions with a subtle neutral background when hovered, adding slight visibility."
+          },
+          "active": {
+            "value": "{gray.200}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for primary actions with a subtle neutral background when active or pressed."
+          },
+          "default-inverse": {
+            "value": "{white.5}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for primary actions with a subtle neutral background, providing minimal emphasis that help structure the layout without adding visual weight on dark, colored or high-contrast backgrounds."
+          },
+          "hover-inverse": {
+            "value": "{white.10}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for primary actions with a subtle neutral background when hovered, adding slight visibility on dark, colored, or high-contrast backgrounds."
+          },
+          "active-inverse": {
+            "value": "{white.15}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for primary actions with subtle backgrounds when active or pressed on dark, colored, or high-contrast backgrounds."
+          },
+          "default": {
+            "value": "{gray.25}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for primary actions with a subtle neutral background, providing minimal emphasis that help structure the layout without adding visual weight."
+          },
+          "ghost-inverse": {
+            "value": "{white.0}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use as an alternative initial state for very low-emphasis primary action backgrounds on dark, colored, or high-contrast backgrounds."
+          }
+        },
+        "ghost": {
+          "value": "{white.0}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use as an alternative initial state for primary actions with no emphasis, keeping the background invisible, such as buttons, interactive tiles, dropdowns."
+        },
+        "ghost-inverse": {
+          "value": "{white.0}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use as an alternative initial state for primary actions on dark, colored, or high-contrast backgrounds, such as buttons, interactive tiles, drop downs."
+        }
+      },
+      "strong": {
+        "default": {
+          "value": "{red.500}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for important actions, applying the highest emphasis action background, such as strong buttons or icon buttons."
+        },
+        "hover": {
+          "value": "{red.600}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for important actions when hovered, reinforcing visibility and attention."
+        },
+        "active": {
+          "value": "{red.700}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for important actions when active or pressed, showing maximum emphasis."
+        },
+        "default-inverse": {
+          "value": "{red.500}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for important actions, applying a high-emphasis background, such as strong buttons on dark, colored, or high-contrast backgrounds."
+        },
+        "hover-inverse": {
+          "value": "{red.400}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for important actions when hovered, reinforcing visibility and attention on dark, colored, or high-contrast backgrounds."
+        },
+        "active-inverse": {
+          "value": "{red.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for important actions when active or pressed, showing maximum emphasis, on dark, colored, or high-contrast backgrounds."
+        },
+        "ghost": {
+          "value": "{white.0}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for ghost actions on strong interaction background."
+        },
+        "ghost-inverse": {
+          "value": "{white.0}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use as an alternative initial state on strong action background on dark, colored, or high-contrast backgrounds."
+        }
+      }
+    },
+    "decorative-emphasis": {
+      "expressive": {
+        "high": {
+          "value": "{blue.600}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for expressive backgrounds with a strong accent tone to create clear hierarchy and differentiation, such as banners, sections or small emphasized element."
+        },
+        "low": {
+          "value": "{blue.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for expressive backgrounds with a light accent tone to support subtle hierarchy, such as banners, sections or small emphasized element."
+        },
+        "medium": {
+          "value": "{blue.200}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for expressive backgrounds with a medium accent tone to reinforce structure, such as banners, sections or small emphasized element."
+        }
+      },
+      "functional": {
+        "low": {
+          "value": "{gray.25}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for subtle functional backgrounds that create gentle separation from the base."
+        },
+        "medium": {
+          "value": "{gray.50}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for functional backgrounds with moderate contrast to clearly separate layers."
+        },
+        "high": {
+          "value": "{gray.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for strong functional backgrounds that provide distinct separation and clarity."
+        }
+      }
+    },
+    "tag": {
+      "coral": {
+        "value": "{coral.500}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use this background only for decorative badges."
+      },
+      "teal": {
+        "value": "{teal.500}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use this background only for decorative badges."
+      },
+      "mint-green": {
+        "value": "{mint-green.500}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use this background only for decorative badges."
+      },
+      "sunshine": {
+        "value": "{sunshine.500}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use this background only for decorative badges."
+      },
+      "cotton-candy": {
+        "value": "{cotton-candy.500}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use this background only for decorative badges."
+      },
+      "sky-blue": {
+        "value": "{skyblue.500}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use this background only for decorative badges."
+      },
+      "grape": {
+        "value": "{grape.500}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use this background only for decorative badges."
+      },
+      "leaf-green": {
+        "value": "{leaf-green.500}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use this background only for decorative badges."
+      }
+    },
+    "field": {
+      "default": {
+        "value": "{white.100}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the default background of input fields before interaction."
+      },
+      "active": {
+        "value": "{white.100}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the background of input fields when active or focused."
+      },
+      "disabled": {
+        "value": "{black.10}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the background of input fields when disabled, showing inactivity."
+      },
+      "default-inverse": {
+        "value": "{white.5}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the default background of input fields on dark, colored, or high-contrast backgrounds."
+      },
+      "disabled-inverse": {
+        "value": "{white.30}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the background of input fields when disabled on dark, colored, or high-contrast backgrounds."
+      },
+      "active-inverse": {
+        "value": "{white.10}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the background of input fields when active or focused on dark, colored, or high-contrast backgrounds."
+      },
+      "hover": {
+        "value": "{gray.50}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "hover-inverse": {
+        "value": "{white.10}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      }
+    },
+    "feedback": {
+      "info": {
+        "subtle": {
+          "value": "{ocean.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for subtle info feedback backgrounds that provide light emphasis."
+        },
+        "default": {
+          "value": "{ocean.800}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for informational feedback backgrounds highlighting important details."
+        },
+        "inverse": {
+          "value": "{ocean.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for info feedback backgrounds on dark, colored, or high-contrast backgrounds."
+        },
+        "subtle-inverse": {
+          "value": "{ocean.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for subtle info feedback backgrounds on dark, colored, or high-contrast backgrounds."
+        }
+      },
+      "warning": {
+        "subtle": {
+          "value": "{yellow.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for subtle warning feedback backgrounds with light emphasis."
+        },
+        "default": {
+          "value": "{yellow.500}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for warning feedback backgrounds drawing attention to potential issues."
+        },
+        "subtle-inverse": {
+          "value": "{yellow.500}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for subtle warning feedback backgrounds on dark, colored, or high-contrast backgrounds."
+        },
+        "inverse": {
+          "value": "{yellow.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for warning feedback backgrounds drawing attention to potential issues on dark, colored, or high-contrast backgrounds."
+        }
+      },
+      "error": {
+        "subtle": {
+          "value": "{crimson.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for subtle error feedback backgrounds that keep emphasis light."
+        },
+        "default": {
+          "value": "{crimson.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for error feedback backgrounds signaling problems or corrections."
+        },
+        "inverse": {
+          "value": "{crimson.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for error feedback backgrounds on dark, colored, or high-contrast backgrounds."
+        },
+        "subtle-inverse": {
+          "value": "{crimson.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for subtle error feedback backgrounds on dark, colored, or high-contrast backgrounds."
+        }
+      },
+      "success": {
+        "subtle": {
+          "value": "{green.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for subtle success feedback backgrounds with light emphasis."
+        },
+        "default": {
+          "value": "{green.800}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for success feedback backgrounds confirming that an action was successful."
+        },
+        "inverse": {
+          "value": "{green.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for success feedback backgrounds on dark, colored, or high-contrast backgrounds."
+        },
+        "subtle-inverse": {
+          "value": "{green.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for subtle success feedback backgrounds on dark, colored, or high-contrast backgrounds."
+        }
+      },
+      "neutral": {
+        "subtle": {
+          "value": "{gray.25}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for subtle neutral feedback backgrounds that lightly structure the layout."
+        },
+        "default": {
+          "value": "{gray.800}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for neutral feedback backgrounds with no positive or negative meaning."
+        },
+        "inverse": {
+          "value": "{gray.50}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for neutral feedback backgrounds on dark, colored, or high-contrast backgrounds."
+        },
+        "subtle-inverse": {
+          "value": "{gray.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for subtle neutral feedback backgrounds on dark, colored, or high-contrast backgrounds."
+        }
+      }
+    },
+    "elevation": {
+      "blur": {
+        "medium": {
+          "value": "{blurry-gray.30}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use as a medium blur overlay on images (e.g. hero banners, immersive headers) to improve text readability without overpowering the background. Must be combined with a blur effect to achieve the visual depth."
+        },
+        "high": {
+          "value": "{blurry-gray.50}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use as a stronger blur overlay on images when higher contrast and readability are needed for text or key content. Always test legibility carefully."
+        }
+      },
+      "scrim": {
+        "low": {
+          "value": "{black.30}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use as a low-opacity scrim background to softly darken the interface behind a modal, drawer, or tutorial, ensuring focus on the foreground."
+        },
+        "high": {
+          "value": "{black.80}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use as a high-opacity scrim background when stronger dimming is required to emphasize the foreground element and reduce background distractions."
+        }
+      },
+      "overlay": {
+        "solid": {
+          "none": {
+            "value": "{black.0}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for initial state for animation purposes on an image, keeping the image fully visible on default state."
+          },
+          "low": {
+            "value": "{black.30}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use as a low-opacity solid overlay on images to enhance content readability without fully covering the background."
+          },
+          "medium": {
+            "value": "{black.70}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use as a medium-opacity solid overlay on images to provide stronger readability support for text or UI elements."
+          },
+          "high": {
+            "value": "{black.90}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use as a high-opacity solid overlay on images when maximum contrast is required to ensure accessibility and clarity."
+          }
+        },
+        "gradient": {
+          "low": {
+            "start": {
+              "value": "{black.50}",
+              "type": "color",
+              "$extensions": {
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "description": "Use for the start point of a low gradient (0%)"
+            },
+            "middle": {
+              "value": "{black.20}",
+              "type": "color",
+              "$extensions": {
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "description": "Use for the middle point of a low gradient (between 30-50%)"
+            },
+            "end": {
+              "value": "{black.5}",
+              "type": "color",
+              "$extensions": {
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "description": "Use for the end point of a low gradient (100%)"
+            }
+          },
+          "medium": {
+            "start": {
+              "value": "{black.70}",
+              "type": "color",
+              "$extensions": {
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "description": "Use for the start point of a medium gradient (0%)"
+            },
+            "middle": {
+              "value": "{black.50}",
+              "type": "color",
+              "$extensions": {
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "description": "Use for the middle point of a medium gradient (between 30-50%)"
+            },
+            "end": {
+              "value": "{black.15}",
+              "type": "color",
+              "$extensions": {
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "description": "Use for the end point of a medium gradient (100%)"
+            }
+          },
+          "high": {
+            "start": {
+              "value": "{black.90}",
+              "type": "color",
+              "$extensions": {
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "description": "Use for the start point of a high gradient (0%)"
+            },
+            "middle": {
+              "value": "{black.70}",
+              "type": "color",
+              "$extensions": {
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "description": "Use for the middle point of a high gradient (between 30-50%)"
+            },
+            "end": {
+              "value": "{black.30}",
+              "type": "color",
+              "$extensions": {
+                "com.figma.scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "description": "Use for the end point of a high gradient (100%)"
+            }
+          }
+        }
+      }
+    },
+    "base-inverse": {
+      "value": "{slate.950}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for background surfaces placed on dark, colored, or high-contrast areas."
+    },
+    "footer": {
+      "default": {
+        "value": "{blue.900}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the background of the footer."
+      },
+      "soft": {
+        "value": "{white.100}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use soft alternative for the background of the footer."
+      }
+    },
+    "disabled-inverse": {
+      "value": "{white.30}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for disabled background surfaces on dark, colored, or high-contrast areas."
+    },
+    "disabled": {
+      "value": "{black.15}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for background surfaces of disabled or inactive components."
+    },
+    "tooltip": {
+      "default": {
+        "value": "{gray.950}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use this color for the tooltip background to provide maximum contrast for the overlay"
+      },
+      "default-inverse": {
+        "value": "{white.100}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use this color for the tooltip background to provide maximum contrast for the overlay"
+      }
+    }
+  },
+  "text": {
+    "primary": {
+      "value": "{gray.950}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for main body text and primary content that requires the highest visibility on light background."
+    },
+    "secondary": {
+      "value": "{gray.800}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for supporting text, subtitles, or less prominent information on light background."
+    },
+    "tertiary": {
+      "value": "{gray.700}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for tertiary content, or low-priority text with reduced visibility on light background."
+    },
+    "interaction": {
+      "primary": {
+        "default": {
+          "value": "{blue.500}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for primary interactive text in its default state, such as links or main actions, on light background."
+        },
+        "hover": {
+          "value": "{blue.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for primary interactive text when hovered, to indicate interactivity, on light background."
+        },
+        "active": {
+          "value": "{blue.400}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for primary interactive text when active or pressed, signaling user engagement, on light background."
+        },
+        "default-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for primary interactive text in its default state on dark or colored background. For example, use it for the label on primary buttons."
+        },
+        "hover-inverse": {
+          "value": "{gray.200}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for primary interactive text when hovered on dark or colored background. For example, use it for the label on primary buttons when hovered."
+        },
+        "active-inverse": {
+          "value": "{gray.400}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for primary interactive text when active or pressed on dark or colored background. For example, use it for the label on primary buttons when active."
+        }
+      },
+      "secondary": {
+        "default": {
+          "value": "{gray.700}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for secondary interactive text in its default state, such as secondary links or actions, on light background."
+        },
+        "hover": {
+          "value": "{gray.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for secondary interactive text when hovered, to highlight interactivity, on light background."
+        },
+        "active": {
+          "value": "{gray.950}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for secondary interactive text when active or pressed, signaling user engagement, on light background."
+        },
+        "default-inverse": {
+          "value": "{white.80}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for secondary interactive text in its default state on dark or colored background."
+        },
+        "hover-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for secondary interactive text when hovered on dark or colored background."
+        },
+        "active-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for secondary interactive text when active or pressed on dark or colored background."
+        }
+      },
+      "strong": {
+        "default": {
+          "value": "{red.500}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for important interactive text in its default state, such as requesting assistance or critical actions, on light background."
+        },
+        "hover": {
+          "value": "{red.600}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for important interactive text when hovered, to indicate interactivity, on light background."
+        },
+        "active": {
+          "value": "{red.700}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for important interactive text when active or pressed, signaling user engagement, on light background."
+        },
+        "default-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for important interactive text in its default state on dark or colored background."
+        },
+        "hover-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for important interactive text when hovered on dark or colored background."
+        },
+        "active-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for important interactive text when active or pressed on dark or colored background."
+        }
+      }
+    },
+    "feedback": {
+      "info": {
+        "inverse": {
+          "value": "{ocean.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for informational feedback messages on bg-feedback-info-default or bg-feedback-info-subtle-inverse or dark backgrounds."
+        },
+        "default": {
+          "value": "{ocean.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for informational feedback messages, that highlight details, such as tooltips."
+        }
+      },
+      "warning": {
+        "inverse": {
+          "value": "{yellow.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for warning feedback messages on dark backgrounds."
+        },
+        "default": {
+          "value": "{yellow.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for warning feedback messages that draw attention to potential issues."
+        }
+      },
+      "success": {
+        "inverse": {
+          "value": "{green.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for success feedback messages on bg-feedback-success-default,  bg-feedback-success-subtle-inverse or dark backgrounds."
+        },
+        "default": {
+          "value": "{green.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for success feedback messages that confirm an action was completed correctly, such as success banners."
+        }
+      },
+      "error": {
+        "default": {
+          "value": "{crimson.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for error feedback messages that indicate problems or required corrections."
+        },
+        "inverse": {
+          "value": "{crimson.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for error feedback messages on bg-feedback-error-default, bg-feedback-error-subtle-inverse or dark backgrounds."
+        }
+      },
+      "neutral": {
+        "default": {
+          "value": "{gray.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for neutral feedback messages that provide context without positive or negative meaning."
+        },
+        "inverse": {
+          "value": "{gray.200}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "TEXT_FILL"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for neutral feedback messages on bg-feedback-neutral-default or dark backgrounds."
+        }
+      }
+    },
+    "disabled": {
+      "value": "{black.30}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for text in a disabled state or unavailable actions on light background, ensuring it looks inactive."
+    },
+    "disabled-inverse": {
+      "value": "{white.30}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for disabled text on dark or colored backgrounds to make it look unavailable."
+    },
+    "tag": {
+      "coral": {
+        "value": "{coral.800}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for text on coral color badges bg-badge-coral."
+      },
+      "teal": {
+        "value": "{teal.200}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for text on teal color badges bg-badge-teal."
+      },
+      "leaf-green": {
+        "value": "{leaf-green.800}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for text on leaf green color badges bg-badge-leaf-green."
+      },
+      "cotton-candy": {
+        "value": "{cotton-candy.800}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for text on cotton candy color badges bg-badge-cotton-candy."
+      },
+      "sky-blue": {
+        "value": "{skyblue.800}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for text on sky blue color badges bg-badge-sky-blue."
+      },
+      "grape": {
+        "value": "{grape.200}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for text on grape color badges bg-badge-grape."
+      },
+      "mint-green": {
+        "value": "{mint-green.800}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for text on mint green color badges bg-badge-mint-green."
+      },
+      "sunshine": {
+        "value": "{sunshine.800}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for text on sunshine color badges bg-badge-sunshine."
+      }
+    },
+    "field": {
+      "placeholder-inverse": {
+        "value": "{white.60}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for placeholder text inside input fields on dark or colored backgrounds."
+      },
+      "filled-inverse": {
+        "value": "{white.100}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for user-entered text in input fields on dark or colored backgrounds."
+      },
+      "helper-inverse": {
+        "value": "{white.60}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for helper or assistive text below input fields on dark or colored backgrounds."
+      },
+      "disabled-inverse": {
+        "value": "{white.30}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for text in disabled input fields on dark or colored backgrounds."
+      },
+      "disabled": {
+        "value": "{black.30}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for text in disabled input fields, making it clear the field is inactive, on light background."
+      },
+      "filled": {
+        "value": "{gray.950}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for text entered by the user in input fields, on light background."
+      },
+      "helper": {
+        "value": "{gray.800}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for helper or assistive text displayed below input fields, offering guidance or context, on light background."
+      },
+      "placeholder": {
+        "value": "{gray.700}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for placeholder text inside input fields, providing a hint about the expected value, on light background."
+      }
+    },
+    "primary-inverse": {
+      "value": "{white.100}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for primary text on dark or colored backgrounds to ensure clear visibility."
+    },
+    "secondary-inverse": {
+      "value": "{white.80}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for secondary text on dark or colored backgrounds to ensure lower visibility than primary text."
+    },
+    "tertiary-inverse": {
+      "value": "{white.60}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "TEXT_FILL"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for tertiary text on dark or colored backgrounds to ensure subtle visibility."
+    },
+    "tooltip": {
+      "label": {
+        "value": "{white.100}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use this color for tooltips labels to guarantee maximum contrast for the overlay"
+      },
+      "label-inverse": {
+        "value": "{gray.950}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use this color for tooltips labels to guarantee maximum contrast for the overlay in inversed mode"
+      }
+    }
+  },
+  "stroke": {
+    "regular": {
+      "value": "{black.10}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for standard strokes defining structure with balanced visibility, such as container borders, section dividers."
+    },
+    "interaction": {
+      "primary": {
+        "default": {
+          "value": "{blue.500}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of main interactive elements such as primary buttons or active inputs in their default state."
+        },
+        "hover": {
+          "value": "{blue.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of primary interactive elements when hovered, reinforcing interactivity."
+        },
+        "active": {
+          "value": "{blue.400}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of primary interactive elements when active or pressed, ensuring clear user feedback."
+        },
+        "default-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of default primary interactive elements on dark, colored, or high-contrast backgrounds."
+        },
+        "hover-inverse": {
+          "value": "{gray.200}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of primary interactive elements when hovered on dark, colored, or high-contrast backgrounds."
+        },
+        "active-inverse": {
+          "value": "{gray.400}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of primary interactive elements when active or pressed on dark, colored, or high-contrast backgrounds."
+        },
+        "soft": {
+          "default": {
+            "value": "{gray.500}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "STROKE_COLOR"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for the stroke of main interactive elements with a soft appearance in their default state, providing lighter emphasis."
+          },
+          "hover": {
+            "value": "{blue.300}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "STROKE_COLOR"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for the stroke of main interactive elements with a soft appearance when hovered, reinforcing interaction discreetly."
+          },
+          "active": {
+            "value": "{blue.400}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "STROKE_COLOR"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for the stroke of main interactive elements with a soft appearance when active or pressed."
+          },
+          "default-inverse": {
+            "value": "{white.80}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "STROKE_COLOR"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for the stroke of soft interactive elements in their default state on dark, colored, or high-contrast backgrounds."
+          },
+          "hover-inverse": {
+            "value": "{white.100}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "STROKE_COLOR"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for the stroke of soft interactive elements when hovered on dark, colored, or high-contrast backgrounds."
+          },
+          "active-inverse": {
+            "value": "{white.100}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "STROKE_COLOR"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "description": "Use for the stroke of soft interactive elements when active or pressed on dark, colored, or high-contrast backgrounds."
+          }
+        }
+      },
+      "strong": {
+        "hover": {
+          "value": "{red.600}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of important  interactive elements when hovered, reinforcing urgency and drawing attention."
+        },
+        "active": {
+          "value": "{red.700}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of important  interactive elements when active or pressed, showing peak emphasis for high-impact actions."
+        },
+        "default": {
+          "value": "{red.500}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of important interactive elements such as alert buttons or emergency actions in their default state, ensuring maximum visibility."
+        },
+        "default-inverse": {
+          "value": "{red.500}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of important  interactive elements in their default state on dark, colored, or high-contrast backgrounds."
+        },
+        "hover-inverse": {
+          "value": "{red.400}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of important  interactive elements when hovered on dark, colored, or high-contrast backgrounds."
+        },
+        "active-inverse": {
+          "value": "{red.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of important  interactive elements when active or pressed on dark, colored, or high-contrast backgrounds."
+        }
+      },
+      "secondary": {
+        "default": {
+          "value": "{gray.700}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for the stroke of secondary interactive elements, such as secondary buttons, in their default state."
+        },
+        "hover": {
+          "value": "{gray.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for the stroke of secondary interactive elements when hovered, highlighting interactivity."
+        },
+        "active": {
+          "value": "{gray.950}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for the stroke of secondary interactive elements when active or pressed."
+        },
+        "soft": {
+          "default-inverse": {
+            "value": "{white.30}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "STROKE_COLOR"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for the stroke of soft secondary interactive elements in their default state on dark, colored, or high-contrast backgrounds."
+          },
+          "hover-inverse": {
+            "value": "{white.60}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "STROKE_COLOR"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for the stroke of soft secondary interactive elements when hovered on dark, colored, or high-contrast backgrounds."
+          },
+          "active-inverse": {
+            "value": "{white.100}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "STROKE_COLOR"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for the stroke of soft secondary interactive elements when active or pressed on dark, colored, or high-contrast backgrounds."
+          },
+          "default": {
+            "value": "{gray.500}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "STROKE_COLOR"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for the stroke of secondary interactive elements with a soft appearance in their default state."
+          },
+          "hover": {
+            "value": "{gray.800}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "STROKE_COLOR"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for the stroke of secondary interactive elements with a soft appearance when hovered."
+          },
+          "active": {
+            "value": "{gray.950}",
+            "type": "color",
+            "$extensions": {
+              "com.figma.scopes": [
+                "STROKE_COLOR"
+              ],
+              "com.figma.hiddenFromPublishing": true
+            },
+            "description": "Use for the stroke of secondary interactive elements with a soft appearance when active or pressed."
+          }
+        },
+        "default-inverse": {
+          "value": "{white.60}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for the stroke of default secondary interactive elements on dark, colored, or high-contrast backgrounds."
+        },
+        "hover-inverse": {
+          "value": "{white.80}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for the stroke of secondary interactive elements when hovered on dark, colored, or high-contrast backgrounds."
+        },
+        "active-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for the stroke of secondary interactive elements when active or pressed on dark, colored, or high-contrast backgrounds."
+        }
+      }
+    },
+    "disabled": {
+      "value": "{black.15}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for strokes on disabled or inactive elements, signaling that they are not interactive or accessible."
+    },
+    "field": {
+      "active": {
+        "value": "{blue.500}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "STROKE_COLOR"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the stroke of input fields and form elements when selected, highlighting the active choice on light backgrounds."
+      },
+      "default": {
+        "value": "{gray.650}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "STROKE_COLOR"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the stroke of input fields and form elements in their default state, ensuring clear boundaries on light backgrounds."
+      },
+      "disabled": {
+        "value": "{black.30}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "STROKE_COLOR"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the stroke of input fields and form elements when disabled, making it clear the field is inactive on light backgrounds."
+      },
+      "default-inverse": {
+        "value": "{white.60}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "STROKE_COLOR"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the stroke of input fields and form elements in their default state on dark, colored, or high-contrast backgrounds."
+      },
+      "active-inverse": {
+        "value": "{white.100}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "STROKE_COLOR"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the stroke of input fields and form elements when selected on dark, colored, or high-contrast backgrounds."
+      },
+      "disabled-inverse": {
+        "value": "{white.30}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "STROKE_COLOR"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the stroke of input fields and form elements when disabled on dark, colored, or high-contrast backgrounds."
+      },
+      "hover-inverse": {
+        "value": "{white.60}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "STROKE_COLOR"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the stroke of input fields and form elements when hovered on dark, colored, or high-contrast backgrounds."
+      },
+      "hover": {
+        "value": "{gray.650}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "STROKE_COLOR"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "description": "Use for the stroke of input fields and form elements when hovered, indicating interactivity on light backgrounds."
+      }
+    },
+    "subtle": {
+      "value": "{black.5}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for the lightest strokes to create soft separation, such as dropdown dividers, table rows."
+    },
+    "strong": {
+      "value": "{black.20}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for strong strokes that create clear separation and hierarchy in the layout."
+    },
+    "disabled-inverse": {
+      "value": "{white.10}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for strokes on disabled or inactive elements placed on dark, colored, or high-contrast backgrounds."
+    },
+    "strong-inverse": {
+      "value": "{white.20}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for strong strokes on dark, colored, or high-contrast backgrounds to ensure maximum visibility."
+    },
+    "regular-inverse": {
+      "value": "{white.10}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for standard strokes on dark, colored, or high-contrast backgrounds to maintain clarity and structure."
+    },
+    "subtle-inverse": {
+      "value": "{white.5}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for subtle strokes on dark, colored, or high-contrast backgrounds to provide soft separation."
+    },
+    "feedback": {
+      "error": {
+        "default": {
+          "value": "{crimson.700}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of error feedback elements, signaling critical issues or invalid states on light backgrounds."
+        },
+        "inverse": {
+          "value": "{crimson.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of error feedback elements on dark, colored, or high-contrast backgrounds."
+        }
+      },
+      "success": {
+        "default": {
+          "value": "{green.800}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of success feedback elements, confirming a positive or completed action on light backgrounds."
+        },
+        "inverse": {
+          "value": "{green.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of success feedback elements on dark, colored, or high-contrast backgrounds."
+        }
+      },
+      "info": {
+        "default": {
+          "value": "{ocean.500}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of informational feedback elements, highlighting supportive or contextual messages on light backgrounds."
+        },
+        "inverse": {
+          "value": "{ocean.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of informational feedback elements on dark, colored, or high-contrast backgrounds."
+        }
+      },
+      "warning": {
+        "default": {
+          "value": "{yellow.700}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of warning feedback elements, signaling caution or potential issues on light backgrounds."
+        },
+        "inverse": {
+          "value": "{yellow.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of warning feedback elements on dark, colored, or high-contrast backgrounds."
+        }
+      },
+      "neutral": {
+        "inverse": {
+          "value": "{gray.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for the stroke of neutral feedback elements on dark, colored, or high-contrast backgrounds."
+        },
+        "default": {
+          "value": "{gray.700}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for neutral feedback strokes with no positive or negative meaning, providing a balanced outline on light backgrounds."
+        }
+      }
+    }
+  },
+  "icon": {
+    "primary-inverse": {
+      "value": "{white.100}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for primary icons in navigation, labels, or general UI elements where high emphasis is required, on dark, colored, or high-contrast backgrounds, ensuring visibility with strong emphasis."
+    },
+    "primary": {
+      "value": "{gray.950}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for decorative primary icons in navigation, labels, or general UI elements where high emphasis is required, on light backgrounds."
+    },
+    "feedback": {
+      "info": {
+        "default": {
+          "value": "{ocean.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for providing neutral, helpful context or guiding users through a process. Always pair with text for clarity and accessibility on light backgrounds."
+        },
+        "inverse": {
+          "value": "{ocean.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for providing neutral, helpful context or guiding users through a process on bg-feedback-info, dark, colored, or high-contrast backgrounds. Always pair with text for clarity and accessibility."
+        }
+      },
+      "warning": {
+        "default": {
+          "value": "{yellow.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for warning feedback icons (alerting users to potential risks, non-blocking issues, or required attention). Always pair with text for clarity and accessibility on light backgrounds."
+        },
+        "inverse": {
+          "value": "{yellow.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for warning feedback icons (alerting users to potential risks, non-blocking issues, or required attention) on dark, colored, or high-contrast backgrounds. Always pair with text for clarity and accessibility."
+        }
+      },
+      "error": {
+        "default": {
+          "value": "{crimson.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for error feedback icons (indicating errors, failures, or critical issues that need user action). Always pair with text for clarity and accessibility on light backgrounds."
+        },
+        "inverse": {
+          "value": "{crimson.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for error feedback icons (indicating errors, failures, or critical issues that need user action) on dark, colored, or high-contrast backgrounds. Always pair with text for clarity and accessibility."
+        }
+      },
+      "success": {
+        "default": {
+          "value": "{green.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for success feedback icons (confirming a successful action, validation, or positive outcome). Always pair with text for clarity and accessibility on light backgrounds."
+        },
+        "inverse": {
+          "value": "{green.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for success feedback icons (confirming a successful action, validation, or positive outcome) on bg-feedback-success, dark, colored, or high-contrast backgrounds. Always pair with text for clarity and accessibility."
+        }
+      },
+      "neutral": {
+        "default": {
+          "value": "{gray.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for neutral feedback icons (no positive or negative meaning). Always pair with text for clarity and accessibility on light backgrounds."
+        },
+        "inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for neutral feedback icons (no positive or negative meaning) on bg-feedback-neutral, dark, colored, or high-contrast backgrounds. Always pair with text for clarity and accessibility."
+        }
+      }
+    },
+    "interaction": {
+      "primary": {
+        "default": {
+          "value": "{blue.500}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for high-emphasis interactive elements (e.g. primary action buttons, main navigation, and key interactions), providing strong emphasis for key actions."
+        },
+        "default-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for high-emphasis interactive elements (e.g. primary action buttons, main navigation, and key interactions), providing strong emphasis for key actions, on bg-interaction-primary-default, dark, colored, or high-contrast backgrounds."
+        },
+        "hover-inverse": {
+          "value": "{gray.200}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for high-emphasis interactive elements (e.g. primary action buttons, main navigation, and key interactions), when hovered, reinforcing their interactivity, on  bg-interaction-primary-hover, dark, colored, or high-contrast backgrounds."
+        },
+        "active-inverse": {
+          "value": "{gray.400}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for high-emphasis interactive elements (e.g. primary action buttons, main navigation, and key interactions), when active or pressed, ensuring clear feedback, on bg-interaction-primary-active, dark, colored, or high-contrast backgrounds."
+        },
+        "hover": {
+          "value": "{blue.300}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for high-emphasis interactive elements (e.g. primary action buttons, main navigation, and key interactions), when hovered, reinforcing their interactivity."
+        },
+        "active": {
+          "value": "{blue.400}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for high-emphasis interactive elements (e.g. primary action buttons, main navigation, and key interactions), when active or pressed, ensuring clear feedback."
+        }
+      },
+      "secondary": {
+        "default": {
+          "value": "{gray.700}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for icons supporting interactive elements that are less prominent but still actionable, (e.g. secondary buttons or tertiary navigation)."
+        },
+        "default-inverse": {
+          "value": "{white.80}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for icons supporting interactive elements that are less prominent but still actionable, (e.g. secondary buttons or tertiary navigation), on bg-interaction-secondary-default, dark, colored, or high-contrast backgrounds."
+        },
+        "hover-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for icons supporting interactive elements that are less prominent but still actionable, (e.g. secondary buttons or tertiary navigation) when hovered, showing availability for interaction, on bg-interaction-secondary-hover, dark, colored, or high-contrast backgrounds."
+        },
+        "active-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for icons supporting interactive elements that are less prominent but still actionable, (e.g. secondary buttons or tertiary navigation) when active or pressed, reinforcing feedback on on bg-interaction-secondary-active, dark, colored, or high-contrast backgrounds.."
+        },
+        "hover": {
+          "value": "{gray.900}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for icons supporting interactive elements that are less prominent but still actionable, (e.g. secondary buttons or tertiary navigation) when hovered, showing availability for interaction."
+        },
+        "active": {
+          "value": "{gray.950}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": true
+          },
+          "description": "Use for icons supporting interactive elements that are less prominent but still actionable, (e.g. secondary buttons or tertiary navigation) when active or pressed, reinforcing feedback."
+        }
+      },
+      "strong": {
+        "default": {
+          "value": "{red.500}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for urgent or critical interactive elements requiring high contrast, (e.g. destructive actions, alerts, or assistance requests), emphasizing critical or high-contrast actions."
+        },
+        "hover": {
+          "value": "{red.600}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for urgent or critical interactive elements requiring high contrast, (e.g. destructive actions, alerts, or assistance requests), when hovered, reinforcing urgency."
+        },
+        "active": {
+          "value": "{red.700}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for urgent or critical interactive elements requiring high contrast, (e.g. destructive actions, alerts, or assistance requests), when active or pressed, signaling critical confirmation."
+        },
+        "default-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for urgent or critical interactive elements requiring high contrast, (e.g. destructive actions, alerts, or assistance requests), emphasizing critical or high-contrast actions, on bg-interaction-strong-default, dark, colored, or high-contrast backgrounds."
+        },
+        "hover-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for urgent or critical interactive elements requiring high contrast, (e.g. destructive actions, alerts, or assistance requests), when hovered on bg-interaction-strong-hover, dark, colored, or high-contrast backgrounds."
+        },
+        "active-inverse": {
+          "value": "{white.100}",
+          "type": "color",
+          "$extensions": {
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL",
+              "STROKE_COLOR"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "description": "Use for urgent or critical interactive elements requiring high contrast, (e.g. destructive actions, alerts, or assistance requests), when active or pressed on bg-interaction-strong-active, dark, colored, or high-contrast backgrounds."
+        }
+      }
+    },
+    "secondary": {
+      "value": "{gray.800}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for decorative secondary icons in navigation, labels, or general UI elements with medium emphasis, on light backgrounds."
+    },
+    "tertiary": {
+      "value": "{gray.700}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for decorative tertiary icons in navigation, labels, or general UI elements with low emphasis, on light backgrounds."
+    },
+    "secondary-inverse": {
+      "value": "{white.60}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for secondary icons in navigation, labels, or general UI elements with medium emphasis, on dark, colored, or high-contrast backgrounds, providing medium emphasis."
+    },
+    "tertiary-inverse": {
+      "value": "{white.40}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for tertiary icons in navigation, labels, or general UI elements with low emphasis, on dark, colored, or high-contrast backgrounds, offering low emphasis."
+    },
+    "disabled": {
+      "value": "{black.30}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for icons in disabled states, making it clear they are inactive on light backgrounds."
+    },
+    "disabled-inverse": {
+      "value": "{white.30}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "FRAME_FILL",
+          "SHAPE_FILL",
+          "STROKE_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Use for icons in disabled states, making it clear they are inactive on dark, colored, or high-contrast backgrounds, indicating inactivity."
+    }
+  },
+  "focus": {
+    "default": {
+      "value": "{blue.500}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR",
+          "EFFECT_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Focus highlights ensure accessibility and clarity for all users. Use to indicate focus states on interactive elements (e.g., buttons, inputs, links) on light backgrounds."
+    },
+    "inverse": {
+      "value": "{white.100}",
+      "type": "color",
+      "$extensions": {
+        "com.figma.scopes": [
+          "STROKE_COLOR",
+          "EFFECT_COLOR"
+        ],
+        "com.figma.hiddenFromPublishing": false
+      },
+      "description": "Focus highlights ensure accessibility and clarity for all users. Use to indicate focus states on interactive elements (e.g., buttons, inputs, links) when placed on dark, colored, or high-contrast backgrounds."
+    }
+  },
+  "brand": {
+    "logo": {
+      "background": {
+        "value": "{brand.blue}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "text": {
+        "value": "{white.100}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "SHAPE_FILL",
+            "TEXT_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "switch": {
+        "value": "{brand.red}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      },
+      "border": {
+        "value": "{brand.blue}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "STROKE_COLOR"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      }
+    },
+    "switch": {
+      "default": {
+        "value": "{brand.red}",
+        "type": "color",
+        "$extensions": {
+          "com.figma.scopes": [
+            "SHAPE_FILL"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        }
+      }
+    }
+  }
+}
