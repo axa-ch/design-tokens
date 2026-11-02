@@ -16,12 +16,24 @@ import {
   responsiveTypescriptFormatName,
 } from "./formats/responsive-typescript";
 import {
+  tailwindFormat,
+  tailwindFormatName,
+  tailwindVariablesFormat,
+  tailwindVariablesFormatName,
+} from "./formats/tailwind";
+import {
+  tailwindThemeCssFormat,
+  tailwindThemeCssFormatName,
+} from "./formats/tailwind-theme-css";
+import {
   responsiveJsonParser,
   responsiveJsonParserName,
 } from "./parsers/responsive-json";
 import { css } from "./platforms/css";
 import { js } from "./platforms/js";
 import { scss } from "./platforms/scss";
+import { tailwind } from "./platforms/tailwind";
+import { tailwindThemeCss } from "./platforms/tailwind-theme-css";
 
 const config = {
   hooks: {
@@ -33,6 +45,9 @@ const config = {
       [responsiveScssFormatName]: responsiveScssFormat,
       [responsiveJavascriptFormatName]: responsiveJavascriptFormat,
       [responsiveTypescriptFormatName]: responsiveTypescriptFormat,
+      [tailwindFormatName]: tailwindFormat,
+      [tailwindVariablesFormatName]: tailwindVariablesFormat,
+      [tailwindThemeCssFormatName]: tailwindThemeCssFormat,
     },
   },
   parsers: [responsiveJsonParserName],
@@ -41,6 +56,8 @@ const config = {
     css,
     scss,
     js,
+    tailwind,
+    "tailwind-theme-css": tailwindThemeCss,
   },
   log: {
     verbosity: "verbose",
