@@ -1,0 +1,35 @@
+.token-documentation {
+  max-width: 1120px;
+  margin: auto;
+  padding: 32px;
+  color: #242429;
+  background: #fff;
+  font-family: "Source Sans 3", sans-serif;
+  line-height: 1.5;
+}
+.token-documentation h1 { font-size: 2rem; }
+.token-documentation h2 { margin-top: 40px; }
+.token-documentation h3 { overflow-wrap: anywhere; }
+.token-documentation nav { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.token-documentation a { color: #00008f; }
+.token-documentation .token-card { border: 1px solid #d4d7dd; border-radius: 8px; padding: 20px; margin: 16px 0; }
+.token-documentation dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; }
+.token-documentation dd { margin: 0; overflow-wrap: anywhere; }
+.token-documentation .token-preview { overflow: auto; padding: 24px; margin: 16px 0; background: #efeff1; }
+.token-documentation .token-preview-color { background: repeating-conic-gradient(#ddd 0% 25%, #fff 0% 50%) 0 / 16px 16px; }
+.token-documentation .token-preview-color > div { height: 64px; }
+.token-documentation .token-preview-shape > div { width: 96px; height: 64px; background: #00008f; border-style: solid; border-color: #ff1721; }
+.token-documentation .token-preview-shadow > div { width: 96px; height: 64px; background: #fff; color: #242429; }
+.token-documentation .token-preview-spacing > div { display: flex; width: 100%; min-width: 2px; min-height: 24px; background: #b6dfff; }
+.token-documentation .token-preview-spacing span { display: block; flex: 0 0 16px; height: 24px; background: #00008f; }
+.token-documentation .token-preview-desktop { display: none; }
+.token-documentation summary { cursor: pointer; font-weight: 600; }
+.token-code { margin: 16px 0; }
+.token-code header { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.token-code button { cursor: pointer; padding: 4px 12px; }
+.token-code pre { overflow: auto; padding: 16px; background: #f7f7f8; border: 1px solid #dddfe4; }
+.token-code [role="status"] { font-size: 0.875rem; }
+@media (max-width: 600px) {
+  .token-documentation { padding: 16px; }
+  .token-documentation dl { grid-template-columns: 1fr; }
+}

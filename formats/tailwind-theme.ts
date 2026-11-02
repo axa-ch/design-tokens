@@ -16,7 +16,7 @@ const dimension = (token: TransformedToken, unit = "px"): string => {
     : token.value;
 };
 
-const fontWeight = (token: TransformedToken): string => {
+export const fontWeight = (token: TransformedToken): string => {
   const weights: Record<string, string> = {
     thin: "100",
     extralight: "200",
@@ -58,6 +58,16 @@ export const buildTailwindTheme = (dictionary: Dictionary) => {
     maxWidth: {},
     boxShadow: {},
   };
+  const mappings = new Map<string, { group: string; key: string }>();
+  const set = (
+    token: TransformedToken,
+    group: string,
+    key: string,
+    value: TailwindValue,
+  ) => {
+    theme[group][key] = value;
+    mappings.set(token.path.join("."), { group, key });
+  };
   const tokensByPath = new Map(
     variableTokens.map((token) => [token.path.join("."), token]),
   );
@@ -80,7 +90,7 @@ export const buildTailwindTheme = (dictionary: Dictionary) => {
   };
 
   for (const token of sortedBreakpointTokens) {
-    theme.screens[token.path.slice(1).join("-")] = dimension(token);
+    set(token, "screens", token.path.slice(1).join("-"), dimension(token));
   }
 
   for (const token of variableTokens) {
@@ -88,11 +98,11 @@ export const buildTailwindTheme = (dictionary: Dictionary) => {
     const key = path.join("-");
 
     if (token.type === "color") {
-      theme.colors[token.name] = token.value;
+      set(token, "colors", token.name, token.value);
     } else if (root === "radius") {
-      theme.borderRadius[key] = dimension(token, key === "circle" ? "%" : "px");
+      set(token, "borderRadius", key, dimension(token, key === "circle" ? "%" : "px"));
     } else if (["dimension", "gap", "padding"].includes(root)) {
-      theme.spacing[token.name] = dimension(token);
+      set(token, "spacing", token.name, dimension(token));
     } else if (token.path.at(-1) === "font-size") {
       const lineHeight = tokensByPath.get(
         [...token.path.slice(0, -1), "line-height"].join("."),
@@ -103,39 +113,47 @@ export const buildTailwindTheme = (dictionary: Dictionary) => {
         );
       }
 
-      theme.fontSize[token.name.replace(/-font-size$/, "")] = [
+      set(token, "fontSize", token.name.replace(/-font-size$/, ""), [
         responsiveValue(token),
         { lineHeight: responsiveValue(lineHeight) },
-      ];
+      ]);
     } else if (root === "fontSize") {
-      theme.fontSize[key] = responsiveValue(token);
+      set(token, "fontSize", key, responsiveValue(token));
     } else if (root === "lineHeight" || token.path.at(-1) === "line-height") {
-      theme.lineHeight[
-        root === "lineHeight" ? key : token.name.replace(/-line-height$/, "")
-      ] = responsiveValue(token);
+      set(
+        token, "lineHeight",
+        root === "lineHeight" ? key : token.name.replace(/-line-height$/, ""),
+        responsiveValue(token),
+      );
     } else if (root === "font-family" || token.name.endsWith("-font-family")) {
-      theme.fontFamily[
-        token.name.replace(/^font-family-/, "").replace(/-font-family$/, "")
-      ] = responsiveValue(token, (family) => String(family.value));
+      set(
+        token, "fontFamily",
+        token.name.replace(/^font-family-/, "").replace(/-font-family$/, ""),
+        responsiveValue(token, (family) => String(family.value)),
+      );
     } else if (root === "fontWeights" || token.path.at(-1) === "font-weight") {
-      theme.fontWeight[
-        token.name.replace(/^font-weights-/, "").replace(/-font-weight$/, "")
-      ] = responsiveValue(token, fontWeight);
+      set(
+        token, "fontWeight",
+        token.name.replace(/^font-weights-/, "").replace(/-font-weight$/, ""),
+        responsiveValue(token, fontWeight),
+      );
     } else if (
       root === "letterSpacing" ||
       token.path.at(-1) === "letter-spacing"
     ) {
-      theme.letterSpacing[
+      set(
+        token, "letterSpacing",
         token.name
           .replace(/^letter-spacing-/, "")
-          .replace(/-letter-spacing$/, "")
-      ] = responsiveValue(token);
+          .replace(/-letter-spacing$/, ""),
+        responsiveValue(token),
+      );
     } else if (root === "blur" && path[0] === "size") {
-      theme.blur[path.slice(1).join("-")] = dimension(token);
+      set(token, "blur", path.slice(1).join("-"), dimension(token));
     } else if (root === "stroke" && path[0] === "width") {
-      theme.borderWidth[path.slice(1).join("-")] = dimension(token);
+      set(token, "borderWidth", path.slice(1).join("-"), dimension(token));
     } else if (root === "container" && path[0] === "size") {
-      theme.maxWidth[path.slice(1).join("-")] = dimension(token);
+      set(token, "maxWidth", path.slice(1).join("-"), dimension(token));
     } else if (root === "drop-shadow" && path.at(-1) === "x") {
       const shadowPath = token.path.slice(0, -1);
       const components = ["x", "y", "blur", "spread"].map((component) => {
@@ -153,7 +171,11 @@ export const buildTailwindTheme = (dictionary: Dictionary) => {
         components.push(String(color.value));
       }
 
-      theme.boxShadow[path.slice(0, -1).join("-")] = components.join(" ");
+      const key = path.slice(0, -1).join("-");
+      set(token, "boxShadow", key, components.join(" "));
+      for (const component of ["y", "blur", "spread"]) {
+        mappings.set([...shadowPath, component].join("."), { group: "boxShadow", key });
+      }
     }
   }
 
@@ -180,5 +202,5 @@ export const buildTailwindTheme = (dictionary: Dictionary) => {
     ? `:root {\n${declarations(responsiveTokens, "  ")}\n}\n\n@media (min-width: ${desktopBreakpoint}) {\n  :root {\n${declarations(usedOverrides, "    ")}\n  }\n}\n`
     : "";
 
-  return { theme, responsiveCss };
+  return { theme, responsiveCss, mappings };
 };

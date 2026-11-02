@@ -38,7 +38,7 @@ export const getReferenceTargetKeys = (leaf: ReferenceLeaf): string[] => {
   return leaf.targetKeys;
 };
 
-const toCamelCase = (segment: string) =>
+export const toCamelCase = (segment: string) =>
   segment
     .split(/[^a-zA-Z0-9]+/)
     .filter(Boolean)

@@ -1,0 +1,59 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { CodeExample } from './components/token-documentation/token-documentation';
+
+<Meta title="Platforms" />
+
+# Platform setup
+
+Run `npm run build` to generate all platform outputs and the token stories.
+Adjust the import paths below to match your application. Token pages provide
+copyable usage examples for each platform.
+
+## CSS
+
+<CodeExample label="CSS setup" code={'@import "./build/css/tokens.css";\n\n.example { background-color: var(--axa-bg-base); }'} />
+
+Numeric lengths are unitless tokens: use `calc(var(--axa-gap-sm) * 1px)`.
+Motion durations similarly require `calc(var(--axa-xs) * 1ms)`.
+The generated `@custom-media` definitions require a custom-media processor:
+native CSS alone does not resolve them, including the responsive typography query.
+
+## SCSS
+
+<CodeExample label="SCSS setup" code={'@use "./build/scss/tokens.scss" as tokens;\n\n@include tokens.axa-tokens();\n\n.example { background-color: var(--axa-bg-base); }\n\n@media #{tokens.$axa-media-up-lg} {\n  .example { display: block; }\n}'} />
+
+SCSS exposes media-query variables and the `axa-tokens` mixin, not individual
+Sass variables for token values. Include the mixin once to emit CSS custom
+properties and native responsive media queries. Pass a selector to scope them:
+`@include tokens.axa-tokens(".my-theme");`.
+
+## JavaScript and TypeScript
+
+<CodeExample label="JavaScript setup" code={'import { bg, title, media } from "./build/js/tokens.js";\n\nconst background = bg.base;\nconst mobileSize = title.serif.lg.fontSize.xs;\nconst desktopSize = title.serif.lg.fontSize.lg;\nconst desktopQuery = media.up.lg;'} />
+
+The adjacent `tokens.d.ts` supplies TypeScript declarations. Values do not switch
+automatically with the viewport: use your framework's viewport handling to
+choose between `xs` and `lg`. Tokens without differing values are plain values.
+Numeric lengths and durations remain numbers; add units at the point of use.
+
+## Tailwind JavaScript preset
+
+<CodeExample label="Tailwind preset setup" code={'import axaTokens from "./build/tailwind/tokens.js";\n\nexport default {\n  presets: [axaTokens],\n  content: ["./src/**/*.{html,js,ts,tsx}"],\n};'} />
+
+<CodeExample label="Tailwind preset stylesheet" code={'@import "./build/tailwind/tokens.css";\n\n@tailwind base;\n@tailwind components;\n@tailwind utilities;'} />
+
+The companion stylesheet supplies responsive token values; do not omit it.
+
+## Tailwind v4 CSS theme
+
+<CodeExample label="Tailwind v4 setup" code={'@import "tailwindcss";\n@import "./build/tailwind/theme.css";'} />
+
+The standalone theme includes `@theme inline` and responsive variables. It needs
+neither the JavaScript preset nor its companion stylesheet. Both Tailwind
+integrations use the utility names shown on the token pages.
+
+<CodeExample label="Tailwind usage" code={'<div class="bg-bg-base gap-gap-sm text-title-serif-lg">Example</div>'} />
+
+Typography switches from Mobile to Desktop at the generated `device.lg`
+breakpoint. Tokens without a mapping, such as grid column counts and motion
+durations, have no generated utility; use their CSS or JavaScript values.

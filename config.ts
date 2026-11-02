@@ -17,6 +17,12 @@ import {
   responsiveTypescriptFormatName,
 } from "./formats/responsive-typescript";
 import {
+  storybookCatalogFormat,
+  storybookCatalogFormatName,
+  storybookStoriesFormat,
+  storybookStoriesFormatName,
+} from "./formats/storybook";
+import {
   tailwindFormat,
   tailwindFormatName,
   tailwindVariablesFormat,
@@ -33,6 +39,7 @@ import {
 import { css } from "./platforms/css";
 import { js } from "./platforms/js";
 import { scss } from "./platforms/scss";
+import { storybook } from "./platforms/storybook";
 import { tailwind } from "./platforms/tailwind";
 import { tailwindThemeCss } from "./platforms/tailwind-theme-css";
 
@@ -46,6 +53,8 @@ const config = {
       [responsiveScssFormatName]: responsiveScssFormat,
       [responsiveJavascriptFormatName]: responsiveJavascriptFormat,
       [responsiveTypescriptFormatName]: responsiveTypescriptFormat,
+      [storybookCatalogFormatName]: storybookCatalogFormat,
+      [storybookStoriesFormatName]: storybookStoriesFormat,
       [tailwindFormatName]: tailwindFormat,
       [tailwindVariablesFormatName]: tailwindVariablesFormat,
       [tailwindThemeCssFormatName]: tailwindThemeCssFormat,
@@ -57,6 +66,7 @@ const config = {
     css,
     scss,
     js,
+    storybook,
     tailwind,
     "tailwind-theme-css": tailwindThemeCss,
   },

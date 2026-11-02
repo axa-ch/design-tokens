@@ -28,8 +28,10 @@ import { Text } from './components/text/text';
 ```scss
 @use "./build/scss/tokens.scss" as tokens;
 
+@include tokens.axa-tokens();
+
 .button {
-  color: tokens.$axa-brand-blue;
+  color: var(--axa-brand-blue);
 }
 ```
 
@@ -47,5 +49,8 @@ console.log(media.up.md);
 CSS custom-media queries and SCSS/JavaScript media values use the same
 `--axa-media-*` / `axa-media-*` names. The token model and available families
 are described in the project README.
+
+See the **Platforms** page for setup instructions for every output, including
+the Tailwind JavaScript preset and Tailwind v4 CSS theme.
   </div>
 </Unstyled>

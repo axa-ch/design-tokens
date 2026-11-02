@@ -3,6 +3,7 @@ import { themes } from "storybook/theming";
 
 // load custom fonts
 import "../stories/assets/css/fonts.css";
+import "../stories/assets/css/token-documentation.css";
 // load the tokens
 import "../build/css/tokens.css";
 

@@ -1,14 +1,37 @@
 # AXA Design Tokens
 
 Run `npm run build` to generate CSS, SCSS, JavaScript/TypeScript and Tailwind
-outputs from `tokens/**/*.json`. Run `npm test` to validate the Tailwind outputs.
+outputs from `tokens/**/*.json`, plus generated Storybook documentation.
+Run `npm test` to validate documentation generation and rendering.
 
 ## Storybook demo
 
 Run `npm run storybook` to build the tokens and start the demo on port 6006.
 Run `npm run build-storybook` to build the static Storybook site.
-The demo covers available color, media, radius, shadow, spacing, and typography
-tokens; it does not invent token families that are absent from v4.
+The `storybook` Style Dictionary platform writes `build/storybook/catalog.json`
+and `build/storybook/tokens.stories.tsx` on every build. These generated files are
+ignored by Git and cleaned with the other platform outputs. Do not edit them.
+
+Stories are grouped by the exported token collections: Colors, Typography,
+Spacing, Shapes, Effects, Breakpoints, Containers, Grid and Motion. Collections
+named "primitives" are excluded. Tokens also defined in a non-primitive
+collection remain documented, including foundations stored in Typography.
+Supplemental files in `tokens/primitives/` still participate in resolving values;
+their presence does not hide a token also defined in a documented collection.
+Figma publishing visibility does not affect documentation.
+
+Each token page includes descriptions where supplied, resolved values,
+type-appropriate previews, Mobile/Desktop values and copyable CSS, SCSS,
+JavaScript and Tailwind usage. Related typography and shadow values are combined
+for previews. Tailwind examples use the same mapping as both Tailwind outputs;
+unmapped tokens are explicitly identified. The Platforms page documents setup
+for all outputs, including both Tailwind integrations. Welcome and migration
+pages remain handwritten, as do the reusable documentation components.
+
+CSS custom-media queries require a custom-media processor. SCSS emits native
+responsive queries through `@include tokens.axa-tokens()`; individual token
+values are CSS custom properties, not Sass variables. JavaScript responsive
+values must be selected explicitly by the consumer.
 
 ## Tailwind JavaScript preset
 

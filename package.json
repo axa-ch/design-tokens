@@ -30,6 +30,7 @@
     "prebuild": "npm run clean",
     "build": "npm run typecheck && tsx build.ts",
     "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
     "storybook": "npm run build && storybook dev -p 6006",
     "build-storybook": "npm run build && storybook build"
   },

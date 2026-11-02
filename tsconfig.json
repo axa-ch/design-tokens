@@ -5,6 +5,8 @@
     "moduleResolution": "Bundler",
     "strict": true,
     "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
     "types": ["node"],
     "noEmit": true
   },
@@ -13,6 +15,9 @@
     "config.ts",
     "formats/**/*.ts",
     "parsers/**/*.ts",
-    "platforms/**/*.ts"
+    "platforms/**/*.ts",
+    "stories/components/token-documentation/**/*.tsx",
+    "tests/**/*.ts",
+    "build/storybook/**/*.tsx"
   ]
 }
