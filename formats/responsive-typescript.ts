@@ -24,12 +24,12 @@ export const responsiveTypescriptFormat: FormatFn = async ({
   dictionary,
   file,
 }) => {
-  const { groups, valueOf } = buildResponsiveObject(dictionary);
+  const { groups, valueOf: resolveValue } = buildResponsiveObject(dictionary);
 
   return `${await fileHeader({ file })}${groups
     .map(
       ({ name, node }) =>
-        `export declare const ${name}: ${formatType(valueOf(node))};`,
+        `export declare const ${name}: ${formatType(resolveValue(node))};`,
     )
     .join("\n\n")}\n`;
 };

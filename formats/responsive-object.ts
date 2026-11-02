@@ -30,6 +30,14 @@ type ResponsiveObject = {
   valueOf: (node: ResponsiveNode) => unknown;
 };
 
+export const getReferenceTargetKeys = (leaf: ReferenceLeaf): string[] => {
+  if (leaf.targetKeys === undefined) {
+    throw new Error(`Reference "{${leaf.reference}}" has not been resolved.`);
+  }
+
+  return leaf.targetKeys;
+};
+
 const toCamelCase = (segment: string) =>
   segment
     .split(/[^a-zA-Z0-9]+/)
@@ -159,8 +167,9 @@ export const buildResponsiveObject = (
   };
 
   sortedBreakpointTokens.forEach((token, index, tokens) => {
-    const viewport = toCamelCase(token.path.at(-1)!);
-    const { up, down, only } = breakpointQueries(token, index, tokens);
+    const queries = breakpointQueries(token, index, tokens);
+    const viewport = toCamelCase(queries.viewport);
+    const { up, down, only } = queries;
     const source = token.path.join(".");
 
     insert(
@@ -275,21 +284,29 @@ export const buildResponsiveObject = (
     return node;
   };
 
-  const valueOf = (node: ResponsiveNode): unknown => {
+  const resolveValue = (node: ResponsiveNode): unknown => {
     if (node instanceof Map) {
       return Object.fromEntries(
-        [...node].map(([key, child]) => [key, valueOf(child)]),
+        [...node].map(([key, child]) => [key, resolveValue(child)]),
       );
     }
 
     return "literal" in node
       ? node.literal
-      : valueOf(getNode(node.targetKeys!));
+      : resolveValue(getNode(getReferenceTargetKeys(node)));
   };
 
   return {
-    groups: groupNames.map((name) => ({ name, node: root.get(name)! })),
+    groups: groupNames.map((name) => {
+      const node = root.get(name);
+
+      if (node === undefined) {
+        throw new Error(`Export group "${name}" was not found.`);
+      }
+
+      return { name, node };
+    }),
     deferred: sortedDeferred,
-    valueOf,
+    valueOf: resolveValue,
   };
 };

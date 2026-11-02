@@ -4,6 +4,7 @@ import {
   buildResponsiveObject,
   formatAccessor,
   formatKey,
+  getReferenceTargetKeys,
 } from "./responsive-object";
 
 export const responsiveJavascriptFormatName = "javascript/responsive-object";
@@ -16,7 +17,7 @@ const formatNode = (node: ResponsiveNode, indentLevel = 0): string => {
   if (!(node instanceof Map)) {
     return "literal" in node
       ? (JSON.stringify(node.literal) ?? "undefined")
-      : formatAccessor(node.targetKeys!);
+      : formatAccessor(getReferenceTargetKeys(node));
   }
 
   const entries = [...node].filter(([, child]) => {

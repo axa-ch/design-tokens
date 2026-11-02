@@ -25,12 +25,15 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "lint": "biome lint .",
     "clean": "tsx clean.ts",
     "prebuild": "npm run clean",
     "build": "npm run typecheck && tsx build.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
+    "@axa-ch/easy-config": "^4.0.1",
+    "@biomejs/biome": "^2.4.8",
     "@types/node": "^26.6.6",
     "style-dictionary": "^5.5.0",
     "tsx": "^4.23.15",

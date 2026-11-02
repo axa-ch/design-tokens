@@ -89,6 +89,12 @@ export const breakpointQueries = (
   index: number,
   tokens: TransformedToken[],
 ) => {
+  const viewport = token.path.at(-1);
+
+  if (viewport === undefined) {
+    throw new Error("A breakpoint token must have a non-empty path.");
+  }
+
   const nextToken = tokens[index + 1];
   const minWidth = `(min-width: ${formatBreakpointValue(token.value)})`;
   const maxWidth = nextToken
@@ -96,7 +102,7 @@ export const breakpointQueries = (
     : null;
 
   return {
-    viewport: token.path.at(-1)!,
+    viewport,
     up: minWidth,
     down: maxWidth ?? "(min-width: 0px)",
     only: maxWidth ? `${minWidth} and ${maxWidth}` : minWidth,
