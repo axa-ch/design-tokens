@@ -1,5 +1,11 @@
 import { isDeepStrictEqual } from "node:util";
 import { propertyFormatNames } from "style-dictionary/enums";
+import type {
+  Dictionary,
+  LocalOptions,
+  TransformedToken,
+  TransformedTokens,
+} from "style-dictionary/types";
 import {
   createPropertyFormatter,
   sortByReference,
@@ -7,7 +13,15 @@ import {
 
 const desktopMode = "desktop-mode";
 
-export const splitResponsiveTokens = (dictionary) => {
+type ResponsiveTokens = {
+  sortedBreakpointTokens: TransformedToken[];
+  variableTokens: TransformedToken[];
+  desktopOverrides: TransformedToken[];
+};
+
+export const splitResponsiveTokens = (
+  dictionary: Dictionary,
+): ResponsiveTokens => {
   const desktopTokens = dictionary.allTokens.filter(
     (token) => token.path[0] === desktopMode,
   );
@@ -27,7 +41,7 @@ export const splitResponsiveTokens = (dictionary) => {
     mobileTokens.map((token) => [token.path.join("."), token]),
   );
   const desktopOverrides = desktopTokens
-    .map((token) => {
+    .map((token): TransformedToken | null => {
       const mobileToken = mobileTokensByPath.get(token.path.slice(1).join("."));
 
       if (!mobileToken) {
@@ -40,7 +54,7 @@ export const splitResponsiveTokens = (dictionary) => {
         ? null
         : { ...token, name: mobileToken.name };
     })
-    .filter(Boolean);
+    .filter((token): token is TransformedToken => token !== null);
 
   if (!breakpointTokens.some((token) => token.path.join(".") === "device.lg")) {
     throw new Error('The responsive formats require a "device.lg" token.');
@@ -49,25 +63,32 @@ export const splitResponsiveTokens = (dictionary) => {
   return { sortedBreakpointTokens, variableTokens, desktopOverrides };
 };
 
-export const createResponsiveTokenFormatter = (dictionary, options) => {
+export const createResponsiveTokenFormatter = (
+  dictionary: Dictionary,
+  options: LocalOptions,
+) => {
   const formatProperty = createPropertyFormatter({
     outputReferences: options.outputReferences,
     dictionary,
     format: propertyFormatNames.css,
   });
 
-  return (tokens, indentLevel = 0) =>
+  return (tokens: TransformedToken[], indentLevel = 0) =>
     [...tokens]
-      .sort(sortByReference(dictionary))
+      .sort(sortByReference(dictionary as unknown as TransformedTokens))
       .map(formatProperty)
       .map((line) => `${"  ".repeat(indentLevel)}${line}`)
       .join("\n");
 };
 
-const formatBreakpointValue = (value) =>
+const formatBreakpointValue = (value: unknown) =>
   `${value}${typeof value === "number" ? "px" : ""}`;
 
-export const breakpointQueries = (token, index, tokens) => {
+export const breakpointQueries = (
+  token: TransformedToken,
+  index: number,
+  tokens: TransformedToken[],
+) => {
   const nextToken = tokens[index + 1];
   const minWidth = `(min-width: ${formatBreakpointValue(token.value)})`;
   const maxWidth = nextToken
@@ -75,7 +96,7 @@ export const breakpointQueries = (token, index, tokens) => {
     : null;
 
   return {
-    viewport: token.path.at(-1),
+    viewport: token.path.at(-1)!,
     up: minWidth,
     down: maxWidth ?? "(min-width: 0px)",
     only: maxWidth ? `${minWidth} and ${maxWidth}` : minWidth,

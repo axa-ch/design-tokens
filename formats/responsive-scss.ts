@@ -1,18 +1,31 @@
+import type { FormatFn, TransformedToken } from "style-dictionary/types";
 import { fileHeader } from "style-dictionary/utils";
 import {
   breakpointQueries,
   createResponsiveTokenFormatter,
   splitResponsiveTokens,
-} from "./responsive-helpers.js";
+} from "./responsive-helpers";
 
 export const responsiveScssFormatName = "scss/responsive-variables";
 
-export const responsiveScssFormat = async ({ dictionary, options, file }) => {
+export const responsiveScssFormat: FormatFn = async ({
+  dictionary,
+  options,
+  file,
+}) => {
   const { sortedBreakpointTokens, variableTokens, desktopOverrides } =
     splitResponsiveTokens(dictionary);
   const formatTokens = createResponsiveTokenFormatter(dictionary, options);
-  const formatMediaVariables = (...args) => {
-    const { viewport, up, down, only } = breakpointQueries(...args);
+  const formatMediaVariables = (
+    token: TransformedToken,
+    index: number,
+    tokens: TransformedToken[],
+  ) => {
+    const { viewport, up, down, only } = breakpointQueries(
+      token,
+      index,
+      tokens,
+    );
 
     return [
       `$axa-media-up-${viewport}: "${up}";`,

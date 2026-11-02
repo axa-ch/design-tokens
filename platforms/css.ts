@@ -1,5 +1,6 @@
 import { formats, transformGroups } from "style-dictionary/enums";
-import { responsiveCssFormatName } from "../formats/responsive-css.js";
+import type { PlatformConfig } from "style-dictionary/types";
+import { responsiveCssFormatName } from "../formats/responsive-css";
 
 export const css = {
   transformGroup: transformGroups.css,
@@ -18,4 +19,4 @@ export const css = {
       format: formats.cssFonts,
     },
   ],
-};
+} satisfies PlatformConfig;

@@ -1,6 +1,7 @@
 import { transforms } from "style-dictionary/enums";
-import { responsiveJavascriptFormatName } from "../formats/responsive-javascript.js";
-import { responsiveTypescriptFormatName } from "../formats/responsive-typescript.js";
+import type { PlatformConfig } from "style-dictionary/types";
+import { responsiveJavascriptFormatName } from "../formats/responsive-javascript";
+import { responsiveTypescriptFormatName } from "../formats/responsive-typescript";
 
 export const js = {
   transforms: [
@@ -19,4 +20,4 @@ export const js = {
       format: responsiveTypescriptFormatName,
     },
   ],
-};
+} satisfies PlatformConfig;

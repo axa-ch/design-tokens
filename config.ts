@@ -1,26 +1,27 @@
+import type { Config } from "style-dictionary/types";
 import {
   responsiveCssFormat,
   responsiveCssFormatName,
-} from "./formats/responsive-css.js";
+} from "./formats/responsive-css";
 import {
   responsiveJavascriptFormat,
   responsiveJavascriptFormatName,
-} from "./formats/responsive-javascript.js";
+} from "./formats/responsive-javascript";
 import {
   responsiveScssFormat,
   responsiveScssFormatName,
-} from "./formats/responsive-scss.js";
+} from "./formats/responsive-scss";
 import {
   responsiveTypescriptFormat,
   responsiveTypescriptFormatName,
-} from "./formats/responsive-typescript.js";
+} from "./formats/responsive-typescript";
 import {
   responsiveJsonParser,
   responsiveJsonParserName,
-} from "./parsers/responsive-json.js";
-import { css } from "./platforms/css.js";
-import { js } from "./platforms/js.js";
-import { scss } from "./platforms/scss.js";
+} from "./parsers/responsive-json";
+import { css } from "./platforms/css";
+import { js } from "./platforms/js";
+import { scss } from "./platforms/scss";
 
 const config = {
   hooks: {
@@ -44,6 +45,6 @@ const config = {
   log: {
     verbosity: "verbose",
   },
-};
+} satisfies Config;
 
 export default config;

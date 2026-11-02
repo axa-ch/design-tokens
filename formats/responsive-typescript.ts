@@ -1,14 +1,18 @@
+import type { FormatFn } from "style-dictionary/types";
 import { fileHeader } from "style-dictionary/utils";
-import { buildResponsiveObject, formatKey } from "./responsive-object.js";
+import { buildResponsiveObject, formatKey } from "./responsive-object";
 
 export const responsiveTypescriptFormatName =
   "typescript/responsive-object-declarations";
 
-const formatType = (value, indentLevel = 0) => {
-  if (typeof value !== "object") return typeof value;
+const formatType = (value: unknown, indentLevel = 0): string => {
+  if (typeof value !== "object" || value === null) {
+    return typeof value;
+  }
 
   const indent = "  ".repeat(indentLevel + 1);
-  return `{\n${Object.entries(value)
+
+  return `{\n${Object.entries(value as Record<string, unknown>)
     .map(
       ([key, child]) =>
         `${indent}readonly ${formatKey(key)}: ${formatType(child, indentLevel + 1)};`,
@@ -16,7 +20,10 @@ const formatType = (value, indentLevel = 0) => {
     .join("\n")}\n${"  ".repeat(indentLevel)}}`;
 };
 
-export const responsiveTypescriptFormat = async ({ dictionary, file }) => {
+export const responsiveTypescriptFormat: FormatFn = async ({
+  dictionary,
+  file,
+}) => {
   const { groups, valueOf } = buildResponsiveObject(dictionary);
 
   return `${await fileHeader({ file })}${groups

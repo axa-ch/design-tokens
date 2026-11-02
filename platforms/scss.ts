@@ -1,5 +1,6 @@
 import { transformGroups } from "style-dictionary/enums";
-import { responsiveScssFormatName } from "../formats/responsive-scss.js";
+import type { PlatformConfig } from "style-dictionary/types";
+import { responsiveScssFormatName } from "../formats/responsive-scss";
 
 export const scss = {
   transformGroup: transformGroups.scss,
@@ -14,4 +15,4 @@ export const scss = {
       },
     },
   ],
-};
+} satisfies PlatformConfig;
