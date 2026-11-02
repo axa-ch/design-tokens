@@ -1,0 +1,33 @@
+.text {
+  color: var(--axa-gray-700);
+  font-family: var(--axa-font-family-source-sans);
+
+  a {
+    color: var(--axa-brand-blue);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--axa-brand-red);
+    }
+  }
+}
+
+.text-1 {
+  font-size: calc(var(--axa-font-size-16) * 1px);
+  line-height: calc(var(--axa-line-height-24) * 1px);
+}
+
+.text-2 {
+  font-size: calc(var(--axa-font-size-14) * 1px);
+  line-height: calc(var(--axa-line-height-20) * 1px);
+}
+
+.text-3 {
+  font-size: calc(var(--axa-font-size-13) * 1px);
+  line-height: calc(var(--axa-line-height-18) * 1px);
+}
+
+.text-4 {
+  font-size: calc(var(--axa-font-size-13) * 1px);
+  line-height: calc(var(--axa-line-height-18) * 1px);
+}

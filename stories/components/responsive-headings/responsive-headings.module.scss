@@ -1,0 +1,27 @@
+.container {
+  @media (max-width: 478px) {
+    h1 {
+      font-size: calc(var(--axa-font-size-32) * 1px);
+    }
+
+    h2 {
+      font-size: calc(var(--axa-font-size-28) * 1px);
+    }
+
+    h3 {
+      font-size: calc(var(--axa-font-size-24) * 1px);
+    }
+
+    h4 {
+      font-size: calc(var(--axa-font-size-20) * 1px);
+    }
+
+    h5 {
+      font-size: calc(var(--axa-font-size-18) * 1px);
+    }
+
+    h6 {
+      font-size: calc(var(--axa-font-size-16) * 1px);
+    }
+  }
+}

@@ -1,3 +1,4 @@
+import { logVerbosityLevels } from "style-dictionary/enums";
 import type { Config } from "style-dictionary/types";
 import {
   responsiveCssFormat,
@@ -60,7 +61,7 @@ const config = {
     "tailwind-theme-css": tailwindThemeCss,
   },
   log: {
-    verbosity: "verbose",
+    verbosity: logVerbosityLevels.verbose,
   },
 } satisfies Config;
 

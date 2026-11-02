@@ -1,0 +1,28 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--axa-dimension-24) * 1px);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--axa-dimension-12) * 1px);
+  color: var(--axa-brand-blue);
+
+  span {
+    min-width: calc(var(--axa-dimension-80) * 1px);
+    text-align: right;
+  }
+
+  figure {
+    padding: 0;
+    margin: 0;
+    background: currentColor;
+    width: var(--spacing);
+    height: var(--spacing);
+  }
+}

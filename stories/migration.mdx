@@ -1,0 +1,51 @@
+import { Meta, Unstyled } from '@storybook/addon-docs/blocks';
+import { Heading } from './components/heading/heading';
+import { Text } from './components/text/text';
+
+<Meta title='V4 Token Formats' />
+
+<Unstyled>
+  <div style={{ background: '#fff', color: 'var(--axa-gray-950)', minHeight: '100vh', padding: '32px' }}>
+    <Heading as='h1'>V4 token formats</Heading>
+    <Text as='div'>
+      Run <code>npm run build</code> to generate the token outputs. This demo uses
+      the generated files in <code>build/</code>; it does not recreate the legacy
+      per-category files from earlier releases.
+    </Text>
+
+## CSS
+
+```css
+@import "./build/css/tokens.css";
+
+.button {
+  color: var(--axa-brand-blue);
+}
+```
+
+## SCSS
+
+```scss
+@use "./build/scss/tokens.scss" as tokens;
+
+.button {
+  color: tokens.$axa-brand-blue;
+}
+```
+
+## JavaScript
+
+```js
+import { brand, media } from "./build/js/tokens.js";
+
+console.log(brand.blue);
+console.log(media.up.md);
+```
+
+## Responsive tokens
+
+CSS custom-media queries and SCSS/JavaScript media values use the same
+`--axa-media-*` / `axa-media-*` names. The token model and available families
+are described in the project README.
+  </div>
+</Unstyled>

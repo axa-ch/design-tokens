@@ -1,0 +1,7 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: calc(var(--axa-dimension-12) * 1px);
+  box-sizing: border-box;
+  max-width: calc(var(--axa-container-size-md) * 1px);
+}

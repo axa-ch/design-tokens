@@ -1,0 +1,65 @@
+.h1-primary,
+.h1-secondary,
+.h2-primary,
+.h2-secondary,
+.h3-primary,
+.h3-secondary,
+.h4-primary,
+.h4-secondary,
+.h5-primary,
+.h5-secondary,
+.h6-primary,
+.h6-secondary {
+  margin: 0 0 calc(var(--axa-dimension-16) * 1px);
+  line-height: 1.2;
+}
+
+.h1-primary,
+.h2-primary,
+.h3-primary,
+.h4-primary,
+.h5-primary,
+.h6-primary {
+  color: var(--axa-brand-blue);
+  font-family: var(--axa-font-family-source-sans);
+}
+
+.h1-secondary,
+.h2-secondary,
+.h3-secondary,
+.h4-secondary,
+.h5-secondary,
+.h6-secondary {
+  color: var(--axa-gray-950);
+  font-family: var(--axa-font-family-bold-publico);
+}
+
+.h1-primary,
+.h1-secondary {
+  font-size: calc(var(--axa-font-size-48) * 1px);
+}
+
+.h2-primary,
+.h2-secondary {
+  font-size: calc(var(--axa-font-size-40) * 1px);
+}
+
+.h3-primary,
+.h3-secondary {
+  font-size: calc(var(--axa-font-size-32) * 1px);
+}
+
+.h4-primary,
+.h4-secondary {
+  font-size: calc(var(--axa-font-size-28) * 1px);
+}
+
+.h5-primary,
+.h5-secondary {
+  font-size: calc(var(--axa-font-size-24) * 1px);
+}
+
+.h6-primary,
+.h6-secondary {
+  font-size: calc(var(--axa-font-size-20) * 1px);
+}

@@ -1,0 +1,23 @@
+import type { Preview } from "@storybook/react-vite";
+import { themes } from "storybook/theming";
+
+// load custom fonts
+import "../stories/assets/css/fonts.css";
+// load the tokens
+import "../build/css/tokens.css";
+
+const preview: Preview = {
+  parameters: {
+    options: {
+      showPanel: false,
+      storySort: {
+        order: ["Welcome"],
+      },
+    },
+    docs: {
+      theme: themes.normal,
+    },
+  },
+};
+
+export default preview;

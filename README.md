@@ -3,6 +3,13 @@
 Run `npm run build` to generate CSS, SCSS, JavaScript/TypeScript and Tailwind
 outputs from `tokens/**/*.json`. Run `npm test` to validate the Tailwind outputs.
 
+## Storybook demo
+
+Run `npm run storybook` to build the tokens and start the demo on port 6006.
+Run `npm run build-storybook` to build the static Storybook site.
+The demo covers available color, media, radius, shadow, spacing, and typography
+tokens; it does not invent token families that are absent from v4.
+
 ## Tailwind JavaScript preset
 
 The `tailwind` platform generates `build/tailwind/tokens.js`, an ES module preset
